@@ -1,0 +1,88 @@
+version: "2.0"
+nlu:
+- intent: menyapa
+  examples: |
+    - assalamu'alaikum
+    - hi
+    - halo
+    - salam
+    - hey
+    - hi bot
+    - Hallo
+    - hai
+    - selamat pagi
+    - selamat sore
+
+- intent: menolak
+  examples: |
+    - tidak pernah
+    - aku rasa tidak
+    - hmm kayanya engga deh
+    - gue lebih prefer yang lain
+    - ada yang lain ga?
+    - Apakah ada pilihan lain?
+    - tidak
+    - nope
+    - i don't think so
+    - Maaf, tapi aku tidak suka 
+    - Maaf, tapi aku tidak tertarik 
+    - Mungkin ada opsi lain?
+
+- intent: berpisah
+  examples: |
+    - sampai jumpa lagi
+    - good bye!
+    - babay!
+    - dadah
+    - sampai bertemu kembali
+    - bye
+    - sampai berjumpa lagi
+    - bye bot
+    - sampai jumpa
+    - Saya akan mencobanya.
+    - Terima kasih atas bantuannya! Saya sangat bersemangat untuk mengunjungi restoran tersebut.
+    - Terima kasih atas rekomendasinya! Aku akan mencoba restoran-restoran tersebut.
+
+- intent: terima_kasih
+  examples: |
+    - Makasi ya RestBot!
+    - Thank you banget lho
+    - oh! terima kasih!
+    - terima kasih banyak
+    - ah, terima kasih
+    - makasih
+    - Terima kasih banyak atas rekomendasinya!
+    - terima kasih atas infonya
+    - makasih ya
+    - terima kasih atas bantuannya!
+
+- intent: rekomen_resto
+  examples: |
+    - Saya ingin mencari tempat ngopi untuk 2 orang di deket UGM
+    - Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang
+    - tolong carikan [japanese resto](jenis_resto) enak dong
+    - Halo, saya ingin mencari tempat makan enak di sekitar sini.
+    - Hai, ada rekomendasi [restoran Italia](jenis_resto) enak di sekitar sini?
+    - Hai, bisakah kamu merekomendasikan [restoran steak](jenis_resto) yang bagus?
+    - Apakah ada [restoran sushi](jenis_resto) yang baik di sekitar sini?
+    - Saya ingin mencari tempat makan siang yang cepat di dekat kantor.
+    - Apakah ada tempat makan yang bagus untuk sarapan di sini?
+    - Bisakah kamu merekomendasikan tempat makan [vegetarian]?
+    - Aku ingin mencari tempat [warkop](jenis_resto) di Jogja. Apa ada yang kamu rekomendasikan?
+    - Tolong rekomen dong [rumah makan padang](jenis_resto) yang murah disini
+
+- intent: rekomen_menu
+  examples: |
+    - Apa menu rekomendasi di Gudeg Sagan?
+    - Best seller menu di Seven Stone apa ya?
+    - Aku ingin mencoba makanan Asia. Apa yang kamu rekomendasikan?
+    - Apa ada tambahan lain yang cocok untuk disajikan dengan nasi goreng tersebut?
+    - Apakah ada hidangan lain yang direkomendasikan?
+    - Enaknya makan apa ya disini?
+    - Aku ingin mencoba makanan tradisional, apa yang kamu rekomendasikan?
+    - Rekomendasiin kopi yang enak disini dong
+    - Minuman reccommended disini apa ya?
+    - Specialty menu disini apa ya?
+    - Apa yang bisa kamu rekomendasikan untuk hidangan utama?
+    - Apa ya menu spesifik di RM Padang Sederhana?
+

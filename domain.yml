@@ -1,0 +1,46 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- menyapa:
+    use_entities: false
+- menolak:
+    use_entities: false
+- berpisah:
+    use_entities: false
+- terima_kasih:
+    use_entities: false
+- rekomen_menu:
+    use_entities: false
+- rekomen_resto:
+    use_entities: true
+entities:
+- jenis_resto
+slots:
+  jenis_resto:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    # mappings:
+    # - type: custom
+  email:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    # mappings:
+    # - type: custom
+responses:
+  utter_ask_for_bantu_layanan:
+  - text: Hai saya RestoChat, ada yang bisa dibantu?
+  utter_rekomendasi_jenis_resto:
+  - text: berikut rekomendasi {jenis_resto} untuk anda!
+  utter_thanks:
+  - text: Terimakasih sudah menggunakan RestoChat!
+actions: []
+forms: {}
+e2e_actions: []

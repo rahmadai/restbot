@@ -1,0 +1,109 @@
+{
+  "action_listen": {
+    "precision": 0.8421052631578947,
+    "recall": 1.0,
+    "f1-score": 0.9142857142857143,
+    "support": 16
+  },
+  "utter_happy": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3
+  },
+  "utter_greet": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5
+  },
+  "goodbye": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2
+  },
+  "utter_did_that_help": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3
+  },
+  "utter_goodbye": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4
+  },
+  "deny": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2
+  },
+  "mood_great": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2
+  },
+  "utter_iamabot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "greet": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5
+  },
+  "utter_cheer_up": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3
+  },
+  "bot_challenge": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "mood_unhappy": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "micro avg": {
+    "precision": 0.8421052631578947,
+    "recall": 0.3137254901960784,
+    "f1-score": 0.45714285714285713,
+    "support": 51
+  },
+  "macro avg": {
+    "precision": 0.06015037593984962,
+    "recall": 0.07142857142857142,
+    "f1-score": 0.06530612244897958,
+    "support": 51
+  },
+  "weighted avg": {
+    "precision": 0.26418988648090813,
+    "recall": 0.3137254901960784,
+    "f1-score": 0.2868347338935574,
+    "support": 51
+  },
+  "conversation_accuracy": {
+    "accuracy": 0.0,
+    "correct": 0,
+    "total": 7
+  }
+}

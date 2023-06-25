@@ -1,0 +1,4 @@
+multidict
+attr
+numpy >= 1.17.3
+rasa>=2.6.2

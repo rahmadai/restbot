@@ -1,0 +1,45 @@
+[
+  {
+    "text": "Terima kasih atas bantuannya! Saya sangat bersemangat untuk mengunjungi restoran tersebut.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "jenis_resto",
+        "start": 72,
+        "end": 80,
+        "confidence_entity": 0.8974266052246094,
+        "value": "restoran",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tolong rekomen dong rumah makan padang yang murah disini",
+    "entities": [
+      {
+        "start": 20,
+        "end": 38,
+        "value": "rumah makan padang",
+        "entity": "jenis_resto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "jenis_resto",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.998869001865387,
+        "value": "rumah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "jenis_resto",
+        "start": 32,
+        "end": 38,
+        "confidence_entity": 0.9765875935554504,
+        "value": "padang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
