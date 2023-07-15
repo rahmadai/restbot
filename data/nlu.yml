@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: menyapa
+- intent: intent_greet
   examples: |
     - assalamu'alaikum
     - hi
@@ -13,7 +13,7 @@ nlu:
     - selamat pagi
     - selamat sore
 
-- intent: menolak
+- intent: intent_reject
   examples: |
     - tidak pernah
     - aku rasa tidak
@@ -28,7 +28,7 @@ nlu:
     - Maaf, tapi aku tidak tertarik 
     - Mungkin ada opsi lain?
 
-- intent: berpisah
+- intent: intent_bye
   examples: |
     - sampai jumpa lagi
     - good bye!
@@ -43,7 +43,12 @@ nlu:
     - Terima kasih atas bantuannya! Saya sangat bersemangat untuk mengunjungi restoran tersebut.
     - Terima kasih atas rekomendasinya! Aku akan mencoba restoran-restoran tersebut.
 
-- intent: terima_kasih
+- intent: intent_confirmation
+  examples: |
+    - benar saya pesan itu
+    - saya mau ke burjo aja deh
+
+- intent: intent_thanks
   examples: |
     - Makasi ya RestBot!
     - Thank you banget lho
@@ -56,7 +61,7 @@ nlu:
     - makasih ya
     - terima kasih atas bantuannya!
 
-- intent: rekomen_resto
+- intent: intent_recommendation_restaurant
   examples: |
     - Saya ingin mencari tempat ngopi untuk 2 orang di deket UGM
     - Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang
@@ -71,7 +76,7 @@ nlu:
     - Aku ingin mencari tempat [warkop](jenis_resto) di Jogja. Apa ada yang kamu rekomendasikan?
     - Tolong rekomen dong [rumah makan padang](jenis_resto) yang murah disini
 
-- intent: rekomen_menu
+- intent: intent_recommendation_menu
   examples: |
     - Apa menu rekomendasi di Gudeg Sagan?
     - Best seller menu di Seven Stone apa ya?
@@ -85,4 +90,23 @@ nlu:
     - Specialty menu disini apa ya?
     - Apa yang bisa kamu rekomendasikan untuk hidangan utama?
     - Apa ya menu spesifik di RM Padang Sederhana?
+
+- intent: intent_ask_restaurant_location
+  examples: |
+    - Dimana ya [alamat](lokasi_resto) [Cronica Coffee Shop](nama_resto)?
+    - Share [alamat](lokasi_resto) [Estuary Coffee](nama_resto) dong
+
+- intent: intent_restaurant_working_hours
+  examples: |
+    - [McDonalds](nama_resto) buka [jam berapa](working_hours) yaa?
+    - [Pukul berapa](working_hours) [McDonalds](nama_resto) buka?
+    - Bisakah kamu memberitahu [jam buka](working_hours) [Burger King](nama_resto)?
+    - Saya penasaran dengan [jam operasional](working_hours) [KFC](nama_resto). Kapan mereka buka?
+    - Tahu tidak [kapan](working_hours) [Pizza Hut](nama_resto) mulai melayani pelanggan?
+    - Bisa informasikan [jam buka](working_hours) [Subway](nama_resto)?
+    - Bagaimana [jam kerja](working_hours) [Starbucks](nama_resto)?
+    - Saya ingin tahu kapan [Dominos Pizza](nama_resto) [buka](working_hours). Punya informasi?
+    - Bisa berikan saya [jam buka](working_hours) [Taco Bell](nama_resto)?
+    - Pukul [berapa](working_hours) [Wendys](nama_resto) mulai melayani makanan?
+    - [Kapan](working_hours) [Papa Johns](nama_resto) mulai beroperasi?
 

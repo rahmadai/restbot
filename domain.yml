@@ -5,22 +5,38 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- menyapa:
+- intent_greet:
     use_entities: false
-- menolak:
+- intent_reject:
     use_entities: false
-- berpisah:
+- intent_bye:
     use_entities: false
-- terima_kasih:
+- intent_thanks:
     use_entities: false
-- rekomen_menu:
+- intent_recommendation_menu:
     use_entities: false
-- rekomen_resto:
+- intent_recommendation_restaurant:
+    use_entities: true
+- intent_confirmation:
+    use_entities: false
+- intent_ask_restaurant_location:
+    use_entities: true
+- intent_restaurant_working_hours:
     use_entities: true
 entities:
 - jenis_resto
+- nama_resto
+- lokasi_resto
+- working_hours
 slots:
   jenis_resto:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    # mappings:
+    # - type: custom
+  nama_resto:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
@@ -35,10 +51,20 @@ slots:
     # mappings:
     # - type: custom
 responses:
-  utter_ask_for_bantu_layanan:
+  utter_ask_questions:
   - text: Hai saya RestoChat, ada yang bisa dibantu?
-  utter_rekomendasi_jenis_resto:
+  utter_ask_other_questions:
+  - text: apakah informasi tadi sudah cukup?
+  utter_ask_restaurant_location:
+  - text: dimana lokasi restaurant yang anda inginkan?
+  utter_recommendation_restaurant:
   - text: berikut rekomendasi {jenis_resto} untuk anda!
+  utter_confirmation_for_restaurant:
+  - text: apakah anda ingin memesan di {jenis_resto}?
+  utter_provide_restaurant_location:
+  - text: berikut lokasi {nama_resto} yang anda inginkan!
+  utter_restaurant_hours:
+  - text: berikut jam buka {nama_resto}!
   utter_thanks:
   - text: Terimakasih sudah menggunakan RestoChat!
 actions: []

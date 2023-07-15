@@ -2,11 +2,75 @@ version: "2.0"
 stories:
 - story: user supplies customer info
   steps:
-  - intent: menyapa
-  - action: utter_ask_for_bantu_layanan
-  - intent: rekomen_resto
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_recommendation_restaurant
     entities:
     - jenis_resto
-  - action: utter_rekomendasi_jenis_resto
-  - intent: terima_kasih
+  - action: utter_recommendation_restaurant
+  - intent: intent_thanks
   - action: utter_thanks
+
+- story: User search for a restaurant
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_recommendation_restaurant
+    entities:
+    - jenis_resto
+  - action: utter_recommendation_restaurant
+  - intent: intent_ask_restaurant_location
+  - action: utter_provide_restaurant_location
+  - intent: intent_confirmation
+  - action: utter_confirmation_for_restaurant
+  - intent: intent_thanks
+  - action: utter_thanks
+
+# - story: User inquires about a specific restaurant
+#   steps:
+#   - intent: intent_greet
+#   - action: utter_ask_questions
+#   - intent: intent_recommendation_menu
+#     entities:
+#     - restaurant_name
+#   - action: utter_rekomendasi_menu
+#   - intent: intent_restaurant_facility
+#     entities:
+#     - restaurant_name
+#   - action: utter_restaurant_facilities
+#   - intent: intent_restaurant_price
+#   - action: utter_restaurant_price
+#   - intent: intent_thanks
+#   - action: utter_thanks
+
+- story: User checks restaurant opening hours
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_working_hours
+    entities:
+    - restaurant_name
+  - action: utter_restaurant_hours
+  # - intent: challenge_bot
+  # - action: utter_challenge_bot_response
+  # - intent: intent_reject
+  - action: utter_ask_other_questions
+  - intent: intent_bye
+  - action: utter_thanks
+
+# - story: User asks for recommendations
+#   steps:
+#   - intent: intent_greet
+#   - action: utter_ask_questions
+#   - intent: intent_restaurant_menu
+#     entities:
+#     - restaurant_name
+#   - action: utter_restaurant_menu
+#   - intent: intent_recommendation_menu
+#     entities:
+#     - restaurant_name
+#   - action: utter_rekomendasi_menu
+#   - intent: intent_confirmation
+#   - action: utter_confirmation_for_restaurant
+#   - intent: intent_thanks
+#   - action: utter_thanks
