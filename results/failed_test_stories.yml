@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 stories:
 - story: sad path 1 (./.venv/lib64/python3.8/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
   steps:

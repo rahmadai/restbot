@@ -1,4 +1,4 @@
-version: '2.0'
+version: '3.1'
 config:
   store_entities_as_slots: true
 session_config:
@@ -32,24 +32,24 @@ slots:
   jenis_resto:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: true
+    # auto_fill: true
     influence_conversation: true
-    # mappings:
-    # - type: custom
+    mappings:
+    - type: custom
   nama_resto:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: true
+    # auto_fill: true
     influence_conversation: true
-    # mappings:
-    # - type: custom
+    mappings:
+    - type: custom
   email:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: true
+    # auto_fill: true
     influence_conversation: true
-    # mappings:
-    # - type: custom
+    mappings:
+    - type: custom
 responses:
   utter_ask_questions:
   - text: Hai saya RestoChat, ada yang bisa dibantu?
