@@ -1,27 +1,27 @@
 [
   {
-    "text": "Saya ingin tahu kapan Dominos Pizza buka. Punya informasi?",
+    "text": "Dimana ya alamat Cronica Coffee Shop?",
     "entities": [
       {
-        "start": 22,
-        "end": 35,
-        "value": "Dominos Pizza",
-        "entity": "restaurant_name"
+        "start": 10,
+        "end": 16,
+        "value": "alamat",
+        "entity": "lokasi_resto"
       },
       {
-        "start": 36,
-        "end": 40,
-        "value": "buka",
-        "entity": "working_hours"
+        "start": 17,
+        "end": 36,
+        "value": "Cronica Coffee Shop",
+        "entity": "restaurant_name"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "working_hours",
-        "start": 16,
-        "end": 21,
-        "confidence_entity": 0.5200812220573425,
-        "value": "kapan",
+        "entity": "lokasi_resto",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9878267645835876,
+        "value": "alamat",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
@@ -29,25 +29,90 @@
       },
       {
         "entity": "restaurant_name",
-        "start": 22,
-        "end": 35,
-        "confidence_entity": 0.9638300538063049,
-        "value": "Dominos Pizza",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.9918027520179749,
+        "value": "Coffee",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Pukul berapa Wendys mulai melayani makanan?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 12,
+        "value": "berapa",
+        "entity": "working_hours"
       },
       {
+        "start": 13,
+        "end": 19,
+        "value": "Wendys",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
         "entity": "working_hours",
-        "start": 36,
-        "end": 40,
-        "confidence_entity": 0.7304586172103882,
-        "value": "buka",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9932848215103149,
+        "value": "Pukul berapa",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
+      }
+    ]
+  },
+  {
+    "text": "Bagaimana jam kerja Starbucks?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "jam kerja",
+        "entity": "working_hours"
+      },
+      {
+        "start": 20,
+        "end": 29,
+        "value": "Starbucks",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "working_hours",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.9969726800918579,
+        "value": "jam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 26,
+        "end": 31,
+        "confidence_entity": 0.5322187542915344,
+        "value": "makan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 58,
+        "end": 60,
+        "confidence_entity": 0.7786789536476135,
+        "value": "Jl",
+        "extractor": "DIETClassifier"
       }
     ]
   }

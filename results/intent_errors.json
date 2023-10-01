@@ -1,0 +1,50 @@
+[
+  {
+    "text": "benar saya pesan itu",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.6576666831970215
+    }
+  },
+  {
+    "text": "Terima kasih atas rekomendasinya! Aku akan mencoba restoran-restoran tersebut.",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.8025692105293274
+    }
+  },
+  {
+    "text": "Rekomendasiin kopi yang enak disini dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.5353856086730957
+    }
+  },
+  {
+    "text": "Sini restoran favorit aku, coba tebak makanan favoritku",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.9448045492172241
+    }
+  },
+  {
+    "text": "Gue mau makan nasi padang murah",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.9924973249435425
+    }
+  },
+  {
+    "text": "Saya tidak suka hidangan dengan bahan dasar berbau ikan",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.9999243021011353
+    }
+  }
+]
