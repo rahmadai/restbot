@@ -1,7 +1,0 @@
-- intent: supply_contact_info
-  examples: |
-    - My name is [John](name). email's [john@email.com](email)
-    - name: [David](name) email: [david@email.com](email)
-    - Yeah sure. I'm [Barbara](name). My email is [barbara@email.com](email)
-    - [Susan](name), [susan@email.com](email)
-    - Sure. It's [Fred](name). My email is [fred@email.com](email).
