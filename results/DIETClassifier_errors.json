@@ -1,44 +1,53 @@
 [
   {
-    "text": "Terima kasih atas bantuannya! Saya sangat bersemangat untuk mengunjungi restoran tersebut.",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "jenis_resto",
-        "start": 72,
-        "end": 80,
-        "confidence_entity": 0.8974266052246094,
-        "value": "restoran",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Tolong rekomen dong rumah makan padang yang murah disini",
+    "text": "Saya ingin tahu kapan Dominos Pizza buka. Punya informasi?",
     "entities": [
       {
-        "start": 20,
-        "end": 38,
-        "value": "rumah makan padang",
-        "entity": "jenis_resto"
+        "start": 22,
+        "end": 35,
+        "value": "Dominos Pizza",
+        "entity": "restaurant_name"
+      },
+      {
+        "start": 36,
+        "end": 40,
+        "value": "buka",
+        "entity": "working_hours"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "jenis_resto",
-        "start": 20,
-        "end": 25,
-        "confidence_entity": 0.998869001865387,
-        "value": "rumah",
-        "extractor": "DIETClassifier"
+        "entity": "working_hours",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.5200812220573425,
+        "value": "kapan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
       },
       {
-        "entity": "jenis_resto",
-        "start": 32,
-        "end": 38,
-        "confidence_entity": 0.9765875935554504,
-        "value": "padang",
-        "extractor": "DIETClassifier"
+        "entity": "restaurant_name",
+        "start": 22,
+        "end": 35,
+        "confidence_entity": 0.9638300538063049,
+        "value": "Dominos Pizza",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "working_hours",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.7304586172103882,
+        "value": "buka",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
       }
     ]
   }
