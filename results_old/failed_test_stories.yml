@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: happy path 1 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: intent_greet: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: intent_greet: amazing
+  - action: utter_happy  # predicted: utter_thanks
+- story: happy path 2 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: intent_greet: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: intent_greet: amazing
+  - action: utter_happy  # predicted: utter_thanks
+  - intent: goodbye  # predicted: intent_bye: bye-bye!
+  - action: utter_goodbye  # predicted: utter_thanks
+- story: sad path 1 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: intent_greet: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: intent_bye: not good
+  - action: utter_cheer_up  # predicted: utter_thanks
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: intent_bye: yes
+  - action: utter_happy  # predicted: utter_thanks
+- story: sad path 2 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: intent_greet: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: intent_bye: not good
+  - action: utter_cheer_up  # predicted: utter_thanks
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: intent_greet: not really
+  - action: utter_goodbye  # predicted: utter_thanks
+- story: sad path 3 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: intent_greet: hi
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: intent_bye: very terrible
+  - action: utter_cheer_up  # predicted: utter_thanks
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: intent_reject: no
+  - action: utter_goodbye  # predicted: utter_thanks
+- story: say goodbye (./tests/test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: intent_bye: bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: bot challenge (./tests/test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: intent_thanks: are you a bot?
+  - action: utter_iamabot  # predicted: action_default_fallback

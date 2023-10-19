@@ -1,0 +1,76 @@
+stories:
+- story: User states the preferences, and then ask restaurant recommendation from it
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_provide_information
+  - intent: intent_recommendation_restaurant
+  - action: utter_provide_general_recommendation_restaurant
+- story: User asks for recommendations
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_menu
+    entities:
+    - restaurant_name
+  - action: utter_provide_restaurant_menu
+  - intent: intent_recommendation_menu
+    entities:
+    - restaurant_name
+  - action: utter_provide_menu_recommendation
+  - intent: intent_confirmation
+  - action: utter_confirmation_for_restaurant
+  - intent: intent_thanks
+  - action: utter_thanks
+- story: User greets, confirms recommendation, and asks for restaurant recommendation
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_recommendation_restaurant
+  - action: utter_provide_general_recommendation_restaurant
+- story: User greets, confirms recommendation, rejects, and asks for working hours
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_reject
+  - action: utter_reject
+  - intent: intent_restaurant_working_hours
+  - action: utter_provide_restaurant_hours
+- story: User greets, rejects recommendation, confirms, asks for working hours, and expresses gratitude
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_reject
+  - action: utter_reject
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_restaurant_working_hours
+  - action: utter_provide_restaurant_hours
+  - intent: intent_thanks
+  - action: utter_thanks
+- story: User search for a restaurant type
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_recommendation_restaurant
+    entities:
+    - restaurant_type
+    - restaurant_name
+    - working_hours
+    - restaurant_location
+  - action: utter_provide_general_recommendation_restaurant
+  - intent: intent_ask_restaurant_location
+    entities:
+    - restaurant_type
+    - restaurant_name
+    - working_hours
+    - restaurant_location
+  - action: utter_provide_restaurant_location
+  - intent: intent_confirmation
+  - action: utter_confirmation_for_restaurant
+  - intent: intent_thanks
+  - action: utter_thanks

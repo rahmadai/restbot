@@ -1,55 +1,29 @@
 [
   {
-    "text": "Dimana ya alamat Cronica Coffee Shop?",
+    "text": "ada menu apa saja di Tilasawa?",
     "entities": [
       {
-        "start": 10,
-        "end": 16,
-        "value": "alamat",
-        "entity": "lokasi_resto"
-      },
-      {
-        "start": 17,
-        "end": 36,
-        "value": "Cronica Coffee Shop",
+        "start": 21,
+        "end": 29,
+        "value": "Tilasawa",
         "entity": "restaurant_name"
       }
     ],
-    "predicted_entities": [
-      {
-        "entity": "lokasi_resto",
-        "start": 10,
-        "end": 16,
-        "confidence_entity": 0.9878267645835876,
-        "value": "alamat",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      },
-      {
-        "entity": "restaurant_name",
-        "start": 25,
-        "end": 31,
-        "confidence_entity": 0.9918027520179749,
-        "value": "Coffee",
-        "extractor": "DIETClassifier"
-      }
-    ]
+    "predicted_entities": []
   },
   {
-    "text": "Pukul berapa Wendys mulai melayani makanan?",
+    "text": "Kapan Papa Johns mulai beroperasi?",
     "entities": [
       {
-        "start": 6,
-        "end": 12,
-        "value": "berapa",
+        "start": 0,
+        "end": 5,
+        "value": "Kapan",
         "entity": "working_hours"
       },
       {
-        "start": 13,
-        "end": 19,
-        "value": "Wendys",
+        "start": 6,
+        "end": 16,
+        "value": "Papa Johns",
         "entity": "restaurant_name"
       }
     ],
@@ -57,61 +31,113 @@
       {
         "entity": "working_hours",
         "start": 0,
-        "end": 12,
-        "confidence_entity": 0.9932848215103149,
-        "value": "Pukul berapa",
+        "end": 5,
+        "confidence_entity": 0.9758957028388977,
+        "value": "kapan",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
+      },
+      {
+        "entity": "working_hours",
+        "start": 6,
+        "end": 10,
+        "confidence_entity": 0.986403226852417,
+        "value": "Papa",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "working_hours",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.9697101712226868,
+        "value": "beroperasi",
+        "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Bagaimana jam kerja Starbucks?",
+    "text": "Saya ingin tahu kapan Dominos Pizza buka. Punya informasi?",
     "entities": [
       {
-        "start": 10,
-        "end": 19,
-        "value": "jam kerja",
-        "entity": "working_hours"
+        "start": 22,
+        "end": 35,
+        "value": "Dominos Pizza",
+        "entity": "restaurant_name"
       },
       {
-        "start": 20,
-        "end": 29,
-        "value": "Starbucks",
-        "entity": "restaurant_name"
+        "start": 36,
+        "end": 40,
+        "value": "buka",
+        "entity": "working_hours"
       }
     ],
     "predicted_entities": [
       {
         "entity": "working_hours",
-        "start": 10,
-        "end": 13,
-        "confidence_entity": 0.9969726800918579,
-        "value": "jam",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.5274609923362732,
+        "value": "kapan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9850195646286011,
+        "value": "Pizza",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang",
+    "text": "Apakah ada restoran sushi yang baik di sekitar sini?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "restoran sushi",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.9942247271537781,
+        "value": "restoran",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Aku ingin mencari tempat warkop di Jogja. Apa ada yang kamu rekomendasikan?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "warkop",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Gue mau makan nasi padang murah",
     "entities": [],
     "predicted_entities": [
       {
         "entity": "restaurant_type",
-        "start": 26,
-        "end": 31,
-        "confidence_entity": 0.5322187542915344,
-        "value": "makan",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "restaurant_name",
-        "start": 58,
-        "end": 60,
-        "confidence_entity": 0.7786789536476135,
-        "value": "Jl",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.9958118200302124,
+        "value": "padang",
         "extractor": "DIETClassifier"
       }
     ]

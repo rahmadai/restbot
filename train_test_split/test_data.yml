@@ -1,0 +1,108 @@
+version: "3.1"
+nlu:
+- intent: intent_restaurant_facility
+  examples: |
+    - Apa saja fasilitas yang ada di [Burger King](restaurant_name)?
+- intent: intent_restaurant_menu
+  examples: |
+    - ada menu apa saja di [Tilasawa](restaurant_name)?
+- intent: intent_restaurant_working_hours
+  examples: |
+    - [Kapan](working_hours) [Papa Johns](restaurant_name) mulai beroperasi?
+    - Saya ingin tahu kapan [Dominos Pizza](restaurant_name) [buka](working_hours). Punya informasi?
+- intent: intent_recommendation_restaurant
+  examples: |
+    - Halo, saya ingin mencari tempat makan enak di sekitar sini.
+    - Apakah ada [restoran sushi](restaurant_type) yang baik di sekitar sini?
+    - Aku ingin mencari tempat [warkop](restaurant_type) di Jogja. Apa ada yang kamu rekomendasikan?
+- intent: intent_recommendation_menu
+  examples: |
+    - Enaknya makan apa ya disini?
+    - Best seller menu di Seven Stone apa ya?
+- intent: intent_challenge_bot
+  examples: |
+    - apa saya berbicara dengan bot?
+    - berapa umur platformmu
+- intent: intent_confirmation
+  examples: |
+    - Aku memesan yang itu.
+    - Pesananku sudah benar.
+    - Ya, itu benar.
+    - Pasti, itu pesananku.
+    - Pesanan aku adalah itu.
+- intent: intent_bye
+  examples: |
+    - Aku mau off, teman-teman.
+    - sampai jumpa
+    - Okesip, aku pergi dulu.
+    - Udah ah, gua cabut dulu, ya.
+    - Saya akan mencobanya
+    - Off dulu ya
+    - Gue cabut duluan, guys.
+- intent: intent_reject
+  examples: |
+    - Saran yang lain deh
+    - Nggak mau yang itu
+    - Mungkin ada opsi lain?
+    - Aku sih kurang suka
+    - Nggak prefer
+    - hmm kayanya engga deh
+    - Kurang srek itu
+    - Ga pengen
+- intent: intent_greet
+  examples: |
+    - Bonjour
+    - Halo, bot.
+    - heyho
+    - Good morning
+    - Apa kabar?
+    - heyy there
+    - test
+    - Yow
+- intent: intent_thanks
+  examples: |
+    - Terima kasih atas kesabaran Anda
+    - Saya sangat menghargai bantuanmu, terima kasih
+    - Terima kasih atas penjelasan yang detail
+    - Terima kasih telah memberikan penjelasan yang jelas
+    - makasih
+    - Saya senang bisa mendapatkan jawaban, terima kasih
+    - Saya berterima kasih atas waktu yang Anda habiskan untuk menjawab pertanyaan saya
+    - makasih ya!
+    - Saya bersyukur atas bantuanmu, terima kasih
+    - Terima kasih atas kesediaanmu membantu
+- intent: intent_ask_restaurant_location
+  examples: |
+    - Tolong beri tahu saya koordinat GPS restoran ini.
+    - Saya ingin tahu di mana restoran favorit saya berada.
+    - Di mana restoran populer ini berada?
+    - Lokasi restoran ini di sekitar mana?
+    - Restobot, di mana alamat lengkap restoran ini berada?
+    - Apakah restoran ini mudah dijangkau dengan transportasi umum?
+    - Di mana restoran terdekat?
+    - Apakah restoran ini terletak di area yang aman dan nyaman?
+    - Bisakah Anda memberi saya petunjuk ke restoran ini dari sini?
+    - Bisakah Anda memberi tahu saya di mana restoran ini berlokasi?
+- intent: intent_provide_information
+  examples: |
+    - Saya ingin mencoba hidangan yang sesuai untuk musim gugur
+    - Saya ingin makanan sehat dan rendah kalori
+    - Aku mau nyoba makanan italia
+    - Gue mau makan nasi padang murah
+    - Saya ingin makanan yang mudah dibawa untuk takeout
+    - Saya ingin makanan yang sesuai untuk diet keto
+    - Saya suka hidangan berbahan dasar daging sapi
+    - Saya ingin makanan yang sesuai untuk diet vegan
+    - Saya ingin menu sarapan yang lezat
+- intent: intent_provide_negative_sample
+  examples: |
+    - Lagi gamau itu
+    - Gue ga suka ...
+    - Saya sedang mengurangi nasi padang
+    - Resto dengan hidangan pedas bukan tipeku, bot
+    - Aku kurang suka restoran dengan suasana yang terlalu formal, bot
+    - Saya tidak menyukai hidangan tradisional
+    - Gue ada alergi ...
+    - Lagi ga pengan itu
+    - Bot, aku gak terlalu suka restoran dengan harga yang terlalu tinggi
+    - Saya tidak terlalu suka makanan laut

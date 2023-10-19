@@ -62,7 +62,6 @@ stories:
   # - action: utter_ask_other_questions
   - intent: intent_bye
   - action: utter_thanks
-  
 
 - story: User asks for recommendations
   steps:

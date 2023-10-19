@@ -1,50 +1,90 @@
 [
   {
-    "text": "benar saya pesan itu",
-    "intent": "intent_confirmation",
+    "text": "Aku ingin mencari tempat warkop di Jogja. Apa ada yang kamu rekomendasikan?",
+    "intent": "intent_recommendation_restaurant",
     "intent_prediction": {
-      "name": "intent_provide_information",
-      "confidence": 0.6576666831970215
+      "name": "intent_recommendation_menu",
+      "confidence": 0.8150541186332703
     }
   },
   {
-    "text": "Terima kasih atas rekomendasinya! Aku akan mencoba restoran-restoran tersebut.",
+    "text": "Saya akan mencobanya",
     "intent": "intent_bye",
     "intent_prediction": {
-      "name": "intent_thanks",
-      "confidence": 0.8025692105293274
+      "name": "intent_confirmation",
+      "confidence": 0.29879409074783325
     }
   },
   {
-    "text": "Rekomendasiin kopi yang enak disini dong",
-    "intent": "intent_recommendation_menu",
+    "text": "Aku sih kurang suka",
+    "intent": "intent_reject",
     "intent_prediction": {
-      "name": "intent_recommendation_restaurant",
-      "confidence": 0.5353856086730957
+      "name": "intent_confirmation",
+      "confidence": 0.5899320244789124
     }
   },
   {
-    "text": "Sini restoran favorit aku, coba tebak makanan favoritku",
-    "intent": "intent_challenge_bot",
+    "text": "Nggak prefer",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.9512755274772644
+    }
+  },
+  {
+    "text": "Ga pengen",
+    "intent": "intent_reject",
     "intent_prediction": {
       "name": "intent_provide_negative_sample",
-      "confidence": 0.9448045492172241
+      "confidence": 0.999992847442627
+    }
+  },
+  {
+    "text": "Apakah restoran ini mudah dijangkau dengan transportasi umum?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.9999948740005493
     }
   },
   {
     "text": "Gue mau makan nasi padang murah",
     "intent": "intent_provide_information",
     "intent_prediction": {
-      "name": "intent_provide_negative_sample",
-      "confidence": 0.9924973249435425
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.9977298378944397
     }
   },
   {
-    "text": "Saya tidak suka hidangan dengan bahan dasar berbau ikan",
+    "text": "Lagi gamau itu",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Saya sedang mengurangi nasi padang",
     "intent": "intent_provide_negative_sample",
     "intent_prediction": {
       "name": "intent_provide_information",
-      "confidence": 0.9999243021011353
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Saya tidak menyukai hidangan tradisional",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.9916792511940002
+    }
+  },
+  {
+    "text": "Saya tidak terlalu suka makanan laut",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.3749261796474457
     }
   }
 ]

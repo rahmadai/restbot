@@ -1,0 +1,340 @@
+version: "3.1"
+nlu:
+- intent: intent_restaurant_facility
+  examples: |
+    - Apa saja fasilitas yang ada di [KFC](restaurant_name)?
+    - Apa saja fasilitas yang ada di [Pizza Hut](restaurant_name)?
+    - Apa saja fasilitas yang ada di [McDonalds](restaurant_name)?
+- intent: intent_restaurant_menu
+  examples: |
+    - menu di [RM Sederhana](restaurant_name) ada apa aja ya?
+    - menu di [RM Padang Sederhana](restaurant_name) ada apa aja ya?
+    - di [Warung Layar Sentuh](restaurant_name) ada makanan apa aja?
+- intent: intent_restaurant_working_hours
+  examples: |
+    - Bisakah kamu memberitahu [jam buka](working_hours) [Burger King](restaurant_name)?
+    - Tahu tidak [kapan](working_hours) [Pizza Hut](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan [jam buka](working_hours) [Subway](restaurant_name)?
+    - [Pukul berapa](working_hours) [McDonalds](restaurant_name) buka?
+    - Saya penasaran dengan [jam operasional](working_hours) [KFC](restaurant_name). Kapan mereka buka?
+    - [McDonalds](restaurant_name) buka [jam berapa](working_hours) yaa?
+    - Bisa berikan saya [jam buka](working_hours) [Taco Bell](restaurant_name)?
+    - Pukul [berapa](working_hours) [Wendys](restaurant_name) mulai melayani makanan?
+    - Bagaimana [jam kerja](working_hours) [Starbucks](restaurant_name)?
+- intent: intent_recommendation_restaurant
+  examples: |
+    - Saya ingin mencari tempat ngopi untuk 2 orang di deket UGM
+    - Hai, ada rekomendasi [restoran Italia](restaurant_type) enak di sekitar sini?
+    - Tolong rekomen dong [rumah makan padang](restaurant_type) yang murah disini
+    - Bisakah kamu merekomendasikan tempat makan [vegetarian](restaurant_type)?
+    - tolong carikan [japanese resto](restaurant_type) enak dong
+    - Apakah ada tempat makan yang bagus untuk sarapan di sini?
+    - Hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus?
+    - Saya ingin mencari tempat makan siang yang cepat di dekat kantor.
+    - Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang
+- intent: intent_recommendation_menu
+  examples: |
+    - Aku ingin mencoba makanan tradisional, apa yang kamu rekomendasikan?
+    - Apa ya menu spesifik di RM Padang Sederhana?
+    - Apakah ada hidangan lain yang direkomendasikan?
+    - Aku ingin mencoba makanan Asia. Apa yang kamu rekomendasikan?
+    - Apa yang bisa kamu rekomendasikan untuk hidangan utama?
+    - Minuman reccommended disini apa ya?
+    - Apa menu rekomendasi di Gudeg Sagan?
+    - Rekomendasiin kopi yang enak disini dong
+    - Specialty menu disini apa ya?
+    - Apa ada tambahan lain yang cocok untuk disajikan dengan nasi goreng tersebut?
+- intent: intent_challenge_bot
+  examples: |
+    - apakah kamu masih bekerja
+    - bodoh botnya
+    - apakah kamu manusia?
+    - apa saya berbicara dengan manusia?
+    - kok itu aja gabisa jawab
+    - apakah kamu bot?
+    - apakah kamu sibuk
+    - kamu bot ya?
+    - gue lagi bicara sama bot nih
+    - berapa umurmu
+- intent: intent_confirmation
+  examples: |
+    - Itu pesananku, ya.
+    - Tidak ada yang berubah, itu yang aku pesan.
+    - Itu yang aku pesan.
+    - Betul, aku pesan itu.
+    - Iya, pesananku itu.
+    - Benar, aku mau yang itu.
+    - Benar, aku pesan yang itu.
+    - Benar sekali.
+    - Pesananku adalah itu.
+    - Setuju, aku mau yang itu.
+    - Ya, itu pesananku yang benar.
+    - Gue pengen cobain itu deh
+    - Sesuai dengan yang aku minta.
+    - Iya, pesanannya itu.
+    - Aku setuju dengan pesanan ini.
+    - Tepat sekali.
+    - Sudah sesuai, itu pesananku.
+    - Gue mau nyoba rekomendasi lu deh
+- intent: intent_bye
+  examples: |
+    - Saya pamit, ya.
+    - Udah ya, kita off.
+    - Udah deh, saya pamit duluan.
+    - sampai bertemu kembali
+    - Saya akan kembali nanti.
+    - Gue harus cabut dulu, ya.
+    - Gue mo pergi
+    - Aku pamit dulu
+    - Gw pergi dulu
+    - sampai jumpa lagi
+    - Oke deh, restobot. Gue pengen nyobain itu
+    - Udah saatnya w cuss, bro.
+    - Ya udah, kita off dulu ya.
+    - Bye-bye, teman-teman.
+    - good bye
+    - Nah, udah dulu ah, bye!
+    - Udah ya, kita off dulu.
+    - Gw cabs dulu
+    - Gue cabs dulu
+    - good bye!
+    - Aku pamit ya, semuanya.
+    - Okesip, saya pamit dulu.
+    - Waktunya bubar, sobat.
+    - Bye-bye
+    - Waktunya off, sobat.
+    - Oke deh, aku pamit dulu ya
+    - Gue harus jalan, ya.
+- intent: intent_reject
+  examples: |
+    - Nggak pengen
+    - Tidak mau
+    - Ga mo
+    - Yang lain saja
+    - Tidak mau itu
+    - Sorry, tapi gue milih yang lain aja deh
+    - Nggak terlalu pengen
+    - No way, gue gak mau pilih yang kayak gitu
+    - Enggak ah, cari yang lain aja
+    - Nggak mau
+    - Ada opsi lain ga?
+    - Other suggestion?
+    - tidak
+    - nope
+    - Maaf, tapi aku tidak tertarik
+    - Gue sih mending gak usah deh pilih yang itu
+    - Ga terlalu suka
+    - Enggak dulu
+    - Engga pengen
+    - Apakah ada pilihan lain?
+    - Tidak mau yang itu
+    - Enggak mau
+    - Ga like
+    - Tidak dulu
+    - Yang lain dulu deh
+    - Kurang suka itu si
+    - Gamau itu
+    - Kurang srek sama itu
+    - Suggestion lain, mungkin?
+    - Gue mending nolak aja pilihan yang ini
+    - Yang lain aja
+    - Hmm yang lain saja
+- intent: intent_greet
+  examples: |
+    - Hai, Restobot! Bagaimana kabarmu hari ini?
+    - Assalamualaikum!
+    - halo
+    - salam kenal
+    - Selamat malem
+    - assalamu alaikum warohmatullahi wabarakaatuh
+    - Hi bot
+    - Yo
+    - salam hormat
+    - Gue mau nanya dong
+    - kak
+    - om swastiastu
+    - Woy
+    - Hei Restobot
+    - hai
+    - selamat pagi
+    - holla
+    - selamat sore
+    - morning
+    - shalom
+    - sore
+    - salam
+    - Selamat siang
+    - knock knock
+    - Hei Restobot, apa kabar hari ini?
+    - permisi
+    - Hallo
+    - Halo, bos!
+    - assalamu'alaikum
+    - Good afternoon
+    - Selamat malam
+    - Selamat sore
+    - Hey bot
+    - hi
+    - tes
+- intent: intent_thanks
+  examples: |
+    - Saya sangat bersyukur atas panduannya, terima kasih
+    - Terima kasih banyak atas jawaban yang informatif
+    - Terima kasih atas bantuannya.
+    - terima kasih banyak
+    - Saya sangat menghargai pelayanannya, terima kasih
+    - Terima kasih atas bantuanmu
+    - Terima kasih atas jawaban yang cepat
+    - Saya bersyukur atas dukungannya, terima kasih
+    - Terima kasih telah memberikan informasi yang berguna
+    - Saya bersyukur atas pelayanan Anda, terima kasih
+    - Thank you banget lho
+    - Terima kasih atas bantuan Anda yang luar biasa
+    - Terima kasih atas informasi yang sangat berguna
+    - terima kasih atas bantuannya!
+    - Terima kasih atas solusi yang tepat
+    - Terima kasih telah memandu saya
+    - Kamu sangat membantu, terima kasih ya
+    - oh! terima kasih!
+    - Terima kasih banyak atas rekomendasinya!
+    - Makasi ya RestBot!
+    - makasih ya
+    - Saya sangat senang dengan respons Anda, terima kasih
+    - Saya sangat menghargai solusinya, terima kasih
+    - Saya sangat senang dengan pelayanan Anda, terima kasih
+    - Saya sangat menghargai jawaban yang Anda berikan, terima kasih
+    - Terima kasih atas informasi yang berharga
+    - Terima kasih telah menjawab pertanyaan saya
+    - wah, terima kasih banyak ya!
+    - Saya berterima kasih atas jawaban yang akurat
+    - ah, terima kasih
+    - Terima kasih atas panduan yang baik
+    - Saya sangat menghargai bantuannya, terima kasih
+    - Terima kasih telah memberikan solusi
+    - Saya sangat menghargai dukungannya, terima kasih
+    - Terima kasih atas keramahannya
+    - Saya sangat menghargai informasi ini.
+    - terima kasih atas infonya
+    - Saya berterima kasih atas informasi yang diberikan
+- intent: intent_ask_restaurant_location
+  examples: |
+    - Saya butuh tahu di mana restoran ini berada, bisakah Anda bantu?
+    - Saya ingin tahu lokasi restoran ini, mungkin bisa memberi petunjuk, Restobot?
+    - Apa lokasi pasti dari restoran ini?
+    - Apa alamat pasti dari restoran ini?
+    - Apakah Anda bisa memberi tahu saya di mana restoran ini beroperasi?
+    - Apakah restoran ini terletak di pusat kota atau di pinggiran kota?
+    - Di mana restoran yang memiliki ulasan bagus ini berlokasi?
+    - dimana lokasi Oppio Coffee?
+    - Saya butuh alamat restoran ini, bisa Anda bantu?
+    - Saya butuh info tentang lokasi restoran ini. Bisa bantu, Restobot?
+    - Apakah ada tempat parkir yang tersedia di dekat restoran ini?
+    - Lokasi restoran ini dekat dengan titik mana?
+    - Bagaimana saya bisa mencapai restoran ini dari lokasi saya?
+    - Apakah restoran ini terletak di dekat area perbelanjaan atau pusat bisnis?
+    - Restobot, dimana letaknya restoran ini?
+    - Bisakah Anda beri tahu saya alamat pasti restoran ini?
+    - Bisa Anda tunjukkan lokasi restoran ini di peta?
+    - Restobot, mohon berikan detail lokasi restoran
+    - Di mana alamat restoran yang populer ini?
+    - Bisa beri tahu alamat lengkap restoran ini?
+    - Lokasi restoran ini ada di mana?
+    - Bisa beri tahu saya alamat restoran ini?
+    - Tolong beri tahu saya di mana alamat restoran ini.
+    - Saya kurang familiar dengan lokasinya, bisakah Anda memberi tahu saya di mana restoran ini berada?
+    - Bisakah Anda memberi saya petunjuk ke restoran ini?
+    - Di mana lokasi tepat dari restoran ini?
+    - Apa alamat lengkap dari restoran ini?
+    - Bisakah Anda memberi saya koordinat GPS restoran ini?
+    - Apakah restoran ini terletak di pusat kawasan kuliner atau daerah makanan yang terkenal?
+    - Di mana alamat restoran yang paling dekat?
+    - Apakah ada pemandangan atau panorama khusus yang dapat dinikmati dari restoran ini?
+    - Saya butuh petunjuk arah menuju restoran ini.
+    - Bagaimana cara menuju ke restoran ini?
+    - Bagaimana saya bisa menemukan restoran ini?
+    - Di mana restoran dengan menu spesial ini berlokasi?
+    - Dimana ya alamat Cronica Coffee Shop?
+    - Di mana saya bisa menemukan restoran ini di kota ini?
+    - Share alamat Estuary Coffee dong
+- intent: intent_provide_information
+  examples: |
+    - Saya suka hidangan berbahan dasar ayam
+    - Saya ingin mencoba masakan Korea.
+    - Saya ingin mencoba hidangan eksotis
+    - Gua ngidam nasi padang
+    - Aku suka makanan Asia
+    - Saya ingin mencoba hidangan yang menyehatkan
+    - Saya suka hidangan berbahan dasar telur
+    - Saya ingin mencoba hidangan yang unik
+    - Saya suka menu makanan ringan
+    - Saya ingin makanan yang sesuai untuk diet vegetarian
+    - Saya suka hidangan Korea
+    - Gua lebih suka teh
+    - Saya suka makanan berbahan dasar nasi
+    - Saya lebih suka hidangan berbahan dasar sayuran
+    - Saya suka hidangan dari Timur Tengah
+    - Saya lebih suka hidangan berbahan dasar tahu
+    - Saya lebih prefer nasi goreng
+    - Saya suka hidangan pedas dan asam
+    - Saya prefer ini
+    - Saya ingin makanan yang sesuai untuk diet rendah karbohidrat
+    - Saya suka makanan laut
+    - Saya suka hidangan Jepang
+    - Saya ingin makanan yang sesuai untuk diet rendah gula
+    - Gue mau nyobain seafood disini
+    - Saya ingin makanan yang cocok untuk diet gluten-free
+    - Saya mau mencoba mocktail nya
+    - Saya ingin mencoba hidangan khas musim panas
+    - Saya suka hidangan penutup yang manis
+    - Saya ingin mencoba hidangan yang khas restoran ini
+    - Saya suka hidangan berbahan dasar ikan
+    - Saya alergi terhadap kacang, jadi saya harus menghindarinya
+    - Saya ingin menu makan malam yang romantis
+    - Saya suka hidangan daging babi
+    - Saya suka hidangan pedas
+    - Saya suka hidangan berbahan dasar bebek
+    - Saya suka hidangan India
+    - Hari ini aku mau makanan hangat
+    - Aku suka ice cream
+    - Aku suka makanan perancis
+- intent: intent_provide_negative_sample
+  examples: |
+    - Hmm gamau, aku alergi udang
+    - Bot, sebenernya aku gak suka restoran cepat saji
+    - Resto dengan hidangan daging bukan pilihanku, bot
+    - Bot, aku gak suka restoran dengan menu berlemak
+    - Bot, aku gak suka restoran dengan harga yang tidak terjangkau
+    - Aku kurang suka restoran dengan menu vegetarian, bot
+    - Saya ada pantangan ...
+    - Gak suka restoran dengan menu berbumbu pedas, bot
+    - Bot, gak suka restoran chinese
+    - Resto yang terlalu berisik bukan favoritku, bot
+    - Gak suka restoran dengan pelayanan yang lambat, bot
+    - Resto yang terlalu ramai bukan tipeku, bot
+    - Aku bukan penggemar restoran berkonsep buffet, bot
+    - Saya tidak suka makanan timur tengah
+    - Resto berkonsep fine dining bukan pilihanku, bot
+    - Aku kurang suka restoran dengan makanan pedas, bot
+    - Saya tidak suka ...
+    - Saya ga suka kambing
+    - Bot, gak terlalu suka restoran dengan menu vegetarian
+    - Bot, aku gak terlalu suka restoran dengan menu manis
+    - Aku kurang suka restoran dengan harga yang mahal, bot
+    - Aku ga prefer itu
+    - Bot, gak suka restoran yang terlalu mewah
+    - Bot, aku gak terlalu suka makanan laut
+    - Gua ga doyan ...
+    - Resto yang terlalu formal bukan pilihanku, bot
+    - Bot, aku gak suka restoran yang terlalu eksklusif
+    - Gue ga mau all you can eat, lagi bokek
+    - Bot, gak terlalu suka dengan restoran italia
+    - Gw ga pengen
+    - Saya tidak suka hidangan dengan bahan dasar berbau ikan
+    - Resto mewah bukan tipeku, bot
+    - Saya trauma makan
+    - Gak suka restoran dengan menu berlemak tinggi, bot
+    - Saya tidak suka makanan pedas
+    - Bot, gak terlalu suka sama restoran all-you-can-eat
+    - Aku kurang suka restoran dengan pelayanan yang kurang ramah, bot
+    - Aku ga suka gudeg
+    - Resto dengan makanan chinese bukan favoritku, bot
