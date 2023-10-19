@@ -1,45 +1,79 @@
 {
-  "intent_provide_negative_sample": {
+  "intent_restaurant_facility": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 49,
-    "confused_with": {}
-  },
-  "intent_recommendation_menu": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
-  },
-  "intent_challenge_bot": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
-  },
-  "intent_recommendation_restaurant": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "intent_restaurant_working_hours": 1,
+      "intent_provide_negative_sample": 1
+    }
   },
   "intent_provide_information": {
-    "precision": 1.0,
+    "precision": 0.8727272727272727,
     "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.9320388349514563,
+    "support": 48,
+    "confused_with": {}
+  },
+  "intent_thanks": {
+    "precision": 0.9795918367346939,
+    "recall": 1.0,
+    "f1-score": 0.9896907216494846,
     "support": 48,
     "confused_with": {}
   },
   "intent_restaurant_menu": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
     "support": 4,
+    "confused_with": {
+      "intent_provide_information": 2,
+      "intent_challenge_bot": 2
+    }
+  },
+  "intent_recommendation_restaurant": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 12,
+    "confused_with": {
+      "intent_ask_restaurant_location": 11,
+      "intent_thanks": 1
+    }
+  },
+  "intent_confirmation": {
+    "precision": 0.8846153846153846,
+    "recall": 1.0,
+    "f1-score": 0.9387755102040816,
+    "support": 23,
     "confused_with": {}
+  },
+  "intent_ask_restaurant_location": {
+    "precision": 0.7741935483870968,
+    "recall": 1.0,
+    "f1-score": 0.8727272727272727,
+    "support": 48,
+    "confused_with": {}
+  },
+  "intent_bye": {
+    "precision": 0.9705882352941176,
+    "recall": 0.9705882352941176,
+    "f1-score": 0.9705882352941176,
+    "support": 34,
+    "confused_with": {
+      "intent_reject": 1
+    }
+  },
+  "intent_reject": {
+    "precision": 0.9512195121951219,
+    "recall": 0.975,
+    "f1-score": 0.9629629629629629,
+    "support": 40,
+    "confused_with": {
+      "intent_provide_negative_sample": 1
+    }
   },
   "intent_greet": {
     "precision": 1.0,
@@ -48,72 +82,55 @@
     "support": 43,
     "confused_with": {}
   },
-  "intent_confirmation": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 23,
-    "confused_with": {}
-  },
-  "intent_thanks": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 48,
-    "confused_with": {}
-  },
-  "intent_ask_restaurant_location": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 48,
-    "confused_with": {}
-  },
-  "intent_bye": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 34,
-    "confused_with": {}
-  },
-  "intent_restaurant_facility": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
+  "intent_challenge_bot": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 12,
+    "confused_with": {
+      "intent_confirmation": 1,
+      "intent_bye": 1
+    }
   },
   "intent_restaurant_working_hours": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.9090909090909091,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.9090909090909091,
     "support": 11,
-    "confused_with": {}
+    "confused_with": {
+      "intent_provide_negative_sample": 1
+    }
   },
-  "intent_reject": {
+  "intent_recommendation_menu": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 40,
-    "confused_with": {}
+    "recall": 0.16666666666666666,
+    "f1-score": 0.2857142857142857,
+    "support": 12,
+    "confused_with": {
+      "intent_provide_information": 5,
+      "intent_ask_restaurant_location": 3
+    }
   },
-  "accuracy": 1.0,
+  "intent_provide_negative_sample": {
+    "precision": 0.9411764705882353,
+    "recall": 0.9795918367346939,
+    "f1-score": 0.96,
+    "support": 49,
+    "confused_with": {
+      "intent_reject": 1
+    }
+  },
+  "accuracy": 0.9123711340206185,
   "macro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.7940383216404403,
+    "recall": 0.7381622129371228,
+    "f1-score": 0.7372563380424693,
     "support": 388
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 388
-  },
-  "micro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.882951517962725,
+    "recall": 0.9123711340206185,
+    "f1-score": 0.8849987658665072,
     "support": 388
   }
 }

@@ -1,0 +1,33 @@
+language: id
+pipeline:
+- name: LanguageModelFeaturizer
+    # Name of the language model to use
+  model_name: "bert"
+    # Pre-Trained weights to be loaded
+  model_weights: "rasa/LaBSE"
+
+    # An optional path to a directory from which
+    # to load pre-trained model weights.
+    # If the requested model is not found in the
+    # directory, it will be downloaded and
+    # cached in this directory for future use.
+    # The default value of `cache_dir` can be
+    # set using the environment variable
+    # `TRANSFORMERS_CACHE`, as per the
+    # Transformers library.
+  cache_dir: null
+epochs: 100
+assistant_id: 20231019-112101-steel-pelican
+policies:
+# # No configuration for policies was provided. The following default policies were used to train your model.
+# # If you'd like to customize them, uncomment and adjust the policies.
+# # See https://rasa.com/docs/rasa/policies for more information.
+#   - name: MemoizationPolicy
+#   - name: RulePolicy
+#   - name: UnexpecTEDIntentPolicy
+#     max_history: 5
+#     epochs: 100
+#   - name: TEDPolicy
+#     max_history: 5
+#     epochs: 100
+#     constrain_similarities: true

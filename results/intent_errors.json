@@ -1,90 +1,274 @@
 [
   {
+    "text": "Ga terlalu suka",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.9067776799201965
+    }
+  },
+  {
+    "text": "Oke deh, restobot. Gue pengen nyobain itu",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.2679224908351898
+    }
+  },
+  {
+    "text": "Saya ingin mencari tempat ngopi untuk 2 orang di deket UGM",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.7962620854377747
+    }
+  },
+  {
+    "text": "Rekomendasiin dong tempat makan enak dan murah di sekitar Jl. Kaliurang",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.534153938293457
+    }
+  },
+  {
+    "text": "tolong carikan japanese resto enak dong",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.574878454208374
+    }
+  },
+  {
+    "text": "Halo, saya ingin mencari tempat makan enak di sekitar sini.",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.4670923352241516
+    }
+  },
+  {
+    "text": "Hai, ada rekomendasi restoran Italia enak di sekitar sini?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.9031761884689331
+    }
+  },
+  {
+    "text": "Hai, bisakah kamu merekomendasikan restoran steak yang bagus?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.6445960402488708
+    }
+  },
+  {
+    "text": "Apakah ada restoran sushi yang baik di sekitar sini?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.7586709260940552
+    }
+  },
+  {
+    "text": "Saya ingin mencari tempat makan siang yang cepat di dekat kantor.",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.4195448160171509
+    }
+  },
+  {
+    "text": "Apakah ada tempat makan yang bagus untuk sarapan di sini?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.31938809156417847
+    }
+  },
+  {
+    "text": "Bisakah kamu merekomendasikan tempat makan vegetarian?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.2472689300775528
+    }
+  },
+  {
     "text": "Aku ingin mencari tempat warkop di Jogja. Apa ada yang kamu rekomendasikan?",
     "intent": "intent_recommendation_restaurant",
     "intent_prediction": {
-      "name": "intent_recommendation_menu",
-      "confidence": 0.8150541186332703
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.31810301542282104
     }
   },
   {
-    "text": "Saya akan mencobanya",
-    "intent": "intent_bye",
+    "text": "Tolong rekomen dong rumah makan padang yang murah disini",
+    "intent": "intent_recommendation_restaurant",
     "intent_prediction": {
-      "name": "intent_confirmation",
-      "confidence": 0.29879409074783325
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.3541206121444702
     }
   },
   {
-    "text": "Aku sih kurang suka",
-    "intent": "intent_reject",
+    "text": "Apa menu rekomendasi di Gudeg Sagan?",
+    "intent": "intent_recommendation_menu",
     "intent_prediction": {
-      "name": "intent_confirmation",
-      "confidence": 0.5899320244789124
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.2977932095527649
     }
   },
   {
-    "text": "Nggak prefer",
-    "intent": "intent_reject",
+    "text": "Aku ingin mencoba makanan Asia. Apa yang kamu rekomendasikan?",
+    "intent": "intent_recommendation_menu",
     "intent_prediction": {
       "name": "intent_provide_information",
-      "confidence": 0.9512755274772644
+      "confidence": 0.882482647895813
     }
   },
   {
-    "text": "Ga pengen",
-    "intent": "intent_reject",
+    "text": "Apa ada tambahan lain yang cocok untuk disajikan dengan nasi goreng tersebut?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.2670825719833374
+    }
+  },
+  {
+    "text": "Apakah ada hidangan lain yang direkomendasikan?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_confirmation",
+      "confidence": 0.3484690189361572
+    }
+  },
+  {
+    "text": "Aku ingin mencoba makanan tradisional, apa yang kamu rekomendasikan?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.43250370025634766
+    }
+  },
+  {
+    "text": "Rekomendasiin kopi yang enak disini dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.615607500076294
+    }
+  },
+  {
+    "text": "Minuman reccommended disini apa ya?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.39438003301620483
+    }
+  },
+  {
+    "text": "Specialty menu disini apa ya?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_confirmation",
+      "confidence": 0.2790394127368927
+    }
+  },
+  {
+    "text": "Apa yang bisa kamu rekomendasikan untuk hidangan utama?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.6041005253791809
+    }
+  },
+  {
+    "text": "Apa ya menu spesifik di RM Padang Sederhana?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.21393829584121704
+    }
+  },
+  {
+    "text": "Tahu tidak kapan Pizza Hut mulai melayani pelanggan?",
+    "intent": "intent_restaurant_working_hours",
     "intent_prediction": {
       "name": "intent_provide_negative_sample",
-      "confidence": 0.999992847442627
+      "confidence": 0.5275305509567261
     }
   },
   {
-    "text": "Apakah restoran ini mudah dijangkau dengan transportasi umum?",
-    "intent": "intent_ask_restaurant_location",
+    "text": "Apa saja fasilitas yang ada di McDonalds?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.3989892601966858
+    }
+  },
+  {
+    "text": "Apa saja fasilitas yang ada di Burger King?",
+    "intent": "intent_restaurant_facility",
     "intent_prediction": {
       "name": "intent_provide_negative_sample",
-      "confidence": 0.9999948740005493
+      "confidence": 0.4308038353919983
     }
   },
   {
-    "text": "Gue mau makan nasi padang murah",
-    "intent": "intent_provide_information",
+    "text": "menu di RM Sederhana ada apa aja ya?",
+    "intent": "intent_restaurant_menu",
     "intent_prediction": {
-      "name": "intent_recommendation_restaurant",
-      "confidence": 0.9977298378944397
+      "name": "intent_challenge_bot",
+      "confidence": 0.16217823326587677
     }
   },
   {
-    "text": "Lagi gamau itu",
+    "text": "di Warung Layar Sentuh ada makanan apa aja?",
+    "intent": "intent_restaurant_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.21290984749794006
+    }
+  },
+  {
+    "text": "menu di RM Padang Sederhana ada apa aja ya?",
+    "intent": "intent_restaurant_menu",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.16790996491909027
+    }
+  },
+  {
+    "text": "ada menu apa saja di Tilasawa?",
+    "intent": "intent_restaurant_menu",
+    "intent_prediction": {
+      "name": "intent_challenge_bot",
+      "confidence": 0.1767076998949051
+    }
+  },
+  {
+    "text": "Aku ga prefer itu",
     "intent": "intent_provide_negative_sample",
     "intent_prediction": {
       "name": "intent_reject",
-      "confidence": 1.0
+      "confidence": 0.6046580672264099
     }
   },
   {
-    "text": "Saya sedang mengurangi nasi padang",
-    "intent": "intent_provide_negative_sample",
+    "text": "kamu bot ya?",
+    "intent": "intent_challenge_bot",
     "intent_prediction": {
-      "name": "intent_provide_information",
-      "confidence": 1.0
+      "name": "intent_bye",
+      "confidence": 0.5760766267776489
     }
   },
   {
-    "text": "Saya tidak menyukai hidangan tradisional",
-    "intent": "intent_provide_negative_sample",
+    "text": "kok itu aja gabisa jawab",
+    "intent": "intent_challenge_bot",
     "intent_prediction": {
-      "name": "intent_recommendation_menu",
-      "confidence": 0.9916792511940002
-    }
-  },
-  {
-    "text": "Saya tidak terlalu suka makanan laut",
-    "intent": "intent_provide_negative_sample",
-    "intent_prediction": {
-      "name": "intent_reject",
-      "confidence": 0.3749261796474457
+      "name": "intent_confirmation",
+      "confidence": 0.4389435350894928
     }
   }
 ]

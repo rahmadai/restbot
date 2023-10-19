@@ -1,58 +1,222 @@
 [
   {
-    "text": "ada menu apa saja di Tilasawa?",
+    "text": "Hai, ada rekomendasi restoran Italia enak di sekitar sini?",
     "entities": [
       {
         "start": 21,
-        "end": 29,
-        "value": "Tilasawa",
-        "entity": "restaurant_name"
+        "end": 36,
+        "value": "restoran Italia",
+        "entity": "restaurant_type"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "Kapan Papa Johns mulai beroperasi?",
+    "text": "Hai, bisakah kamu merekomendasikan restoran steak yang bagus?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 49,
+        "value": "restoran steak",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 44,
+        "end": 49,
+        "confidence_entity": 0.9848167300224304,
+        "value": "steak",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Apakah ada restoran sushi yang baik di sekitar sini?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "restoran sushi",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.987037181854248,
+        "value": "sushi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bisakah kamu merekomendasikan tempat makan vegetarian?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 53,
+        "value": "vegetarian",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tolong rekomen dong rumah makan padang yang murah disini",
+    "entities": [
+      {
+        "start": 20,
+        "end": 38,
+        "value": "rumah makan padang",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.9816789031028748,
+        "value": "rumah",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Apa ya menu spesifik di RM Padang Sederhana?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 24,
+        "end": 26,
+        "confidence_entity": 0.68663489818573,
+        "value": "RM",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.7904446721076965,
+        "value": "Sederhana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "McDonalds buka jam berapa yaa?",
     "entities": [
       {
         "start": 0,
-        "end": 5,
-        "value": "Kapan",
+        "end": 9,
+        "value": "McDonalds",
+        "entity": "restaurant_name"
+      },
+      {
+        "start": 15,
+        "end": 25,
+        "value": "jam berapa",
+        "entity": "working_hours"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.5333899855613708,
+        "value": "McDonalds buka",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "working_hours",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.6731735467910767,
+        "value": "jam berapa",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Pukul berapa McDonalds buka?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Pukul berapa",
         "entity": "working_hours"
       },
       {
-        "start": 6,
-        "end": 16,
-        "value": "Papa Johns",
+        "start": 13,
+        "end": 22,
+        "value": "McDonalds",
         "entity": "restaurant_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "working_hours",
-        "start": 0,
-        "end": 5,
-        "confidence_entity": 0.9758957028388977,
-        "value": "kapan",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.5097996592521667,
+        "value": "berapa",
+        "extractor": "DIETClassifier"
       },
       {
+        "entity": "restaurant_name",
+        "start": 13,
+        "end": 27,
+        "confidence_entity": 0.5164191126823425,
+        "value": "McDonalds buka",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Saya penasaran dengan jam operasional KFC. Kapan mereka buka?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 37,
+        "value": "jam operasional",
+        "entity": "working_hours"
+      },
+      {
+        "start": 38,
+        "end": 41,
+        "value": "KFC",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
         "entity": "working_hours",
-        "start": 6,
-        "end": 10,
-        "confidence_entity": 0.986403226852417,
-        "value": "Papa",
+        "start": 22,
+        "end": 37,
+        "confidence_entity": 0.9803299903869629,
+        "value": "jam operasional",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 38,
+        "end": 41,
+        "confidence_entity": 0.9962692260742188,
+        "value": "KFC",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "working_hours",
-        "start": 23,
-        "end": 33,
-        "confidence_entity": 0.9697101712226868,
-        "value": "beroperasi",
+        "start": 43,
+        "end": 48,
+        "confidence_entity": 0.5522903800010681,
+        "value": "Kapan",
         "extractor": "DIETClassifier"
       }
     ]
@@ -78,66 +242,16 @@
         "entity": "working_hours",
         "start": 16,
         "end": 21,
-        "confidence_entity": 0.5274609923362732,
+        "confidence_entity": 0.6923636794090271,
         "value": "kapan",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
+        "extractor": "DIETClassifier"
       },
       {
         "entity": "restaurant_name",
-        "start": 30,
-        "end": 35,
-        "confidence_entity": 0.9850195646286011,
-        "value": "Pizza",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Apakah ada restoran sushi yang baik di sekitar sini?",
-    "entities": [
-      {
-        "start": 11,
-        "end": 25,
-        "value": "restoran sushi",
-        "entity": "restaurant_type"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "restaurant_type",
-        "start": 11,
-        "end": 19,
-        "confidence_entity": 0.9942247271537781,
-        "value": "restoran",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Aku ingin mencari tempat warkop di Jogja. Apa ada yang kamu rekomendasikan?",
-    "entities": [
-      {
-        "start": 25,
-        "end": 31,
-        "value": "warkop",
-        "entity": "restaurant_type"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Gue mau makan nasi padang murah",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "restaurant_type",
-        "start": 19,
-        "end": 25,
-        "confidence_entity": 0.9958118200302124,
-        "value": "padang",
+        "start": 22,
+        "end": 40,
+        "confidence_entity": 0.403954416513443,
+        "value": "Dominos Pizza buka",
         "extractor": "DIETClassifier"
       }
     ]
