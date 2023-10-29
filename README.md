@@ -43,7 +43,7 @@ $ rasa data validate
 #### Training
 To train the bot, we simply use the rasa train command. We'll provide a name to the model for better organization, but it's not necessary.
 ```
-$ rasa train --fixed-model-name RestoChatv2
+$ rasa train --config config/config-light-copy.yml --fixed-model-name RestoChatv2
 ```
 
 #### Testing

@@ -14,7 +14,10 @@ pipeline:
   weight_sparcity: 0.90
   hidden_layer_sizes:
     text: [256, 128]
-policies: null# # No configuration for policies was provided. The following default policies were used to train your model.
+  tensorboard_log_directory: ./.tensorboard/DIET
+  tensorboard_log_level: epoch
+policies: null # No configuration for policies was provided. The following default policies were used to train your model.
+# # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.
 #   - name: MemoizationPolicy
