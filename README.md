@@ -55,7 +55,7 @@ $ rasa test
 ### Chatting with the bot
 To test your bot, open a new terminal window and start a rasa shell session.
 ```
-$ rasa shell
+$ rasa shell --model models/newmodelv2.tar.gz
 ```
 This will let you chat with your bot in your terminal. If you want a more interactive UI and a little more debugging information like what intents were identified and what entities were extracted, you can use Rasa X.
 
