@@ -37,7 +37,7 @@ Modify the files in `data/` or the `domain.yml` file to play around.
 #### Validating the data
 Before training the bot, a good practice is to check for any inconsistencies in the stories and rules, though in a project this simple, it's unlikely to occur.
 ```
-$ rasa data validate
+$ rasa data validate --config config/config-light-copy.yml
 ```
 
 #### Training
