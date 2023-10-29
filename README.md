@@ -59,4 +59,10 @@ $ rasa shell
 ```
 This will let you chat with your bot in your terminal. If you want a more interactive UI and a little more debugging information like what intents were identified and what entities were extracted, you can use Rasa X.
 
+### How to Run Tensorboard/Monitor Result of Training
+```
+$ tensorboard --logdir .tensorboard
+```
+This will let you monitor the result training
+
 ---
