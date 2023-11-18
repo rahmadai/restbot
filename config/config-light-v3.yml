@@ -16,17 +16,17 @@ pipeline:
     text: [256, 128]
   tensorboard_log_directory: ./.tensorboard/DIET
   tensorboard_log_level: epoch
-policies: null # No configuration for policies was provided. The following default policies were used to train your model.
+policies: # No configuration for policies was provided. The following default policies were used to train your model.
 # # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.
-#   - name: MemoizationPolicy
-#   - name: RulePolicy
+  - name: MemoizationPolicy
+  - name: RulePolicy
 #   - name: UnexpecTEDIntentPolicy
 #     max_history: 5
 #     epochs: 100
-#   - name: TEDPolicy
-#     max_history: 5
-#     epochs: 100
-#     constrain_similarities: true
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true
 assistant_id: 20231118-154945-primordial-wraith

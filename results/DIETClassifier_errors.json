@@ -1,5 +1,26 @@
 [
   {
+    "text": "tolong carikan japanese resto enak dong",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "japanese resto",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.9738681316375732,
+        "value": "japanese",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
     "text": "Hai, ada rekomendasi restoran Italia enak di sekitar sini?",
     "entities": [
       {
@@ -26,7 +47,7 @@
         "entity": "restaurant_type",
         "start": 44,
         "end": 49,
-        "confidence_entity": 0.9848167300224304,
+        "confidence_entity": 0.9839475154876709,
         "value": "steak",
         "extractor": "DIETClassifier"
       }
@@ -47,7 +68,7 @@
         "entity": "restaurant_type",
         "start": 20,
         "end": 25,
-        "confidence_entity": 0.987037181854248,
+        "confidence_entity": 0.9867571592330933,
         "value": "sushi",
         "extractor": "DIETClassifier"
       }
@@ -80,7 +101,7 @@
         "entity": "restaurant_type",
         "start": 20,
         "end": 25,
-        "confidence_entity": 0.9816789031028748,
+        "confidence_entity": 0.9482018351554871,
         "value": "rumah",
         "extractor": "DIETClassifier"
       }
@@ -94,7 +115,7 @@
         "entity": "restaurant_name",
         "start": 24,
         "end": 26,
-        "confidence_entity": 0.68663489818573,
+        "confidence_entity": 0.7637791037559509,
         "value": "RM",
         "extractor": "DIETClassifier"
       },
@@ -102,7 +123,7 @@
         "entity": "restaurant_name",
         "start": 34,
         "end": 43,
-        "confidence_entity": 0.7904446721076965,
+        "confidence_entity": 0.9103800058364868,
         "value": "Sederhana",
         "extractor": "DIETClassifier"
       }
@@ -129,7 +150,7 @@
         "entity": "restaurant_name",
         "start": 0,
         "end": 14,
-        "confidence_entity": 0.5333899855613708,
+        "confidence_entity": 0.7464014291763306,
         "value": "McDonalds buka",
         "extractor": "DIETClassifier"
       },
@@ -137,7 +158,7 @@
         "entity": "working_hours",
         "start": 15,
         "end": 25,
-        "confidence_entity": 0.6731735467910767,
+        "confidence_entity": 0.7428996562957764,
         "value": "jam berapa",
         "extractor": "DIETClassifier"
       }
@@ -162,17 +183,17 @@
     "predicted_entities": [
       {
         "entity": "working_hours",
-        "start": 6,
+        "start": 0,
         "end": 12,
-        "confidence_entity": 0.5097996592521667,
-        "value": "berapa",
+        "confidence_entity": 0.6465960144996643,
+        "value": "Pukul berapa",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "restaurant_name",
         "start": 13,
         "end": 27,
-        "confidence_entity": 0.5164191126823425,
+        "confidence_entity": 0.7261079549789429,
         "value": "McDonalds buka",
         "extractor": "DIETClassifier"
       }
@@ -199,7 +220,7 @@
         "entity": "working_hours",
         "start": 22,
         "end": 37,
-        "confidence_entity": 0.9803299903869629,
+        "confidence_entity": 0.9864001274108887,
         "value": "jam operasional",
         "extractor": "DIETClassifier"
       },
@@ -207,7 +228,7 @@
         "entity": "restaurant_name",
         "start": 38,
         "end": 41,
-        "confidence_entity": 0.9962692260742188,
+        "confidence_entity": 0.9850137829780579,
         "value": "KFC",
         "extractor": "DIETClassifier"
       },
@@ -215,8 +236,16 @@
         "entity": "working_hours",
         "start": 43,
         "end": 48,
-        "confidence_entity": 0.5522903800010681,
+        "confidence_entity": 0.852729320526123,
         "value": "Kapan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "working_hours",
+        "start": 56,
+        "end": 60,
+        "confidence_entity": 0.6803884506225586,
+        "value": "buka",
         "extractor": "DIETClassifier"
       }
     ]
@@ -242,7 +271,7 @@
         "entity": "working_hours",
         "start": 16,
         "end": 21,
-        "confidence_entity": 0.6923636794090271,
+        "confidence_entity": 0.8688949346542358,
         "value": "kapan",
         "extractor": "DIETClassifier"
       },
@@ -250,8 +279,86 @@
         "entity": "restaurant_name",
         "start": 22,
         "end": 40,
-        "confidence_entity": 0.403954416513443,
+        "confidence_entity": 0.5499302744865417,
         "value": "Dominos Pizza buka",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Pukul berapa Wendys mulai melayani makanan?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 12,
+        "value": "berapa",
+        "entity": "working_hours"
+      },
+      {
+        "start": 13,
+        "end": 19,
+        "value": "Wendys",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "working_hours",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5835705399513245,
+        "value": "Pukul berapa",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.9905799031257629,
+        "value": "Wendys",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "menu di RM Padang Sederhana ada apa aja ya?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "RM Padang Sederhana",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.8346700668334961,
+        "value": "RM",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9259162545204163,
+        "value": "Sederhana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "berapa umurmu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "working_hours",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.4092932641506195,
+        "value": "berapa",
         "extractor": "DIETClassifier"
       }
     ]
