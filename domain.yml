@@ -58,10 +58,10 @@ slots:
     mappings:
     - type: custom
   restaurant_name:
-    type: rasa.shared.core.slots.TextSlot
+    type: text
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
   location:
@@ -112,6 +112,7 @@ responses:
   - text: Terimakasih sudah menggunakan RestoChat!
   utter_goodbye:
   - text: Sampai jumpa lagi!
-actions: []
+actions:
+- action_check_restaurants_menu
 forms: {}
 e2e_actions: []

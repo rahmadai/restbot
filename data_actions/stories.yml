@@ -1,0 +1,45 @@
+version: "3.1"
+stories:
+- story: User asks for recommendations
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_menu
+    entities:
+    - restaurant_name
+  - action: utter_provide_restaurant_menu
+  - intent: intent_recommendation_menu
+    entities:
+    - restaurant_name
+  - action: utter_provide_menu_recommendation
+  - intent: intent_confirmation
+  - action: utter_confirmation_for_restaurant
+  - intent: intent_thanks
+  - action: utter_thanks
+  - checkpoint: recommend_checkpoint
+
+- story: handle user affirm
+  steps:
+  - checkpoint: recommend_checkpoint
+  - intent: intent_confirmation
+  - action: action_handle_affirmation
+  - checkpoint: confirm_checkpoint
+
+- story: handle user deny
+  steps:
+  - checkpoint: recommend_checkpoint
+  - intent: intent_denial
+  - action: action_handle_denial
+  - checkpoint: deny_checkpoint
+
+- story: finish flow after denial
+  steps:
+  - checkpoint: deny_checkpoint
+  - intent: intent_goodbye
+  - action: utter_goodbye
+
+- story: finish flow after confirmation
+  steps:
+  - checkpoint: confirm_checkpoint
+  - intent: intent_goodbye
+  - action: utter_goodbye
