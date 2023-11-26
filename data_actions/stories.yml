@@ -7,9 +7,18 @@ stories:
   - intent: intent_ask_restaurant_location
     entities:
     - restaurant_name
-  - action: utter_provide_restaurant_location
+  - action: action_check_restaurants_location
   - checkpoint: recommend_checkpoint
 
+- story: User asks for working hours
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_working_hours
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_working_hours
+  
 - story: handle user affirm
   steps:
   - checkpoint: recommend_checkpoint

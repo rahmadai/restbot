@@ -114,5 +114,7 @@ responses:
   - text: Sampai jumpa lagi!
 actions:
 - action_check_restaurants_menu
+- action_check_restaurants_location
+- action_check_restaurants_working_hours
 forms: {}
 e2e_actions: []
