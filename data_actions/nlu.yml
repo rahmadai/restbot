@@ -228,6 +228,60 @@ nlu:
     - Aku ingin mencari tempat [warkop](restaurant_type) di Jogja. Apa ada yang kamu rekomendasikan?
     - Tolong rekomen dong [rumah makan padang](restaurant_type) yang murah disini
 
+- intent: intent_restaurant_category
+  examples: |
+    - Tolong carikan [japanese resto](restaurant_type) enak dong
+    - Hai, ada rekomendasi [restoran Italia](restaurant_type) enak di sekitar sini?
+    - Hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus?
+    - Apakah ada [restoran sushi](restaurant_type) yang baik di sekitar sini?
+    - Bisakah kamu merekomendasikan tempat makan [vegetarian](restaurant_type)?
+    - Aku ingin mencari tempat [warkop](restaurant_type) di Jogja. Apa ada yang kamu rekomendasikan?
+    - Tolong rekomen dong [rumah makan padang](restaurant_type) yang murah disini
+    - Bisa cariin [chinese restaurant](restaurant_type) yang terkenal di daerah ini?
+    - Ada saran [restoran indonesia](restaurant_type) yang istimewa?
+    - Saya mencari [Bakery](restaurant_type) yang punya kue terbaik, ada yang bisa direkomendasikan?
+    - Apa ada [Bar](restaurant_type) yang memiliki suasana yang nyaman di sekitar sini?
+    - Bisa rekomendasiin [Bar & grill](restaurant_type) yang asik?
+    - Saya ingin mencari [Barbecue restaurant](restaurant_type) yang menyajikan hidangan lezat, ada rekomendasi?
+    - Ada rekomendasi [Cafe](restaurant_type) yang cocok untuk ngobrol santai?
+    - Bisakah kamu merekomendasikan [Chicken restaurant](restaurant_type) yang menyajikan ayam enak?
+    - Apakah ada [Coffee shop](restaurant_type) yang memiliki suasana yang tenang?
+    - Saya ingin mencari [Coffee store](restaurant_type) dengan kopi terbaik di kota ini, ada yang direkomendasikan?
+    - Apa ada [Diner](restaurant_type) yang buka hingga larut malam?
+    - Bisakah kamu merekomendasikan [Family restaurant](restaurant_type) yang cocok untuk keluarga?
+    - Saya mencari [Ice cream shop](restaurant_type) yang menyediakan varian rasa unik, ada yang direkomendasikan?
+    - Ada [Indonesian restaurant](restaurant_type) yang memiliki menu tradisional?
+    - Apakah ada [Italian restaurant](restaurant_type) yang spesial di sekitar sini?
+    - Bisa carikan [Japanese restaurant](restaurant_type) dengan sushi terbaik?
+    - Apa ada [Kafe](restaurant_type) yang menawarkan suasana santai?
+    - Saya ingin mencari [Kafe Coklat](restaurant_type) yang punya varian coklat terbaik, ada yang direkomendasikan?
+    - Bisakah kamu merekomendasikan [Kafe seni](restaurant_type) yang memiliki galeri seni menarik?
+    - Apakah ada [Kedai Jus](restaurant_type) yang menyediakan jus segar?
+    - Ada [Kedai Kopi](restaurant_type) yang memiliki kopi spesial?
+    - Saya ingin mencari [Kedai Salad](restaurant_type) yang menyajikan salad sehat, ada yang direkomendasikan?
+    - Bisakah kamu merekomendasikan [Kedai Sarapan](restaurant_type) yang punya menu sarapan lengkap?
+    - Saya mencari [Korean barbecue](restaurant_type) yang menyajikan daging berkualitas, ada yang direkomendasikan?
+    - Ada [Korean barbecue restaurant](restaurant_type) yang memiliki variasi menu lengkap?
+    - Bisakah kamu merekomendasikan [Layanan Pesan-Antar Pizza](restaurant_type) yang cepat?
+    - Apakah ada [Nasi goreng restaurant](restaurant_type) yang terkenal di daerah ini?
+    - Bisa cariin [Noodle shop](restaurant_type) yang menyajikan mie spesial?
+    - Ada saran [Padang restaurant](restaurant_type) yang menyajikan masakan Padang otentik?
+    - Saya ingin memesan dari [Pengiriman Makanan](restaurant_type), ada yang bisa direkomendasikan?
+    - Bisakah kamu merekomendasikan [Pujasera](restaurant_type) yang menyajikan beragam masakan?
+    - Ada [Ramen restaurant](restaurant_type) yang punya ramen terbaik?
+    - Apakah ada [Pujasera](restaurant_type) yang cocok untuk acara formal?
+    - Saya ingin mencari [Restoran](restaurant_type) dengan suasana yang nyaman untuk makan malam, ada yang direkomendasikan?
+    - Bisa carikan [Restoran Amerika](restaurant_type) yang menyajikan hidangan khas Amerika?
+    - Ada saran [Restoran Cepat Saji](restaurant_type) yang menyediakan makanan cepat saji sehat?
+    - Saya mencari [Restoran Eropa](restaurant_type) yang menyajikan hidangan Eropa otentik, ada yang direkomendasikan?
+    - Bisakah kamu merekomendasikan [Restoran Hidangan Penutup](restaurant_type) dengan pilihan penutup lezat?
+    - Apakah ada [Restoran Indonesia](restaurant_type) yang menyajikan masakan tradisional?
+    - Bisa cariin [Restoran Italia](restaurant_type) yang menyajikan pasta autentik?
+    - Ada saran [Restoran Jawa](restaurant_type) yang menyajikan masakan Jawa otentik?
+    - Saya ingin mencari [Restoran Jepang](restaurant_type) dengan menu sushi yang lezat, ada yang direkomendasikan?
+    - Bisa carikan [Restoran Keluarga](restaurant_type) yang cocok untuk makan bersama
+
+
 - intent: intent_recommendation_menu
   examples: |
     - Apa menu rekomendasi di Gudeg Sagan?
@@ -249,74 +303,180 @@ nlu:
     - Share alamat [Estuary Coffee](restaurant_name) dong
     - dimana lokasi [Oppio Coffee](restaurant_name)?
     - dimana lokasi [Tilasawa]](restaurant_name)?
-    - Di mana lokasi tepat dari restoran ini?
-    - Apakah restoran ini terletak di pusat kota atau di pinggiran kota?
-    - Apa alamat lengkap dari restoran ini?
-    - Apakah restoran ini mudah dijangkau dengan transportasi umum?
-    - Apakah ada tempat parkir yang tersedia di dekat restoran ini?
-    - Apakah restoran ini terletak di area yang aman dan nyaman?
-    - Restobot, di mana alamat lengkap restoran ini berada?
-    - Saya ingin tahu lokasi restoran ini, mungkin bisa memberi petunjuk, Restobot?
-    - Restobot, di mana alamat lengkap restoran ini berada?
-    - Tolong beri tahu saya koordinat GPS restoran ini.
-    - Saya kurang familiar dengan lokasinya, bisakah Anda memberi tahu saya di mana restoran ini berada?
-    - Apakah restoran ini terletak di pusat kawasan kuliner atau daerah makanan yang terkenal?
-    - Apakah ada pemandangan atau panorama khusus yang dapat dinikmati dari restoran ini?
-    - Apakah restoran ini terletak di dekat area perbelanjaan atau pusat bisnis?
-    - Saya butuh info tentang lokasi restoran ini. Bisa bantu, Restobot?
-    - Restobot, mohon berikan detail lokasi restoran
-    - Restobot, dimana letaknya restoran ini?
-    - Bisa beri tahu alamat lengkap restoran ini?
-    - Saya butuh petunjuk arah menuju restoran ini.
-    - Di mana restoran terdekat?
-    - Bisa beri tahu saya alamat restoran ini?
-    - Apa lokasi pasti dari restoran ini?
-    - Di mana alamat restoran yang paling dekat?
-    - Bisakah Anda memberi tahu saya di mana restoran ini berlokasi?
-    - Di mana restoran populer ini berada?
-    - Bagaimana saya bisa menemukan restoran ini?
-    - Bisakah Anda memberi saya petunjuk ke restoran ini?
-    - Lokasi restoran ini di sekitar mana?
-    - Tolong beri tahu saya di mana alamat restoran ini.
-    - Saya butuh alamat restoran ini, bisa Anda bantu?
-    - Bisakah Anda memberi saya koordinat GPS restoran ini?
-    - Di mana restoran dengan menu spesial ini berlokasi?
-    - Lokasi restoran ini ada di mana?
-    - Apa alamat pasti dari restoran ini?
-    - Bisa Anda tunjukkan lokasi restoran ini di peta?
-    - Di mana saya bisa menemukan restoran ini di kota ini?
-    - Saya ingin tahu di mana restoran favorit saya berada.
-    - Bagaimana cara menuju ke restoran ini?
-    - Apakah Anda bisa memberi tahu saya di mana restoran ini beroperasi?
-    - Di mana alamat restoran yang populer ini?
-    - Bisakah Anda memberi saya petunjuk ke restoran ini dari sini?
-    - Lokasi restoran ini dekat dengan titik mana?
-    - Saya butuh tahu di mana restoran ini berada, bisakah Anda bantu?
-    - Bisakah Anda beri tahu saya alamat pasti restoran ini?
-    - Di mana restoran yang memiliki ulasan bagus ini berlokasi?
-    - Bagaimana saya bisa mencapai restoran ini dari lokasi saya?
-    - Tolong beri tahu saya koordinat GPS restoran ini.
+    - Di mana lokasi tepat dari [Mie Sapi Banteng](restaurant_name)?
+    - Apa alamat lengkap dari [Gudeg Sagan](restaurant_name)?
+    - Apakah ada tempat parkir yang tersedia di dekat [BRICafe X Couvee](restaurant_name)?
+    - restobot, di mana alamat lengkap [Fore Coffee - Kaliurang](restaurant_name) berada?
+    - Saya ingin tahu lokasi [Seven Stones Rainforest Coffee](restaurant_name), mungkin bisa memberi petunjuk, Restobot?
+    - restobot, di mana alamat lengkap [Oppio Coffee](restaurant_name) berada?
+    - Tolong beri tahu saya koordinat GPS [Rumah Makan Padang Sederhana](restaurant_name).
+    - Saya butuh info tentang lokasi [Warung Kopi Klotok](restaurant_name). Bisa bantu, restobot?
+    - restobot, mohon berikan detail lokasi [Warung Layar Sentuh](restaurant_name).
+    - restobot, dimana letaknya [Tilasawa Coffee Roaster](restaurant_name)?
+    - Bisa beri tahu alamat lengkap [Sushi Tei](restaurant_name)?
+    - Di mana [Cinema Bakery](restaurant_name) terdekat?
+    - Bisa beri tahu saya alamat [Chingu Cafe](restaurant_name)?
+    - Apa lokasi pasti dari [Ayam Pedas Arto Moro](restaurant_name)?
+    - Di mana alamat [Filosofi Kopi Jogja](restaurant_name) yang paling dekat?
+    - Bisakah Anda memberi tahu saya di mana [Tempo Gelato](restaurant_name) berlokasi?
+    - Di mana [Tempo Gelato Prawirotaman](restaurant_name) populer ini berada?
+    - Bagaimana saya bisa menemukan [EL PRIMO SAUSAGE & DAIRY](restaurant_name)?
+    - Bisakah Anda memberi saya petunjuk ke [Giorno's Pizzeria](restaurant_name)?
+    - Lokasi [RM Duta Minang](restaurant_name) di sekitar mana?
+    - Tolong beri tahu saya di mana alamat [RM. Duta Minang Gowongan](restaurant_name).
+    - Saya butuh alamat [Golden Geisha Ramen](restaurant_name) ini, bisa Anda bantu?
+    - Bisakah Anda memberi saya koordinat GPS [Swasana by Temata Yogyakarta](restaurant_name)?
+    - Di mana [Susu dan Roti Bakar Om Bob](restaurant_name) dengan menu spesial ini berlokasi?
+    - Lokasi [Susu dan Roti Bakar Om Bob Nologaten](restaurant_name) ada di mana?
+    - Apa alamat pasti dari [Susu dan Roti Bakar Om Bob Maguwo](restaurant_name)?
+    - Bisa Anda tunjukkan lokasi [Susu dan Roti Bakar Om Bob Godean](restaurant_name) di peta?
+    - Di mana saya bisa menemukan [Nasi Goreng Sapi Padmanaba](restaurant_name) di kota ini?
+    - Saya ingin tahu di mana [Nasi Goreng Sapi Kantor Notaris](restaurant_name) favorit saya berada.
+    - Saya butuh tahu di mana [Oharang BBQ Jogja ](restaurant_name) berada, bisakah Anda bantu?
+    - Bisakah Anda beri tahu saya alamat pasti [Seorae](restaurant_name) ini?
+    - Tolong beri tahu saya koordinat GPS [Gyu-Kaku Japanese BBQ](restaurant_name) ini.
+    - Di mana [Kakkoii Japanese BBQ & Shabu-Shabu](restaurant_name) dengan menu spesial ini berlokasi?
+    - Lokasi [Gyu-Kaku Japanese BBQ](restaurant_name) ada di mana?
+    - Apa alamat pasti dari [Nikuya BBQ Jogja](restaurant_name)?
+    - Bisa Anda tunjukkan lokasi [Niku Japanese BBQ Jogja](restaurant_name) di peta?
+    - Di mana [Shabu AUCE](restaurant_name) terletak?
+    - Saya butuh alamat [Milk by Artemy](restaurant_name), bisa Anda bantu?
+    - Bisakah Anda memberi petunjuk ke [Sakapatat Brew House & Resto](restaurant_name)?
+    - Lokasi [Izakaya](restaurant_name) di sekitar mana?
+    - Tolong beri tahu saya di mana alamat [Ramenhead](restaurant_name).
+    - Saya ingin tahu di mana [BAKI by D'Monaco](restaurant_name) berada.
+    - Saya butuh tahu di mana [Kanari Society & Space](restaurant_name), bisakah Anda bantu?
+    - Bisakah Anda memberi tahu saya alamat pasti [TRILOGI COFFEE](restaurant_name)?
+    - Tolong beri tahu saya koordinat GPS [Dummin Coffee & Space UKDW](restaurant_name).
+    - Di mana [Enam Langit by Plataran](restaurant_name) berlokasi?
+    - Saya ingin tahu di mana [Mie Ayam Bandung 59](restaurant_name).
+    - Bisakah Anda memberi petunjuk ke [28 Coffee Seturan](restaurant_name)?
+    - Di mana [Chunda Resto](restaurant_name) terdekat?
+    - Apa lokasi pasti dari [Lalawuh Sunda](restaurant_name)?
+    - Saya butuh tahu di mana [R&B Grill Yogyakarta](restaurant_name) berada.
+    - Bisakah Anda memberi tahu saya alamat pasti [R&B Grill Jogja - 2nd Building](restaurant_name)?
+    - Tolong beri tahu saya koordinat GPS [Metropole Coffee](restaurant_name).
+    - Di mana [Mediterranea Restaurant by Kamil](restaurant_name) berlokasi?
+    - Lokasi [Nanamia Pizzeria](restaurant_name) ada di mana?
+    - Apa alamat pasti dari [Nanamia Pizzeria Jogja (North Area)](restaurant_name)?
+    - Bisa Anda tunjukkan lokasi [Warung Burjo DM](restaurant_name) di peta?
+    - Di mana [Warung Burjo Duta Rasa Grup](restaurant_name) terletak?
+    - Saya ingin tahu di mana [Burjo Melati](restaurant_name) berada.
+    - Bisakah Anda memberi petunjuk ke [Warung Burjo Mirasa](restaurant_name)?
+    - Di mana [Burjo Murni Monjali 54](restaurant_name) ada?
+    - Apa lokasi pasti dari [Burjo Murno](restaurant_name)?
 
 - intent: intent_restaurant_working_hours
   examples: |
-    - [McDonalds](restaurant_name) buka [jam berapa](working_hours) yaa?
-    - [Pukul berapa](working_hours) [McDonalds](restaurant_name) buka?
-    - Bisakah kamu memberitahu [jam buka](working_hours) [Burger King](restaurant_name)?
-    - Saya penasaran dengan [jam operasional](working_hours) [KFC](restaurant_name). Kapan mereka buka?
-    - Tahu tidak [kapan](working_hours) [Pizza Hut](restaurant_name) mulai melayani pelanggan?
-    - Bisa informasikan [jam buka](working_hours) [Subway](restaurant_name)?
-    - Bagaimana [jam kerja](working_hours) [Starbucks](restaurant_name)?
-    - Saya ingin tahu kapan [Dominos Pizza](restaurant_name) [buka](working_hours). Punya informasi?
-    - Bisa berikan saya [jam buka](working_hours) [Taco Bell](restaurant_name)?
-    - Pukul [berapa](working_hours) [Wendys](restaurant_name) mulai melayani makanan?
-    - [Kapan](working_hours) [Papa Johns](restaurant_name) mulai beroperasi?
+    - Jam berapa [Tilasawa Coffee Roaster](restaurant_name) buka?
+    - [McDonald's Jakal](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [McDonald's Sudirman Yogyakarta](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Burger King](restaurant_name)?
+    - Saya penasaran dengan jam operasional [KFC](restaurant_name). Kapan mereka buka?
+    - Tahu tidak kapan [Pizza Hut Jakal](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan jam buka [Subway](restaurant_name)?
+    - Bagaimana jam kerja [Starbucks](restaurant_name)?
+    - Saya ingin tahu kapan [Dominos Pizza](restaurant_name) buka. Punya informasi?
+    - Bisa berikan saya jam buka [Taco Bell](restaurant_name)?
+    - Pukul berapa [Wendys](restaurant_name) mulai melayani makanan?
+    - Kapan [Papa Johns](restaurant_name) mulai beroperasi?
+    - Jam berapa [Mie Sapi Banteng](restaurant_name) buka?
+    - [Gudeg Sagan](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [BRICafe X Couvee](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Fore Coffee - Kaliurang](restaurant_name)?
+    - Saya penasaran dengan jam operasional [Seven Stones Rainforest Coffee](restaurant_name). Kapan mereka buka?
+    - Tahu tidak kapan [Oppio Coffee](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan jam buka [Rumah Makan Padang Sederhana](restaurant_name)?
+    - Bagaimana jam kerja [Warung Kopi Klotok](restaurant_name)?
+    - Saya ingin tahu kapan [Warung Layar Sentuh](restaurant_name) buka. Punya informasi?
+    - Bisa berikan saya jam buka [Tilasawa Coffee Roaster](restaurant_name)?
+    - Pukul berapa [Sushi Tei](restaurant_name) mulai melayani makanan?
+    - Kapan [Cinema Bakery](restaurant_name) mulai beroperasi?
+    - Jam berapa [Chingu Cafe](restaurant_name) buka?
+    - [Ayam Pedas Arto Moro](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [Filosofi Kopi Jogja](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Tempo Gelato](restaurant_name)?
+    - Saya penasaran dengan jam operasional [Tempo Gelato Prawirotaman](restaurant_name). Kapan mereka buka?
+    - Tahu tidak kapan [EL PRIMO SAUSAGE & DAIRY](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan jam buka [Giorno's Pizzeria](restaurant_name)?
+    - Bagaimana jam kerja [RM Duta Minang](restaurant_name)?
+    - Saya ingin tahu kapan [RM. Duta Minang Gowongan](restaurant_name) buka. Punya informasi?
+    - Bisa berikan saya jam buka [Golden Geisha Ramen](restaurant_name)?
+    - Pukul berapa [Swasana by Temata Yogyakarta](restaurant_name) mulai melayani makanan?
+    - Kapan [Susu dan Roti Bakar Om Bob](restaurant_name) mulai beroperasi?
+    - Jam berapa [Susu dan Roti Bakar Om Bob Nologaten](restaurant_name) buka?
+    - [Susu dan Roti Bakar Om Bob Maguwo](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [Susu dan Roti Bakar Om Bob Godean](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Nasi Goreng Sapi Padmanaba](restaurant_name)?
+    - Saya penasaran dengan jam operasional [Nasi Goreng Sapi Kantor Notaris](restaurant_name). Kapan mereka buka?
+    - Tahu tidak kapan [Oharang BBQ Jogja ](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan jam buka [Seorae](restaurant_name)?
+    - Bagaimana jam kerja [Gyu-Kaku Japanese BBQ](restaurant_name)?
+    - Saya ingin tahu kapan [Kakkoii Japanese BBQ & Shabu-Shabu](restaurant_name) buka. Punya informasi?
+    - Bisa berikan saya jam buka [Nikuya BBQ Jogja](restaurant_name)?
+    - Pukul berapa [Niku Japanese BBQ Jogja](restaurant_name) mulai melayani makanan?
+    - Kapan [Shabu AUCE](restaurant_name) mulai beroperasi?
+    - Jam berapa [Milk by Artemy](restaurant_name) buka?
+    - [Sakapatat Brew House & Resto](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [Izakaya](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Ramenhead](restaurant_name)?
+    - Saya penasaran dengan jam operasional [BAKI by D'Monaco](restaurant_name). Kapan mereka buka?
+    - Tahu tidak kapan [Kanari Society & Space](restaurant_name) mulai melayani pelanggan?
+    - Bisa informasikan jam buka [TRILOGI COFFEE](restaurant_name)?
+    - Bagaimana jam kerja [Dummin Coffee & Space UKDW](restaurant_name)?
+    - Saya ingin tahu kapan [Enam Langit by Plataran](restaurant_name) buka. Punya informasi?
+    - Bisa berikan saya jam buka [Mie Ayam Bandung 59](restaurant_name)?
+    - Pukul berapa [28 Coffee Seturan](restaurant_name) mulai melayani makanan?
+    - Kapan [Chunda Resto](restaurant_name) mulai beroperasi?
+    - Jam berapa [Lalawuh Sunda](restaurant_name) buka?
+    - [R&B Grill Yogyakarta](restaurant_name) buka jam berapa yaa?
+    - Pukul berapa [R&B Grill Jogja - 2nd Building](restaurant_name) buka?
+    - Bisakah kamu memberitahu jam buka [Metropole Coffee](restaurant_name)?
 
 - intent: intent_restaurant_facility
   examples: |
-    - Apa saja fasilitas yang ada di [KFC](restaurant_name)?
-    - Apa saja fasilitas yang ada di [McDonalds](restaurant_name)?
-    - Apa saja fasilitas yang ada di [Burger King](restaurant_name)?
-    - Apa saja fasilitas yang ada di [Pizza Hut](restaurant_name)?
+    - Apa saja fasilitas yang ada di [Tilasawa Coffee Roaster](restaurant_name)?
+    - Restoran [McDonald's Jakal](restaurant_name) memiliki fasilitas apa saja?
+    - Tolong informasikan fasilitas yang tersedia di [McDonald's Sudirman Yogyakarta](restaurant_name).
+    - Apa yang bisa saya temukan dari segi fasilitas di [Burger King](restaurant_name)?
+    - Restoran [KFC](restaurant_name) punya fasilitas apa saja?
+    - Bisa beri detail tentang fasilitas di [Pizza Hut Jakal](restaurant_name)?
+    - Apa yang tersedia di [Subway](restaurant_name) dari segi fasilitas?
+    - Saya ingin tahu fasilitas yang ada di [Starbucks](restaurant_name).
+    - Restoran [Dominos Pizza](restaurant_name) memiliki fasilitas apa saja?
+    - Apa yang bisa Anda ceritakan tentang fasilitas di [Taco Bell](restaurant_name)?
+    - Bisakah Anda beri detail tentang fasilitas di [Wendys](restaurant_name)?
+    - Apa saja fasilitas yang ada di [Papa Johns](restaurant_name)?
+    - Apa saja fasilitas yang ada di [Mie Sapi Banteng](restaurant_name)?
+    - Restoran [Gudeg Sagan](restaurant_name) memiliki fasilitas apa saja?
+    - Tolong informasikan fasilitas yang tersedia di [BRICafe X Couvee](restaurant_name).
+    - Apa yang bisa saya temukan dari segi fasilitas di [Fore Coffee - Kaliurang](restaurant_name)?
+    - Restoran [Seven Stones Rainforest Coffee](restaurant_name) punya fasilitas apa saja?
+    - Bisa beri detail tentang fasilitas di [Oppio Coffee](restaurant_name)?
+    - Apa yang tersedia di [Rumah Makan Padang Sederhana](restaurant_name) dari segi fasilitas?
+    - Saya ingin tahu fasilitas yang ada di [Warung Kopi Klotok](restaurant_name).
+    - Restoran [Warung Layar Sentuh](restaurant_name) memiliki fasilitas apa saja?
+    - Tolong informasikan fasilitas yang tersedia di [Tilasawa Coffee Roaster](restaurant_name)?
+    - Apa yang bisa saya temukan dari segi fasilitas di [Sushi Tei](restaurant_name)?
+    - Restoran [Cinema Bakery](restaurant_name) punya fasilitas apa saja?
+    - Bisa beri detail tentang fasilitas di [Chingu Cafe](restaurant_name)?
+    - Apa yang tersedia di [Ayam Pedas Arto Moro](restaurant_name) dari segi fasilitas?
+    - Saya ingin tahu fasilitas yang ada di [Filosofi Kopi Jogja](restaurant_name).
+    - Restoran [Tempo Gelato](restaurant_name) memiliki fasilitas apa saja?
+    - Tolong informasikan fasilitas yang tersedia di [Tempo Gelato Prawirotaman](restaurant_name).
+    - Apa yang bisa saya temukan dari segi fasilitas di [EL PRIMO SAUSAGE & DAIRY](restaurant_name)?
+    - Restoran [Giorno's Pizzeria](restaurant_name) punya fasilitas apa saja?
+    - Bisa beri detail tentang fasilitas di [RM Duta Minang](restaurant_name)?
+    - Apa yang tersedia di [RM. Duta Minang Gowongan](restaurant_name) dari segi fasilitas?
+    - Saya ingin tahu fasilitas yang ada di [Golden Geisha Ramen](restaurant_name).
+    - Restoran [Swasana by Temata Yogyakarta](restaurant_name) memiliki fasilitas apa saja?
+    - Tolong informasikan fasilitas yang tersedia di [Susu dan Roti Bakar Om Bob](restaurant_name).
+    - Apa yang bisa saya temukan dari segi fasilitas di [Susu dan Roti Bakar Om Bob Nologaten](restaurant_name)?
+    - Restoran [Susu dan Roti Bakar Om Bob Maguwo](restaurant_name) punya fasilitas apa saja?
+    - Bisa beri detail tentang fasilitas di [Susu dan Roti Bakar Om Bob Godean](restaurant_name)?
+    - Apa yang tersedia di [Nasi Goreng Sapi Padmanaba](restaurant_name) dari segi fasilitas?
+    - Saya ingin tahu fasilitas yang ada di [Nasi Goreng Sapi Kantor Notaris](restaurant_name).
+    - Restoran [Oharang BBQ Jogja](restaurant_name) memiliki fasilitas apa saja?
 
 - intent: intent_restaurant_menu
   examples: |

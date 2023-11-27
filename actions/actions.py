@@ -8,49 +8,10 @@ from rasa_sdk.events import SlotSet
 # read csv file
 import pandas as pd
 df = pd.read_csv('db/list.csv')
-# print(df.loc[df['nama_resto'] == 'Gudeg Bromo Bu Tekluk'])
 
 # menu
-# fasilitas
-# jenis_restaurant
 # harga -> Berapaan : range harga
 
-# Working Hours: 
-# U: Jam berapa tutupnya Cinema Bakery?
-# B: Jam buka [nama_resto] adalah [working_hour]
-
-# Lokasi Resto:
-# U: Dimana ya alamat Cronica Coffee Shop?
-# B: Lokasi [nama_resto] di [alamat]
-
-# class ActionCheckRestaurantsMenu(Action):
-#    def name(self) -> Text:
-#       return "action_check_restaurants_menu"
-
-#    def run(self,
-#            dispatcher: CollectingDispatcher,
-#            tracker: Tracker,
-#            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#       menu = tracker.get_slot('restaurant_name')
-#       response_message = "berikut menu restoran: " + menu
-
-#       dispatcher.utter_message(response_message)
-#       return 0
-
-class ActionCheckRestaurantsMenu(Action):
-    def name(self):
-        return "action_check_restaurants_menu"
-
-    def run(self, dispatcher, tracker, domain):
-        concerts = [
-            {"artist": "Foo Fighters", "reviews": 4.5},
-            {"artist": "Katy Perry", "reviews": 5.0},
-        ]
-        description = ", ".join([c["artist"] for c in concerts])
-        dispatcher.utter_message(text=f"{description}")
-        return [SlotSet("concerts", concerts)]
-   
 class ActionCheckRestaurantsLocation(Action):
     def name(self) -> Text:
         return "action_check_restaurants_location"
@@ -62,11 +23,15 @@ class ActionCheckRestaurantsLocation(Action):
     
         # parse restaurant_name from entity
         name = tracker.latest_message['entities'][0]['value']
+        print(name)
 
         # parse alamat from csv when restaurant_name is matched with nama_resto column
-        location = df.loc[df['nama_resto'] == name, 'alamat'].iloc[0]
-        response_message = "berikut lokasi restoran " + str(name) + " : " + str(location)
-    
+        try:
+            location = df.loc[df['nama_resto'] == name, 'alamat'].iloc[0]
+            response_message = "berikut lokasi restoran " + str(name) + " : " + str(location)
+        except:
+            response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+
         dispatcher.utter_message(response_message)
         return 0
     
@@ -79,34 +44,60 @@ class ActionCheckRestaurantsWorkingHours(Action):
               tracker: Tracker,
               domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
     
-        # parse restaurant_name from entity
-        # parse entities restaurant_name
-        name = tracker.latest_message['entities'][1]['value']
+        name = tracker.latest_message['entities'][0]['value']
         print(name)
-
+        
         # parse alamat from csv when restaurant_name is matched with nama_resto column
-        working_hour = df.loc[df['nama_resto'] == name, 'working_hour'].iloc[0]
-        response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
+        try:
+            working_hour = df.loc[df['nama_resto'] == name, 'working_hour'].iloc[0]
+            response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
+        except:
+            response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
     
         dispatcher.utter_message(response_message)
         return 0
-
-class ActionSuggestRestaurant(Action):
-
+    
+class ActionCheckRestaurantsFacilities(Action):
     def name(self) -> Text:
-        return "action_suggest_restaurant"
-
-    async def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        return "action_check_restaurants_facilities"
+    def run(self,
+                dispatcher: CollectingDispatcher,
+                tracker: Tracker,
+                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        async with httpx.AsyncClient() as client:
-            json_data = {"data": [{"mime_type": "text/plain", "text": tracker.latest_message['text']}]}
-            resp = await client.post("http://localhost:8080/search", json=json_data)
-        
-        dispatcher.utter_message(text="Restaurant List :")
-        matches = resp.json()['data']['docs'][0]['matches']
-        for m in matches[:5]:
-            dispatcher.utter_message(text=f"- {m['text']}")
+        name = tracker.latest_message['entities'][0]['value']
+        print(name)
 
-        return []
+        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        try:
+            facilities = df.loc[df['nama_resto'] == name, 'facilities'].iloc[0]
+            response_message = "berikut fasilitas restoran " + str(name) + " : " + str(facilities)
+        except:
+            response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return 0
+    
+class ActionCheckRestaurantsCategories(Action):
+    def name(self) -> Text:
+        return "action_check_restaurants_categories"
+    def run(self,
+                dispatcher: CollectingDispatcher,
+                tracker: Tracker,
+                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        category = tracker.latest_message['entities'][0]['value']
+        print(category)
+
+        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        try:
+            # get all nama_resto with category
+            list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
+            # clean list from bracket
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "berikut list restoran dengan kategori " + str(category) + " : " + str(list_restaurant)
+        except:
+            response_message = "Maaf, tidak ada kategori " + str(category) + " tidak ada di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return 0

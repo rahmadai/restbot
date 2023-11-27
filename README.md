@@ -43,7 +43,7 @@ $ rasa data validate --config config/config-light-copy.yml
 #### Training
 To train the bot, we simply use the rasa train command. We'll provide a name to the model for better organization, but it's not necessary.
 ```
-$ rasa train --config config/config-light-copy.yml --fixed-model-name RestoChatv2
+$ rasa train --data data_actions --config config/config-light-v3.yml --fixed-model-name RestoChatv3
 ```
 
 #### Testing
@@ -52,10 +52,16 @@ To testing the bot, modify testing inside /tests folder
 $ rasa test
 ```
 
+#### Activate actions server
+You must activate the action server in the different terminal
+```
+$ rasa run actions
+```
+
 ### Chatting with the bot
 To test your bot, open a new terminal window and start a rasa shell session.
 ```
-$ rasa shell --model models/newmodelv2.tar.gz
+$ rasa shell --model models/newmodelv3.tar.gz
 ```
 This will let you chat with your bot in your terminal. If you want a more interactive UI and a little more debugging information like what intents were identified and what entities were extracted, you can use Rasa X.
 

@@ -18,6 +18,24 @@ stories:
     entities:
     - restaurant_name
   - action: action_check_restaurants_working_hours
+
+- story: User asks for restaurant facility
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_facility
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_facilities
+
+- story: User asks for restaurant category
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_category
+    entities:
+    - restaurant_type
+  - action: action_check_restaurants_categories
   
 - story: handle user affirm
   steps:

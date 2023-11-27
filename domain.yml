@@ -17,6 +17,8 @@ intents:
     use_entities: false
 - intent_recommendation_restaurant:
     use_entities: true
+- intent_restaurant_category:
+    use_entities: true
 - intent_confirmation:
     use_entities: false
 - intent_ask_restaurant_location:
@@ -116,5 +118,7 @@ actions:
 - action_check_restaurants_menu
 - action_check_restaurants_location
 - action_check_restaurants_working_hours
+- action_check_restaurants_facilities
+- action_check_restaurants_categories
 forms: {}
 e2e_actions: []
