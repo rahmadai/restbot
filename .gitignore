@@ -5,5 +5,4 @@ __pycache__
 .venv
 *.egg-info
 *.tar.gz
-*.csv
 .rasa
