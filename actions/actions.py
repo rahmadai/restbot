@@ -4,10 +4,13 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+from actions.weighted_product import preprocessing, get_data_resto
 
 # read csv file
 import pandas as pd
 df = pd.read_csv('db/list.csv')
+
+df = preprocessing(df)
 
 # menu
 # harga -> Berapaan : range harga
@@ -92,7 +95,12 @@ class ActionCheckRestaurantsCategories(Action):
         # parse alamat from csv when restaurant_name is matched with nama_resto column
         try:
             # get all nama_resto with category
-            list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
+            # list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
+            df_recommended = df[df['kategori'].apply(lambda x: str(category) in x)]
+            df_recommended = get_data_resto(df_recommended)
+            print(df_recommended)
+            # get nama_resto from df_recommended
+            list_restaurant = df_recommended['nama_resto'].tolist()
             # clean list from bracket
             list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
             response_message = "berikut list restoran dengan kategori " + str(category) + " : " + str(list_restaurant)
