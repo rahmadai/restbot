@@ -61,7 +61,7 @@ def preprocessing(df):
     # lowercase all category
     df['kategori'] = df['kategori'].apply(lambda x: x.lower())
     # split kategori column if there are multiple categories by comma
-    df['kategori'] = df['kategori'].apply(lambda x: x.split(','))
+    # df['kategori'] = df['kategori'].apply(lambda x: x.split(','))
 
     return df
 
@@ -80,7 +80,7 @@ def get_data_resto(df_process):
     df_process['jumlah_review'] = df_process['jumlah_review'].apply(lambda x: 1 if x <= 10 else (2 if x <= 100 else (3 if x <= 500 else (4 if x <= 1000 else 5))))
     df_process['average_price'] = df_process['average_price']
     df_process['rating'] = df_process['rating'].apply(lambda x: round(float(x)))
-    df_process['restoran_type'] = 3
+    df_process['restoran_type'] = df_process['type_resto']
     df_process['distance'] = df_process.apply(lambda x: calculate_distance(lat, long, x['latitude'], x['longitude']), axis=1)
     df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 5 else (3 if x <= 10 else 5))
     df_process['weighted_product'] = df_process.apply(lambda x: weighted_product(x['jumlah_review'], x['average_price'], x['rating'], x['restoran_type'], x['distance']), axis=1)

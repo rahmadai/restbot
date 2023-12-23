@@ -9,11 +9,8 @@ from actions.weighted_product import preprocessing, get_data_resto
 # read csv file
 import pandas as pd
 df = pd.read_csv('db/list.csv')
-
 df = preprocessing(df)
-
-# menu
-# harga -> Berapaan : range harga
+df = df.assign(kategori=df['kategori'].str.split(',')).explode('kategori')
 
 class ActionCheckRestaurantsLocation(Action):
     def name(self) -> Text:
@@ -36,7 +33,7 @@ class ActionCheckRestaurantsLocation(Action):
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
 
         dispatcher.utter_message(response_message)
-        return 0
+        return []
     
 class ActionCheckRestaurantsWorkingHours(Action):
     def name(self) -> Text:
@@ -58,7 +55,29 @@ class ActionCheckRestaurantsWorkingHours(Action):
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
     
         dispatcher.utter_message(response_message)
-        return 0
+        return []
+    
+class ActionCheckRestaurantsPricing(Action):
+    def name(self) -> Text:
+        return "action_check_restaurants_pricing"
+    
+    def run(self,
+              dispatcher: CollectingDispatcher,
+              tracker: Tracker,
+              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    
+        name = tracker.latest_message['entities'][0]['value']
+        print(name)
+        
+        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        try:
+            working_hour = df.loc[df['nama_resto'] == name, 'working_hour'].iloc[0]
+            response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
+        except:
+            response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
     
 class ActionCheckRestaurantsFacilities(Action):
     def name(self) -> Text:
@@ -79,7 +98,7 @@ class ActionCheckRestaurantsFacilities(Action):
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
     
         dispatcher.utter_message(response_message)
-        return 0
+        return []
     
 class ActionCheckRestaurantsCategories(Action):
     def name(self) -> Text:
@@ -96,7 +115,8 @@ class ActionCheckRestaurantsCategories(Action):
         try:
             # get all nama_resto with category
             # list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
-            df_recommended = df[df['kategori'].apply(lambda x: str(category) in x)]
+            # df_recommended = df[df['kategori'].apply(lambda x: str(category) in x)]
+            df_recommended = df[df['kategori'].apply(lambda x: str(category) == x)]
             df_recommended = get_data_resto(df_recommended)
             print(df_recommended)
             # get nama_resto from df_recommended
@@ -108,4 +128,4 @@ class ActionCheckRestaurantsCategories(Action):
             response_message = "Maaf, tidak ada kategori " + str(category) + " tidak ada di database kami"
     
         dispatcher.utter_message(response_message)
-        return 0
+        return []

@@ -433,6 +433,69 @@ nlu:
     - Pukul berapa [R&B Grill Jogja - 2nd Building](restaurant_name) buka?
     - Bisakah kamu memberitahu jam buka [Metropole Coffee](restaurant_name)?
 
+- intent: intent_restaurant_pricing
+  examples: |
+    - Berapa harga menu di [Tilasawa Coffee Roaster](restaurant_name)?
+    - [McDonald's Jakal](restaurant_name) punya harga menu yang sekitar berapa yaa?
+    - Menu apa saja yang ditawarkan oleh [McDonald's Sudirman Yogyakarta](restaurant_name) dan berapa harganya?
+    - Bolehkah kamu informasikan daftar harga di [Burger King](restaurant_name)?
+    - Apa harga menu di [KFC](restaurant_name)? Bisa beri tahu?
+    - Apa harga rata-rata di [Pizza Hut Jakal](restaurant_name)?
+    - Bisa kasih informasi mengenai harga menu di [Subway](restaurant_name)?
+    - Bagaimana dengan harga menu di [Starbucks](restaurant_name)?
+    - Berapa harga pizza di [Dominos Pizza](restaurant_name)? Ada informasi?
+    - Boleh tahu berapa harga menu di [Taco Bell](restaurant_name)?
+    - Mulai dari berapa harga menu di [Wendys](restaurant_name)?
+    - Berapa harga menu di [Papa Johns](restaurant_name)?
+    - Berapa harga menu di [Mie Sapi Banteng](restaurant_name)?
+    - [Gudeg Sagan](restaurant_name) biasanya menawarkan harga menu yang sekitar berapa?
+    - Pukul berapa [BRICafe X Couvee](restaurant_name) buka dan berapa harga menu utamanya?
+    - Boleh kamu informasikan harga menu di [Fore Coffee - Kaliurang](restaurant_name)?
+    - Saya penasaran dengan harga menu di [Seven Stones Rainforest Coffee](restaurant_name). Ada informasi?
+    - Tahu tidak kapan [Oppio Coffee](restaurant_name) mulai menetapkan harga untuk pelanggannya?
+    - Bisa berikan saya gambaran harga menu di [Rumah Makan Padang Sederhana](restaurant_name)?
+    - Bagaimana dengan harga kopi di [Warung Kopi Klotok](restaurant_name)?
+    - Berapa harga menu di [Warung Layar Sentuh](restaurant_name)? Ada informasi?
+    - Boleh berikan saya informasi mengenai harga menu di [Tilasawa Coffee Roaster](restaurant_name)?
+    - Pukul berapa [Sushi Tei](restaurant_name) buka dan berapa harga menu sushi mereka?
+    - Kapan [Cinema Bakery](restaurant_name) mulai menetapkan harga untuk menu mereka?
+    - Berapa harga menu di [Chingu Cafe](restaurant_name)?
+    - [Ayam Pedas Arto Moro](restaurant_name) menawarkan menu dengan harga berapa yaa?
+    - Pukul berapa [Filosofi Kopi Jogja](restaurant_name) buka dan berapa harga kopi mereka?
+    - Boleh kamu memberitahu harga menu di [Tempo Gelato](restaurant_name)?
+    - Saya penasaran dengan harga menu di [Tempo Gelato Prawirotaman](restaurant_name). Ada informasi?
+    - Tahu tidak kapan [EL PRIMO SAUSAGE & DAIRY](restaurant_name) mulai menetapkan harga untuk pelanggannya?
+    - Bisa informasikan harga menu di [Giorno's Pizzeria](restaurant_name)?
+    - Bagaimana dengan harga menu di [RM Duta Minang](restaurant_name)?
+    - Berapa harga menu di [RM. Duta Minang Gowongan](restaurant_name)? Ada informasi?
+    - Boleh berikan saya gambaran harga menu di [Golden Geisha Ramen](restaurant_name)?
+    - Pukul berapa [Swasana by Temata Yogyakarta](restaurant_name) buka dan berapa harga menu utamanya?
+    - Kapan [Susu dan Roti Bakar Om Bob](restaurant_name) mulai menetapkan harga untuk menu mereka?
+    - Berapa harga menu di [Susu dan Roti Bakar Om Bob Nologaten](restaurant_name)?
+    - [Susu dan Roti Bakar Om Bob Maguwo](restaurant_name) biasanya menawarkan harga menu yang sekitar berapa?
+    - Pukul berapa [Susu dan Roti Bakar Om Bob Godean](restaurant_name) buka dan berapa harga menu utamanya?
+    - Boleh kamu informasikan harga menu di [Nasi Goreng Sapi Padmanaba](restaurant_name)?
+    - Saya penasaran dengan harga menu di [Nasi Goreng Sapi Kantor Notaris](restaurant_name). Ada informasi?
+    - Tahu tidak kapan [Oharang BBQ Jogja ](restaurant_name) mulai menetapkan harga untuk pelanggannya?
+    - Bisa berikan saya gambaran harga menu di [Seorae](restaurant_name)?
+    - Bagaimana dengan harga menu di [Gyu-Kaku Japanese BBQ](restaurant_name)?
+    - Berapa harga menu di [Kakkoii Japanese BBQ & Shabu-Shabu](restaurant_name)? Ada informasi?
+    - Boleh berikan saya informasi mengenai harga menu di [Nikuya BBQ Jogja](restaurant_name)?
+    - Pukul berapa [Niku Japanese BBQ Jogja](restaurant_name) buka dan berapa harga menu utamanya?
+    - Kapan [Shabu AUCE](restaurant_name) mulai menetapkan harga untuk menu mereka?
+    - Berapa harga menu di [Milk by Artemy](restaurant_name)?
+    - [Sakapatat Brew House & Resto](restaurant_name) biasanya menawarkan menu dengan harga berapa?
+    - Pukul berapa [Izakaya](restaurant_name) buka dan berapa harga menu utamanya?
+    - Boleh kamu informasikan harga menu di [Ramenhead](restaurant_name)?
+    - Saya penasaran dengan harga menu di [BAKI by D'Monaco](restaurant_name). Ada informasi?
+    - Tahu tidak kapan [Kanari Society & Space](restaurant_name) mulai menetapkan harga untuk pelanggannya?
+    - Bisa informasikan harga menu di [TRILOGI COFFEE](restaurant_name)?
+    - Bagaimana dengan harga kopi di [Dummin Coffee & Space UKDW](restaurant_name)?
+    - Berapa harga menu di [Enam Langit by Plataran](restaurant_name)? Ada informasi?
+    - Boleh berikan saya gambaran harga menu di [Mie Ayam Bandung 59](restaurant_name)?
+    - Pukul berapa [28 Coffee Seturan](restaurant_name) buka dan berapa harga menu utamanya?
+    - Kapan [Chunda Resto](restaurant_name) mulai menetapkan harga untuk menu mereka?
+
 - intent: intent_restaurant_facility
   examples: |
     - Apa saja fasilitas yang ada di [Tilasawa Coffee Roaster](restaurant_name)?

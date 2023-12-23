@@ -19,6 +19,15 @@ stories:
     - restaurant_name
   - action: action_check_restaurants_working_hours
 
+- story: User asks for restaurant pricing
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_pricing
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_pricing
+
 - story: User asks for restaurant facility
   steps:
   - intent: intent_greet
