@@ -1,0 +1,42 @@
+CREATE TABLE dosen(
+    id varchar(15) NOT NULL PRIMARY KEY,
+    nama_dosen varchar(50),
+    email_dosen varchar(30),
+    telp_dosen varchar(15)
+);
+
+CREATE TABLE mata_kuliah(
+    id varchar(20) NOT NULL PRIMARY KEY,
+    nama_mata_kuliah varchar(50),
+    jumlah_sks int(15),
+    tipe_mata_kuliah varchar(10),
+    id_dosen varchar(15) NOT NULL,
+    kapasitas int(11) NOT NULL,
+    FOREIGN KEY(id_dosen) REFERENCES dosen(id)
+);
+
+CREATE TABLE ruangan(
+    id int(11) NOT NULL PRIMARY KEY,
+    jenis_ruangan varchar(10) NOT NULL,
+    fasilitas varchar(80) NOT NULL,
+    kapasitas int(11) NOT NULL
+);
+
+CREATE TABLE mahasiswa(
+    id varchar(10) NOT NULL PRIMARY KEY,
+    nama_mahasiswa varchar(50),
+    jenis_kelamin_mahasiswa varchar(15),
+    alamat_mahasiswa varchar(100),
+    email_mahasiswa varchar(30),
+    telp_mahasiswa varchar(15)
+);
+
+CREATE TABLE transaksi_mata_kuliah(
+    id int(11) NOT NULL PRIMARY KEY,
+    id_mahasiswa varchar(10) NOT NULL,
+    id_mata_kuliah varchar(20) NOT NULL,
+    id_ruangan int(11) NOT NULL,
+    FOREIGN KEY(id_mahasiswa) REFERENCES mahasiswa(id),
+    FOREIGN KEY(id_mata_kuliah) REFERENCES mata_kuliah(id),
+    FOREIGN KEY(id_ruangan) REFERENCES ruangan(id)
+);

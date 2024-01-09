@@ -13,6 +13,10 @@ intents:
     use_entities: false
 - intent_thanks:
     use_entities: false
+- intent_happy_mood:
+    use_entities: false
+- intent_disagree:
+    use_entities: false
 - intent_recommendation_menu:
     use_entities: false
 - intent_recommendation_restaurant:
@@ -27,7 +31,9 @@ intents:
     use_entities: true
 - intent_restaurant_facility:
     use_entities: true
-- intent_restaurant_menu:
+- intent_provide_restaurant_name:
+    use_entities: true
+- intent_restaurant_pricing:
     use_entities: true
 - intent_provide_information:
     use_entities: false
@@ -44,6 +50,7 @@ entities:
 - restaurant_facility
 - restaurant_price
 - landmark
+- location
 slots:
   restaurant_type:
     type: rasa.shared.core.slots.TextSlot
@@ -120,5 +127,7 @@ actions:
 - action_check_restaurants_working_hours
 - action_check_restaurants_facilities
 - action_check_restaurants_categories
+- action_check_restaurants_pricing
+- action_check_restaurants_recommendation
 forms: {}
 e2e_actions: []

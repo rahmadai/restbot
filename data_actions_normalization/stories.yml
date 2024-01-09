@@ -1,0 +1,83 @@
+version: "3.1"
+stories:
+- story: User asks for restaurant locations
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_ask_restaurant_location
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_location
+  - checkpoint: recommend_checkpoint
+
+- story: User asks for recommendations
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_recommendation_restaurant
+    entities:
+    - restaurant_name,location
+  - action: action_check_restaurants_recommendation
+  - checkpoint: recommend_checkpoint
+
+
+- story: User asks for working hours
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_working_hours
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_working_hours
+
+- story: User asks for restaurant pricing
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_pricing
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_pricing
+
+- story: User asks for restaurant facility
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_facility
+    entities:
+    - restaurant_name
+  - action: action_check_restaurants_facilities
+
+- story: User asks for restaurant category
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_restaurant_category
+    entities:
+    - restaurant_type
+  - action: action_check_restaurants_categories
+  
+- story: handle user affirm
+  steps:
+  - checkpoint: recommend_checkpoint
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - checkpoint: confirm_checkpoint
+
+- story: handle user deny
+  steps:
+  - checkpoint: recommend_checkpoint
+  - intent: intent_reject
+  - checkpoint: deny_checkpoint
+
+- story: finish flow after denial
+  steps:
+  - checkpoint: deny_checkpoint
+  - intent: intent_bye
+  - action: utter_goodbye
+
+- story: finish flow after confirmation
+  steps:
+  - checkpoint: confirm_checkpoint
+  - intent: intent_bye
+  - action: utter_goodbye

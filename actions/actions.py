@@ -12,6 +12,34 @@ df = pd.read_csv('db/list.csv')
 df = preprocessing(df)
 df = df.assign(kategori=df['kategori'].str.split(',')).explode('kategori')
 
+class ActionCheckRestaurantsRecommendation(Action):
+    def name(self) -> Text:
+        return "action_check_restaurants_recommendation"
+    def run(self,
+                dispatcher: CollectingDispatcher,
+                tracker: Tracker,
+                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        category = tracker.latest_message['entities'][0]['value']
+        location = tracker.latest_message['entities'][1]['value']
+        print(category)
+
+        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        try:
+            df_recommended = df[df['kategori'].apply(lambda x: str(category) == x)]
+            df_recommended = get_data_resto(df_recommended)
+            print(df_recommended)
+            # get nama_resto from df_recommended
+            list_restaurant = df_recommended['nama_resto'].tolist()
+            # clean list from bracket
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "berikut rekomendasi restoran di " + str(location) + " : " + str(list_restaurant)
+        except:
+            response_message = "Maaf, tidak ada rekomendasi di " + str(location) + " tidak ada di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
+    
 class ActionCheckRestaurantsLocation(Action):
     def name(self) -> Text:
         return "action_check_restaurants_location"
@@ -23,11 +51,12 @@ class ActionCheckRestaurantsLocation(Action):
     
         # parse restaurant_name from entity
         name = tracker.latest_message['entities'][0]['value']
+        name_lower = name.lower()
         print(name)
 
         # parse alamat from csv when restaurant_name is matched with nama_resto column
         try:
-            location = df.loc[df['nama_resto'] == name, 'alamat'].iloc[0]
+            location = df.loc[df['nama_resto'] == name_lower, 'alamat'].iloc[0]
             response_message = "berikut lokasi restoran " + str(name) + " : " + str(location)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -45,11 +74,12 @@ class ActionCheckRestaurantsWorkingHours(Action):
               domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
     
         name = tracker.latest_message['entities'][0]['value']
+        name_lower = name.lower()
         print(name)
         
         # parse alamat from csv when restaurant_name is matched with nama_resto column
         try:
-            working_hour = df.loc[df['nama_resto'] == name, 'working_hour'].iloc[0]
+            working_hour = df.loc[df['nama_resto'] == name_lower, 'working_hour'].iloc[0]
             response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -67,12 +97,13 @@ class ActionCheckRestaurantsPricing(Action):
               domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
     
         name = tracker.latest_message['entities'][0]['value']
+        name_lower = name.lower()
         print(name)
         
         # parse alamat from csv when restaurant_name is matched with nama_resto column
         try:
-            working_hour = df.loc[df['nama_resto'] == name, 'working_hour'].iloc[0]
-            response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
+            price_ranges = df.loc[df['nama_resto'] == name_lower, 'price_ranges'].iloc[0]
+            response_message = "Range harga " + str(name) + " adalah : " + str(price_ranges)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
     
@@ -88,11 +119,12 @@ class ActionCheckRestaurantsFacilities(Action):
                 domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         name = tracker.latest_message['entities'][0]['value']
+        name_lower = name.lower()
         print(name)
 
         # parse alamat from csv when restaurant_name is matched with nama_resto column
         try:
-            facilities = df.loc[df['nama_resto'] == name, 'facilities'].iloc[0]
+            facilities = df.loc[df['nama_resto'] == name_lower, 'facilities'].iloc[0]
             response_message = "berikut fasilitas restoran " + str(name) + " : " + str(facilities)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -109,6 +141,7 @@ class ActionCheckRestaurantsCategories(Action):
                 domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         category = tracker.latest_message['entities'][0]['value']
+        category_lower = category.lower()
         print(category)
 
         # parse alamat from csv when restaurant_name is matched with nama_resto column
@@ -116,7 +149,7 @@ class ActionCheckRestaurantsCategories(Action):
             # get all nama_resto with category
             # list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
             # df_recommended = df[df['kategori'].apply(lambda x: str(category) in x)]
-            df_recommended = df[df['kategori'].apply(lambda x: str(category) == x)]
+            df_recommended = df[df['kategori'].apply(lambda x: str(category_lower) == x)]
             df_recommended = get_data_resto(df_recommended)
             print(df_recommended)
             # get nama_resto from df_recommended
