@@ -10,7 +10,8 @@ from actions.weighted_product import preprocessing, get_data_resto
 import pandas as pd
 df = pd.read_csv('db/list.csv')
 df = preprocessing(df)
-df = df.assign(kategori=df['kategori'].str.split(',')).explode('kategori')
+df = df.assign(category=df['category'].str.split(',')).explode('category')
+df = df.assign(facility=df['facility'].str.split(',')).explode('facility')
 
 class ActionCheckRestaurantsRecommendation(Action):
     def name(self) -> Text:
@@ -19,24 +20,103 @@ class ActionCheckRestaurantsRecommendation(Action):
                 dispatcher: CollectingDispatcher,
                 tracker: Tracker,
                 domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
-        category = tracker.latest_message['entities'][0]['value']
-        location = tracker.latest_message['entities'][1]['value']
-        print(category)
 
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        tracker_list = tracker.latest_message['entities']
+        parsed_entities = {}
+
+        for entity_info in tracker_list:
+            entity = entity_info['entity']
+            value = entity_info['value']
+            parsed_entities[entity] = value
+
         try:
-            df_recommended = df[df['kategori'].apply(lambda x: str(category) == x)]
-            df_recommended = get_data_resto(df_recommended)
-            print(df_recommended)
-            # get nama_resto from df_recommended
-            list_restaurant = df_recommended['nama_resto'].tolist()
-            # clean list from bracket
-            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-            response_message = "berikut rekomendasi restoran di " + str(location) + " : " + str(list_restaurant)
+            restaurant_type = parsed_entities['restaurant_type']
         except:
-            response_message = "Maaf, tidak ada rekomendasi di " + str(location) + " tidak ada di database kami"
-    
+            restaurant_type = None
+        try:
+            location = parsed_entities['location']
+        except:
+            location = None
+        try:
+            restaurant_facility = parsed_entities['restaurant_facility']
+        except:
+            restaurant_facility = None
+
+        # switch by combination restaurant_type, location, restaurant_facility
+        if restaurant_type != None and restaurant_facility != None and location != None:
+            # check in df if restaurant_type exist
+            # df_exist = df[df['category'].apply(lambda x: str(restaurant_type) in x)]
+            # if df_exist is not None:
+            #     df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            # else:
+            #     df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+        elif restaurant_type != None and restaurant_facility == None and location != None:
+            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi " + str(restaurant_type) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+        elif restaurant_type == None and restaurant_facility != None and location != None:
+            df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+        elif restaurant_type != None and restaurant_facility != None and location == None:
+            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
+        elif restaurant_type != None and restaurant_facility == None and location == None:
+            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi " + str(restaurant_type) + " : " + str(list_restaurant)
+        elif restaurant_type == None and restaurant_facility != None and location == None:
+            df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+            # limit df_recommended to 5
+            df_recommended = get_data_resto(df_recommended)
+            # drop duplicate by retaurant_name
+            df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+            df_recommended = df_recommended.head(5)
+            print(df_recommended)
+            list_restaurant = df_recommended['retaurant_name'].tolist()
+            list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+            response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
+        print(response_message)
+
         dispatcher.utter_message(response_message)
         return []
     
@@ -54,9 +134,9 @@ class ActionCheckRestaurantsLocation(Action):
         name_lower = name.lower()
         print(name)
 
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        # parse address from csv when restaurant_name is matched with retaurant_name column
         try:
-            location = df.loc[df['nama_resto'] == name_lower, 'alamat'].iloc[0]
+            location = df.loc[df['retaurant_name'] == name_lower, 'address'].iloc[0]
             response_message = "berikut lokasi restoran " + str(name) + " : " + str(location)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -77,9 +157,9 @@ class ActionCheckRestaurantsWorkingHours(Action):
         name_lower = name.lower()
         print(name)
         
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        # parse address from csv when restaurant_name is matched with retaurant_name column
         try:
-            working_hour = df.loc[df['nama_resto'] == name_lower, 'working_hour'].iloc[0]
+            working_hour = df.loc[df['retaurant_name'] == name_lower, 'working_hour'].iloc[0]
             response_message = "Jam buka " + str(name) + " adalah : " + str(working_hour)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -100,9 +180,9 @@ class ActionCheckRestaurantsPricing(Action):
         name_lower = name.lower()
         print(name)
         
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        # parse address from csv when restaurant_name is matched with retaurant_name column
         try:
-            price_ranges = df.loc[df['nama_resto'] == name_lower, 'price_ranges'].iloc[0]
+            price_ranges = df.loc[df['retaurant_name'] == name_lower, 'price_ranges'].iloc[0]
             response_message = "Range harga " + str(name) + " adalah : " + str(price_ranges)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -122,9 +202,9 @@ class ActionCheckRestaurantsFacilities(Action):
         name_lower = name.lower()
         print(name)
 
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        # parse address from csv when restaurant_name is matched with retaurant_name column
         try:
-            facilities = df.loc[df['nama_resto'] == name_lower, 'facilities'].iloc[0]
+            facilities = df.loc[df['retaurant_name'] == name_lower, 'facility'].iloc[0]
             response_message = "berikut fasilitas restoran " + str(name) + " : " + str(facilities)
         except:
             response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -144,16 +224,16 @@ class ActionCheckRestaurantsCategories(Action):
         category_lower = category.lower()
         print(category)
 
-        # parse alamat from csv when restaurant_name is matched with nama_resto column
+        # parse address from csv when restaurant_name is matched with retaurant_name column
         try:
-            # get all nama_resto with category
-            # list_restaurant = df.loc[df['kategori'] == category, 'nama_resto'].tolist()
-            # df_recommended = df[df['kategori'].apply(lambda x: str(category) in x)]
-            df_recommended = df[df['kategori'].apply(lambda x: str(category_lower) == x)]
+            # get all retaurant_name with category
+            # list_restaurant = df.loc[df['category'] == category, 'retaurant_name'].tolist()
+            # df_recommended = df[df['category'].apply(lambda x: str(category) in x)]
+            df_recommended = df[df['category'].apply(lambda x: str(category_lower) == x)]
             df_recommended = get_data_resto(df_recommended)
             print(df_recommended)
-            # get nama_resto from df_recommended
-            list_restaurant = df_recommended['nama_resto'].tolist()
+            # get retaurant_name from df_recommended
+            list_restaurant = df_recommended['retaurant_name'].tolist()
             # clean list from bracket
             list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
             response_message = "berikut list restoran dengan kategori " + str(category) + " : " + str(list_restaurant)

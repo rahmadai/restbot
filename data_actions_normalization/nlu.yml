@@ -442,6 +442,38 @@ nlu:
 
 - intent: intent_recommendation_restaurant
   examples: |
+    - saya ingin mencari tempat yang mempunyai [tempat parkir](restaurant_facility) untuk 2 orang di deket [ugm](location)
+    - rekomendasiin dong restoran yang ada fasilitas [tempat parkir](restaurant_facility)
+    - tolong carikan tempat yang ada fasilitas [ruang tunggu](restaurant_facility)
+    - halo, saya ingin mencari restoran enak yang mempunyai fasilitas [colokan](restaurant_facility) dong
+    - hai, ada rekomendasi restorant enak [di sekitar sini](location) dan ada [wifi](restaurant_facility) dong
+    - hai, bisakah kamu merekomendasikan tempat kumpul dengan fasilitas berupa [ruangan outdoor](restaurant_facility) di sekitar [kaliurang](location)
+    - apakah ada tempat makan yang ada [ruangan indoor](restaurant_facility) [di sekitar sini](location)
+    - saya ingin mencari rekomendasi tempat yang ada fasilitas berupa [mushala](restaurant_facility) di dekat [kantor](location)
+    - apakah ada restoran yang disediakan [mushala](restaurant_facility) untuk sarapan [di sini](location)
+    - bisakah kamu merekomendasikan tempat yang menyediakan [mushala](restaurant_facility) di sekitar [kaliurang](location)
+    - aku ingin mencari tempat makan yang tersedia [ruang rapat](restaurant_facility) di [jogja](location). apa ada yang kamu rekomendasikan?
+    - tolong rekomen dong restoran yang ada [ruang disabilitas](restaurant_facility)
+    - tolong carikan tempat makan yang enak dan ada [smoking area](restaurant_facility)
+    - hai, ada rekomendasi restoran yang bisa [takeaway](restaurant_facility) dong
+    - hai, bisakah kamu merekomendasikan tempat yang bagus dan tersedia [toilet umum](restaurant_facility)
+    - apakah ada restoran menyediakan [ruangan meeting](restaurant_facility) [di sekitar sini](location)
+    - saya ingin mencari tempat [coffee shop](restaurant_type) yang mempunyai [tempat parkir](restaurant_facility) untuk 2 orang di deket [ugm](location)
+    - rekomendasiin dong [restaurant](restaurant_type) enak dan murah dan ada fasilitas [ac](restaurant_facility) di sekitar [kaliurang](location)
+    - tolong carikan [japanese resto](restaurant_type) di sekitar [kaliurang](location) enak dong dan ada fasilitas [ruang tunggu](restaurant_facility)
+    - halo, saya ingin mencari [restaurant](restaurant_type) enak [di sekitar sini](location) dan ada [colokan](restaurant_facility) dong
+    - hai, ada rekomendasi [restoran italia](restaurant_type) enak [di sekitar sini](location) dan ada [wifi](restaurant_facility) dong
+    - hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus dan ada fasilitas berupa [ruangan outdoor](restaurant_facility) di sekitar [kaliurang](location)
+    - apakah ada [restoran sushi](restaurant_type) yang ada [ruangan indoor](restaurant_facility) [di sekitar sini](location)
+    - saya ingin mencari [restaurant](restaurant_type) yang cepat dan fasilitas berupa [mushala](restaurant_facility) di dekat [kantor](location)
+    - apakah ada [restaurant](restaurant_type) yang disediakan [mushala](restaurant_facility) untuk sarapan [di sini](location)
+    - bisakah kamu merekomendasikan [restaurant vegetarian](restaurant_type) yang menyediakan [mushala](restaurant_facility) di sekitar [kaliurang](location)
+    - aku ingin mencari tempat [coffee shop](restaurant_type) yang tersedia [ruang rapat](restaurant_facility) di [jogja](location). apa ada yang kamu rekomendasikan?
+    - tolong rekomen dong [padang restaurant](restaurant_type) yang murah [disini](location) dan ada [ruang disabilitas](restaurant_facility)
+    - tolong carikan [japanese resto](restaurant_type) enak dan ada [smoking area](restaurant_facility)
+    - hai, ada rekomendasi [restoran italia](restaurant_type) enak [di sekitar sini](location) dan bisa [takeaway](restaurant_facility) dong
+    - hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus dan tersedia [toilet umum](restaurant_facility)
+    - apakah ada [restoran sushi](restaurant_type) yang enak dan menyediakan [ruangan meeting](restaurant_facility) [di sekitar sini](location)
     - saya ingin mencari tempat [coffee shop](restaurant_type) untuk 2 orang di deket [ugm](location)
     - rekomendasiin dong [restaurant](restaurant_type) enak dan murah di sekitar [kaliurang](location)
     - tolong carikan [japanese resto](restaurant_type) di sekitar [kaliurang](location) enak dong
@@ -454,13 +486,10 @@ nlu:
     - bisakah kamu merekomendasikan [restaurant vegetarian](restaurant_type) di sekitar [kaliurang](location)
     - aku ingin mencari tempat [coffee shop](restaurant_type) di [jogja](location). apa ada yang kamu rekomendasikan?
     - tolong rekomen dong [padang restaurant](restaurant_type) yang murah [disini](location)
-
-- intent: intent_restaurant_category
-  examples: |
     - tolong carikan [japanese resto](restaurant_type) enak dong
-    - hai, ada rekomendasi [restoran italia](restaurant_type) enak di sekitar sini?
+    - hai, ada rekomendasi [restoran italia](restaurant_type) enak [di sekitar sini](location)
     - hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus?
-    - apakah ada [restoran sushi](restaurant_type) yang baik di sekitar sini?
+    - apakah ada [restoran sushi](restaurant_type) yang baik [di sekitar sini](location)
     - bisakah kamu merekomendasikan tempat makan [vegetarian](restaurant_type)?
     - aku ingin mencari tempat [warkop](restaurant_type) di jogja. apa ada yang kamu rekomendasikan?
     - tolong rekomen dong [rumah makan padang](restaurant_type) yang murah disini
