@@ -57,6 +57,8 @@ global df
 
 def preprocessing(df):
     # cleaning category if ', ' then replace with ','
+    # lowercase all category
+    df['restaurant_name_lower'] = df['retaurant_name'].apply(lambda x: x.lower())
     df['category'] = df['category'].apply(lambda x: x.replace(', ', ','))
     # lowercase all category
     df['category'] = df['category'].apply(lambda x: x.lower())
@@ -73,7 +75,7 @@ def filter(df):
 
     return df
 
-def get_data_resto(df_process):
+def get_data_resto(df_process, latitude, longitude):
     # C1 = reviews column with number if 10 reviews = 1, 100+ reviews = 2, 101-500 reviews = 3, 5001-1000 reviews = 4, 1000+ reviews = 5
     # C2 = price_ranges column
     # C3 = rating column with round up to nearest integer
@@ -83,8 +85,8 @@ def get_data_resto(df_process):
     df_process['price_ranges'] = df_process['price_ranges']
     df_process['rating'] = df_process['rating'].apply(lambda x: round(float(x)))
     df_process['restoran_type'] = df_process['resto_type']
-    df_process['distance'] = df_process.apply(lambda x: calculate_distance(lat, long, x['latitude'], x['longitude']), axis=1)
-    df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 5 else (3 if x <= 10 else 5))
+    df_process['distance'] = df_process.apply(lambda x: calculate_distance(latitude, longitude, x['latitude'], x['longitude']), axis=1)
+    df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 1 else (3 if x <= 3 else 5))
     df_process['weighted_product'] = df_process.apply(lambda x: weighted_product(x['reviews'], x['price_ranges'], x['rating'], x['restoran_type'], x['distance']), axis=1)
     df_process = df_process.sort_values(by=['weighted_product'], ascending=False)
   

@@ -2,8 +2,6 @@ version: "3.1"
 stories:
 - story: User asks for recommendations
   steps:
-  - intent: intent_greet
-  - action: utter_ask_questions
   - intent: intent_recommendation_restaurant
     entities:
     - restaurant_type,location,restaurant_facility
@@ -11,18 +9,13 @@ stories:
 
 # - story: User asks for restaurant locations
 #   steps:
-#   - intent: intent_greet
-#   - action: utter_ask_questions
 #   - intent: intent_ask_restaurant_location
 #     entities:
 #     - restaurant_name
 #   - action: action_check_restaurants_location
-#   - checkpoint: recommend_checkpoint
 
 # - story: User asks for working hours
 #   steps:
-#   - intent: intent_greet
-#   - action: utter_ask_questions
 #   - intent: intent_restaurant_working_hours
 #     entities:
 #     - restaurant_name
@@ -30,8 +23,8 @@ stories:
 
 # - story: User asks for restaurant pricing
 #   steps:
-#   - intent: intent_greet
-#   - action: utter_ask_questions
+#   # - intent: intent_greet
+#   # - action: utter_ask_questions
 #   - intent: intent_restaurant_pricing
 #     entities:
 #     - restaurant_name
@@ -39,8 +32,6 @@ stories:
 
 # - story: User asks for restaurant facility
 #   steps:
-#   - intent: intent_greet
-#   - action: utter_ask_questions
 #   - intent: intent_restaurant_facility
 #     entities:
 #     - restaurant_name
@@ -51,13 +42,13 @@ stories:
 #   - checkpoint: recommend_checkpoint
 #   - intent: intent_confirmation
 #   - action: utter_confirmation
-#   - checkpoint: confirm_checkpoint
+  # - checkpoint: confirm_checkpoint
 
 # - story: handle user deny
 #   steps:
 #   - checkpoint: recommend_checkpoint
 #   - intent: intent_reject
-#   - checkpoint: deny_checkpoint
+  # - checkpoint: deny_checkpoint
 
 # - story: finish flow after denial
 #   steps:

@@ -6,7 +6,9 @@ from rasa.engine.storage.resource import Resource
 from rasa.engine.storage.storage import ModelStorage
 from rasa.shared.nlu.training_data.message import Message
 from rasa.shared.nlu.training_data.training_data import TrainingData
-import csv
+import pandas as pd
+
+df = pd.read_csv('db/word_changes.csv')
 
 # TODO: Correctly register your component with its type
 @DefaultV1Recipe.register(
@@ -56,16 +58,13 @@ class Preprocess(GraphComponent):
             message.data['text'] = message.data['text'].replace(':', ' ')
             message.data['text'] = message.data['text'].replace(';', ' ')
             message.data['text'] = message.data['text'].lower()
-            # # replace word in message.data['text'] with word in csv file
-            # try:
-            #     with open('db/word_changes.csv', newline="", encoding="utf-8") as csvfile:
-            #         reader = csv.DictReader(csvfile)
-            #         for row in reader:
-            #             message.data['text'] = message.data['text'].replace(row["word"], row["changes_word"])
-            #         # close when done
-            #         csvfile.close()
-            # except FileNotFoundError:
-            #     print(f"CSV file 'db/word_changes.csv' not found.")
+            # replace word in message.data['text'] with word in csv file
+            # run word by word inside text and replace with word_changes.csv
+            for word in message.data['text'].split():
+                try:
+                    message.data['text'] = message.data['text'].replace(word, df.loc[df['word'] == word, 'changes_word'].iloc[0])
+                except:
+                    pass
             print(message.data['text'])
 
         return messages

@@ -526,7 +526,7 @@ nlu:
     - bisakah kamu merekomendasikan [pujasera](restaurant_type) yang menyajikan beragam masakan?
     - ada [ramen restaurant](restaurant_type) yang punya ramen terbaik?
     - apakah ada [pujasera](restaurant_type) yang cocok untuk acara formal?
-    - saya ingin mencari [restoran](restaurant_type) dengan suasana yang nyaman untuk makan malam, ada yang direkomendasikan?
+    - saya ingin mencari [restoran italia](restaurant_type) dengan suasana yang nyaman untuk makan malam, ada yang direkomendasikan?
     - bisa carikan [restoran amerika](restaurant_type) yang menyajikan hidangan khas amerika?
     - ada saran [restoran cepat saji](restaurant_type) yang menyediakan makanan cepat saji sehat?
     - saya mencari [restoran eropa](restaurant_type) yang menyajikan hidangan eropa otentik, ada yang direkomendasikan?

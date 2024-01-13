@@ -18,6 +18,9 @@ pipeline:
   weight_sparcity: 0.90
   hidden_layer_sizes:
     text: [256, 128]
+- name: FallbackClassifier
+  threshold: 0.3
+  ambiguity_threshold: 0.1
   tensorboard_log_directory: ./.tensorboard/DIET
   tensorboard_log_level: epoch
 policies: # No configuration for policies was provided. The following default policies were used to train your model.
@@ -33,13 +36,9 @@ policies: # No configuration for policies was provided. The following default po
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
-  # - name: MemoizationPolicy
-  # - name: RulePolicy
-#   - name: UnexpecTEDIntentPolicy
-#     max_history: 5
-#     epochs: 100
-  # - name: TEDPolicy
+  # - name: UnexpecTEDIntentPolicy
   #   max_history: 5
   #   epochs: 100
-  #   constrain_similarities: true
+  # - constrain_similarities: true
+#   - name: TEDPolicy
 assistant_id: 20231118-154945-primordial-wraith
