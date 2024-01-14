@@ -1,0 +1,18 @@
+Intent,precision,recall,f1-score,support
+intent_recommendation_menu,1.0,0.6666666666666666,0.8,3
+intent_restaurant_working_hours,1.0,1.0,1.0,2
+intent_recommendation_restaurant,0.6666666666666666,1.0,0.8,2
+intent_greet,1.0,1.0,1.0,1
+intent_ask_restaurant_location,1.0,1.0,1.0,1
+intent_bye,1.0,0.6666666666666666,0.8,3
+intent_restaurant_menu,1.0,1.0,1.0,1
+intent_reject,1.0,1.0,1.0,2
+intent_confirmation,0.0,0.0,0.0,1
+intent_provide_information,0.8,0.8888888888888888,0.8421052631578948,9
+intent_restaurant_facility,1.0,1.0,1.0,1
+intent_thanks,0.6666666666666666,1.0,0.8,2
+intent_challenge_bot,1.0,0.8888888888888888,0.9411764705882353,9
+intent_provide_negative_sample,0.8181818181818182,0.9,0.8571428571428572,10
+macro avg,0.8536796536796537,0.8579365079365079,0.8457446136349278,47
+weighted avg,0.8733720180528689,0.8723404255319149,0.8642758335136966,47
+micro avg,0.8723404255319149,0.8723404255319149,0.8723404255319149,47

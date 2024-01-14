@@ -548,6 +548,36 @@ nlu:
     - menu di [RM Padang Sederhana](restaurant_name) ada apa aja ya?
     - ada menu apa saja di [Tilasawa](restaurant_name)?
 
+- intent: intent_provide_restaurant_name
+  examples: |
+    - Namanya [Tilasawa Coffee Roaster](restaurant_name)
+    - Saya tadi milihnya [McDonald's Jakal](restaurant_name)
+    - [McDonald's Sudirman Yogyakarta](restaurant_name)
+    - Restoran nya bernama [Burger King](restaurant_name)
+    - [KFC](restaurant_name)
+    - [Pizza Hut Jakal](restaurant_name)
+    - [Subway](restaurant_name)
+    - [Starbucks](restaurant_name)
+    - [Dominos Pizza](restaurant_name)
+    - [Taco Bell](restaurant_name)
+    - [Wendys](restaurant_name)
+    - [Papa Johns](restaurant_name)
+    - [Mie Sapi Banteng](restaurant_name)
+    - [Gudeg Sagan](restaurant_name)
+    - [BRICafe X Couvee](restaurant_name)
+    - [Fore Coffee - Kaliurang](restaurant_name)
+    - [Seven Stones Rainforest Coffee](restaurant_name)
+    - [Oppio Coffee](restaurant_name)
+    - [Rumah Makan Padang Sederhana](restaurant_name)
+    - [Warung Kopi Klotok](restaurant_name)
+    - [Warung Layar Sentuh](restaurant_name)
+    - [Tilasawa Coffee Roaster](restaurant_name)
+    - [Sushi Tei](restaurant_name)
+    - [Cinema Bakery](restaurant_name)
+    - [Chingu Cafe](restaurant_name)
+    - [Ayam Pedas Arto Moro](restaurant_name)
+    - [Filosofi Kopi Jogja](restaurant_name)
+
 - intent: intent_provide_information
   examples: |
     - Saya ingin mencoba masakan Korea.

@@ -1,6 +1,6 @@
 version: "3.1"
 stories:
-- story: User asks for recommendations
+- story: User asks for restaurant locations
   steps:
   - intent: intent_greet
   - action: utter_ask_questions

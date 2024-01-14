@@ -245,9 +245,10 @@ nlu:
 
 - intent: intent_ask_restaurant_location
   examples: |
-    - Dimana ya alamat Cronica Coffee Shop?
-    - Share alamat Estuary Coffee dong
-    - dimana lokasi Oppio Coffee?
+    - Dimana ya alamat [Cronica Coffee Shop](restaurant_name)?
+    - Share alamat [Estuary Coffee](restaurant_name) dong
+    - dimana lokasi [Oppio Coffee](restaurant_name)?
+    - dimana lokasi [Tilasawa]](restaurant_name)?
     - Di mana lokasi tepat dari restoran ini?
     - Apakah restoran ini terletak di pusat kota atau di pinggiran kota?
     - Apa alamat lengkap dari restoran ini?

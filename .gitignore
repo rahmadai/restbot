@@ -6,3 +6,5 @@ __pycache__
 *.egg-info
 *.tar.gz
 .rasa
+.tensorboard
+.DS_Store

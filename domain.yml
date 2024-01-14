@@ -5,6 +5,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- nlu_fallback:
+    use_entities: false
 - intent_greet:
     use_entities: false
 - intent_reject:
@@ -56,14 +58,14 @@ slots:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
   restaurant_menu:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
   restaurant_name:
@@ -77,21 +79,21 @@ slots:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
   working_hours:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
   email:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     # auto_fill: true
-    influence_conversation: true
+    influence_conversation: false
     mappings:
     - type: custom
 responses:
@@ -99,28 +101,18 @@ responses:
   - text: Hai saya RestoChat, ada yang bisa dibantu?
   utter_reject:
   - text: Mohon maaf, apa ada request lain?
+  utter_default:
+  - text: Maaf saya tidak tahu maksud anda, boleh diulangi?
   utter_confirmation:
   - text: Baik akan saya proses
   utter_ask_other_questions:
   - text: Apakah informasi tadi sudah cukup?
-  utter_ask_restaurant_location:
-  - text: Dimana lokasi restaurant yang anda inginkan?
-  utter_provide_general_recommendation_restaurant:
-  - text: berikut rekomendasi untuk anda! {restaurant_name}
-  utter_confirmation_for_restaurant:
-  - text: Apakah anda ingin memesan di {restaurant_type}?
-  utter_provide_restaurant_location:
-  - text: Berikut lokasi {restaurant_name} yang anda inginkan {location}!
-  utter_provide_restaurant_menu:
-  - text: Berikut lokasi {restaurant_name} yang anda inginkan {restaurant_menu}!
-  utter_provide_menu_recommendation:
-  - text: Berikut rekomendasi menu {restaurant_menu}!
-  utter_provide_restaurant_hours:
-  - text: Berikut jam kerja {restaurant_name}  {working_hours}!
   utter_thanks:
   - text: Terimakasih sudah menggunakan RestoChat!
   utter_goodbye:
   - text: Sampai jumpa lagi!
+  utter_iamabot:
+  - text: Saya adalah chatbot untuk mencarikan anda rekomendasi restoran terbaik
 actions:
 - action_check_restaurants_menu
 - action_check_restaurants_location
