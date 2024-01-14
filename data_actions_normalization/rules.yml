@@ -1,9 +1,9 @@
 version: "3.1"
 rules:
-  # - rule: fallback
-  #   steps:
-  #     - intent: nlu_fallback
-  #     - action: utter_default
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
   - rule: greet user
     steps:
       - intent: intent_greet
