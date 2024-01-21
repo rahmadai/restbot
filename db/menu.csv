@@ -1,0 +1,843 @@
+nama_resto,menu,harga,rank_menu
+Mie Sapi Banteng,mie sapi kuah,13000,1
+Mie Sapi Banteng,sup pangsit,13000,2
+Mie Sapi Banteng,kwetiau sapi kuah,14000,3
+Mie Sapi Banteng,mie sapi,12000,4
+Mie Sapi Banteng,es jeruk ,3000,5
+Mie Sapi Banteng,es teh ,3000,6
+Gudeg Sagan,nasi gudeg krecek paha,36500,1
+Gudeg Sagan,nasi gudeg krecek dada,36500,2
+Gudeg Sagan,nasi gudeg krecek tempe,10000,3
+Gudeg Sagan,es teh ,5500,4
+Gudeg Sagan,teh tawar,1500,5
+Gudeg Sagan,es jeruk ,8000,6
+Gudeg Sagan,lemon tea,8000,7
+Gudeg Sagan,es kopi,7000,8
+BRICafe X Couvee,caramel macchiato,25000,1
+BRICafe X Couvee,salted caramel caffe latte,25000,2
+BRICafe X Couvee,vanilla caffe latte,25000,3
+BRICafe X Couvee,vanilla rum caffe latte,25000,4
+BRICafe X Couvee,creme brulee cafe latte,25000,5
+BRICafe X Couvee,hazelnut cafe latte,25000,6
+Fore Coffee - Kaliurang,soy cafe latte,39000,1
+Fore Coffee - Kaliurang,say coconut latte,42000,2
+Fore Coffee - Kaliurang,hanami latte,35000,3
+Fore Coffee - Kaliurang,aren latte ,20000,4
+Fore Coffee - Kaliurang,iced latte,35000,5
+Seven Stones Rainforest Coffee,salted caramel coffee,24000,1
+Seven Stones Rainforest Coffee,palm sugar coffee,25000,2
+Seven Stones Rainforest Coffee,hazelnut latte coffee,25000,3
+Oppio Coffee,oppio hazelnut coffee,30000,1
+Oppio Coffee,oppio caramel coffee,30000,2
+Oppio Coffee,royal red velvet,33600,3
+Oppio Coffee,royal matcha,36000,4
+Oppio Coffee,mix platter,42000,5
+Oppio Coffee,french fries,24000,6
+Rumah Makan Padang Sederhana,nasi ayam pop,26620,1
+Rumah Makan Padang Sederhana,nasi rendang,30250,2
+Rumah Makan Padang Sederhana,nasi dendeng,30250,3
+Rumah Makan Padang Sederhana,nasi paru,26620,4
+Rumah Makan Padang Sederhana,nasi kikil,30250,5
+Rumah Makan Padang Sederhana,nasi cincang,36300,6
+Rumah Makan Padang Sederhana,nasi otak,23100,7
+Rumah Makan Padang Sederhana,nasi ati ampela,21780,8
+Rumah Makan Padang Sederhana,nasi telor balado,12100,9
+Rumah Makan Padang Sederhana,nasi otak,23100,10
+Warung Kopi Klotok,nasi putih,3500,1
+Warung Kopi Klotok,lodeh tempe lombok ijo,6500,2
+Warung Kopi Klotok,lodeh kluwih,6500,3
+Warung Kopi Klotok,lodeh terong,6500,4
+Warung Kopi Klotok,sayur asem ,6500,5
+Warung Kopi Klotok,sambel dadak,500,6
+Warung Kopi Klotok,sego megono,6500,7
+Warung Kopi Klotok,telur krispi,6500,8
+Warung Kopi Klotok,ayam goreng,7500,9
+Warung Kopi Klotok,pindang goreng,3000,10
+Warung Kopi Klotok,kopi klotok,5000,11
+Warung Kopi Klotok,pisang goreng,6500,12
+Warung Kopi Klotok,es teh manis,4500,13
+Warung Kopi Klotok,es jeruk ,4900,14
+warung layar sentuh,green tea ,24000,1
+warung layar sentuh,red velvet ,24000,2
+warung layar sentuh,jus mangga ,18000,3
+warung layar sentuh,jus semangka,16000,4
+warung layar sentuh,lychee tea,18000,5
+warung layar sentuh,jus jambu ,16000,6
+warung layar sentuh,matchafogatto,22000,7
+warung layar sentuh,teh gula batu,16000,8
+warung layar sentuh,banana smoothies,22000,9
+tilasawa,caramel latte,26000,1
+tilasawa,hazelnut latte,26000,2
+tilasawa,flat white,26000,3
+tilasawa,cereal ice cofffee,26000,4
+tilasawa,screwpine coffee ,26000,5
+tilasawa,cascara,23000,6
+tilasawa,manual brew,25000,7
+sushi tei,salmon bo sushi,72000,1
+sushi tei,salmon sushi,27000,2
+sushi tei,miso soup,23000,3
+sushi tei,tempura,18000,4
+sushi tei,fried salmon skin,59000,5
+sushi tei,edamame,25000,6
+sushi tei,chawanmushi,31000,7
+sushi tei,takoyaki,35000,8
+sushi tei,chuka wakame,42000,9
+sushi tei,chuka iidako,59000,10
+sushi tei,sashimi salad,87000,11
+sushi tei,yakiniku salad,68000,12
+sushi tei,salmon zukushi sashimi,174000,13
+sushi tei,green tea (ocha),7000,14
+cinema bakery,almond croissant,20000,1
+cinema bakery,cheese croissant ,12000,2
+cinema bakery,pain au chocolate,13000,3
+cinema bakery,pizza,30000,4
+cinema bakery,french sandwich,40000,5
+cinema bakery,caramel late,40000,6
+cinema bakery,lemon squash ,27000,7
+cinema bakery,chamomile tea,22000,8
+cinema bakery,ice cream (2 scoops),35000,9
+cinema bakery,vanilla milkshake,28000,10
+cinema bakery,cheese banana,11000,11
+chingu cafe,yoo si jin's orignial (soup),79000,1
+chingu cafe,prime mozarella half-chicken,99000,2
+chingu cafe,beef & chicken mozza bbq,89000,3
+chingu cafe,all-in-1 mozza bbq,109000,4
+chingu cafe,classic ramyeon,19900,5
+chingu cafe,mushroom ramyeon,23900,6
+chingu cafe,korean chicken popcorn (spicy sauce),21900,7
+chingu cafe,korean chicken popcorn (sweet sauce),19900,8
+Ayam Pedas Arto Moro,ayam bakar pedas ,18900,1
+Ayam Pedas Arto Moro,ayam bakar manis,18900,2
+Ayam Pedas Arto Moro,paket ayam bakar pedas,26000,3
+Ayam Pedas Arto Moro,sayur asem bandoeng ,4500,4
+Ayam Pedas Arto Moro,nasi sepuasnya ,4500,5
+Ayam Pedas Arto Moro,es teh manis,4500,6
+Ayam Pedas Arto Moro,es jeruk ,6000,7
+Filosofi Kopi Jogja,caffe latte,33000,1
+Filosofi Kopi Jogja,capuccino,33000,2
+Filosofi Kopi Jogja,green tea latte hot,32000,3
+Filosofi Kopi Jogja,green tea latte ice,35000,4
+Filosofi Kopi Jogja,red velvet ice,35000,5
+Filosofi Kopi Jogja,waffle,35000,6
+Filosofi Kopi Jogja,french fries,22000,7
+Tempo Gelato,gelato cone (2 flavors),30000,1
+Tempo Gelato,small cup (2 flavors),25000,2
+Tempo Gelato,medium cup (3 flavors),45000,3
+Tempo Gelato,big cup (4 flavors),70000,4
+Tempo Gelato,x-big (5 flavors),120000,5
+Tempo Gelato Prawirotaman,gelato cone (2 flavors),30000,1
+Tempo Gelato Prawirotaman,small cup (2 flavors),25000,2
+Tempo Gelato Prawirotaman,medium cup (3 flavors),45000,3
+Tempo Gelato Prawirotaman,big cup (4 flavors),70000,4
+Tempo Gelato Prawirotaman,x-big (5 flavors),120000,5
+EL PRIMO SAUSAGE & DAIRY,el primo deli platter,110000,1
+EL PRIMO SAUSAGE & DAIRY,el primo frankfurter sausage,65000,2
+EL PRIMO SAUSAGE & DAIRY,el primo cheese sausage,75000,3
+EL PRIMO SAUSAGE & DAIRY,US Choice Beef  Rib Bone-in 300gr,150000,4
+EL PRIMO SAUSAGE & DAIRY,Salmon steak with fruit salsa,95000,5
+EL PRIMO SAUSAGE & DAIRY,el primo speciale pizza,71000,6
+EL PRIMO SAUSAGE & DAIRY,banana milk,30000,7
+EL PRIMO SAUSAGE & DAIRY,peach ice tea,24000,8
+Giorno's Pizzeria,carnivoro pizza,87000,1
+Giorno's Pizzeria,pizza di burrata,87000,2
+Giorno's Pizzeria,pizza di mare,70000,3
+Giorno's Pizzeria,tiramisu,40000,4
+Giorno's Pizzeria,fettucine di burrata,70000,5
+Giorno's Pizzeria,hazelnut latte,38000,6
+Giorno's Pizzeria,caramel latte,38000,7
+RM Duta Minang,nasi ayam pop,32000,1
+RM Duta Minang,nasi sop buntut,48000,2
+RM Duta Minang,nasi rendang,28500,3
+RM Duta Minang,nasi paru,28500,4
+RM Duta Minang,nasi dendeng,31000,5
+RM Duta Minang,nasi ayam gulai,27500,6
+RM. Duta Minang Gowongan,nasi ayam pop,32000,1
+RM. Duta Minang Gowongan,nasi sop buntut,48000,2
+RM. Duta Minang Gowongan,nasi rendang,28500,3
+RM. Duta Minang Gowongan,nasi paru,28500,4
+RM. Duta Minang Gowongan,nasi dendeng,31000,5
+RM. Duta Minang Gowongan,nasi ayam gulai,27500,6
+Golden Geisha,beef ramen baitan,50000,1
+Golden Geisha,shogun chicken ramen tamtam,45000,2
+Golden Geisha,hosogiri ramen tamtam,55000,3
+Golden Geisha,japanese milk pudding ,20000,4
+Golden Geisha,japanese silk pudding (soya),15000,5
+Golden Geisha,gyoza,40000,6
+Swasana by Temata Yogyakarta,australian tenderloin,255000,1
+Swasana by Temata Yogyakarta,australian rib eye,180000,2
+Swasana by Temata Yogyakarta,asian caesar salad,46000,3
+Swasana by Temata Yogyakarta,thai beef salad,48000,4
+Swasana by Temata Yogyakarta,hainan chicken rice,58000,5
+Swasana by Temata Yogyakarta,matcha strawberry freeze,45000,6
+Susu dan Roti Bakar Om Bob,susu murni coklat,13500,1
+Susu dan Roti Bakar Om Bob,susu murni red velvet ,13500,2
+Susu dan Roti Bakar Om Bob,susu murni mocca,13000,3
+Susu dan Roti Bakar Om Bob,roti bakar meses keju,11500,4
+Susu dan Roti Bakar Om Bob,es buah,12000,5
+Susu dan Roti Bakar Om Bob,jagung bakar pedas manis,5500,6
+Susu dan Roti Bakar Om Bob,roti bakar meses,7000,7
+Susu dan Roti Bakar Om Bob,mie telur kornet keju,20000,8
+Susu dan Roti Bakar Om Bob Nologaten,susu murni coklat,13500,1
+Susu dan Roti Bakar Om Bob Nologaten,susu murni red velvet ,13500,2
+Susu dan Roti Bakar Om Bob Nologaten,susu murni mocca,13000,3
+Susu dan Roti Bakar Om Bob Nologaten,roti bakar meses keju,11500,4
+Susu dan Roti Bakar Om Bob Nologaten,es buah,12000,5
+Susu dan Roti Bakar Om Bob Nologaten,jagung bakar pedas manis,5500,6
+Susu dan Roti Bakar Om Bob Nologaten,roti bakar meses,7000,7
+Susu dan Roti Bakar Om Bob Nologaten,mie telur kornet keju,20000,8
+Susu dan Roti Bakar Om Bob Maguwo,susu murni coklat,13500,1
+Susu dan Roti Bakar Om Bob Maguwo,susu murni red velvet ,13500,2
+Susu dan Roti Bakar Om Bob Maguwo,susu murni mocca,13000,3
+Susu dan Roti Bakar Om Bob Maguwo,roti bakar meses keju,11500,4
+Susu dan Roti Bakar Om Bob Maguwo,es buah,12000,5
+Susu dan Roti Bakar Om Bob Maguwo,jagung bakar pedas manis,5500,6
+Susu dan Roti Bakar Om Bob Maguwo,roti bakar meses,7000,7
+Susu dan Roti Bakar Om Bob Maguwo,mie telur kornet keju,20000,8
+Susu dan Roti Bakar Om Bob Godean,susu murni coklat,13500,1
+Susu dan Roti Bakar Om Bob Godean,susu murni red velvet ,13500,2
+Susu dan Roti Bakar Om Bob Godean,susu murni mocca,13000,3
+Susu dan Roti Bakar Om Bob Godean,roti bakar meses keju,11500,4
+Susu dan Roti Bakar Om Bob Godean,es buah,12000,5
+Susu dan Roti Bakar Om Bob Godean,jagung bakar pedas manis,5500,6
+Susu dan Roti Bakar Om Bob Godean,roti bakar meses,7000,7
+Susu dan Roti Bakar Om Bob Godean,mie telur kornet keju,20000,8
+Nasi Goreng Sapi Padmanaba,nasi goreng porsi biasa,20000,1
+Nasi Goreng Sapi Padmanaba,nasi goreng porsi jumbo,21000,2
+Nasi Goreng Sapi Padmanaba,es teh,2000,3
+Nasi Goreng Sapi Padmanaba,teh panas,2000,4
+Nasi Goreng Sapi Kantor Notaris,nasi goreng porsi biasa,18000,1
+Nasi Goreng Sapi Kantor Notaris,nasi goreng porsi jumbo,20000,2
+Nasi Goreng Sapi Kantor Notaris,es teh,2000,3
+Nasi Goreng Sapi Kantor Notaris,teh panas,2000,4
+Oharang BBQ Jogja,chicken dinner,79900,1
+Oharang BBQ Jogja,premium ,99900,2
+Oharang BBQ Jogja,premium plus,129900,3
+Oharang BBQ Jogja,supreme,159900,4
+Seorae,regular,198000,1
+Seorae,signature,368000,2
+Seorae,premium,268000,3
+Gyu-Kaku Japanese BBQ,standard buffet,238000,1
+Gyu-Kaku Japanese BBQ,premium buffet,398000,2
+Gyu-Kaku Japanese BBQ,gk yakiniku set,89000,3
+Gyu-Kaku Japanese BBQ,prime yakiniku set,189000,4
+Kakkoii Japanese BBQ & Shabu-Shabu,regular (90 minutes),119000,1
+Kakkoii Japanese BBQ & Shabu-Shabu,regular (150 minutes) ,145000,2
+Kakkoii Japanese BBQ & Shabu-Shabu,weekend (150 minutes),165000,3
+Kakkoii Japanese BBQ & Shabu-Shabu,beef premium (90 minutes),210000,4
+Kakkoii Japanese BBQ & Shabu-Shabu,beef premium (150 minutes),239000,5
+Kakkoii Japanese BBQ & Shabu-Shabu,beef premium (weekend),249000,6
+Shabu AUCE,adult ,120000,1
+Shabu AUCE,kids,60000,2
+Milk by Artemy,milk curry beef katsu,40000,1
+Milk by Artemy,aglio olio beef,37000,2
+Milk by Artemy,fish and chips,50000,3
+Milk by Artemy,ice cream (1 scoop),22000,4
+Milk by Artemy,ice cream (2 scoops),27000,5
+Milk by Artemy,ice cream (3 scoops),32000,6
+Sakapatat Brew House & Resto,virgin mojito classic,23000,1
+Sakapatat Brew House & Resto,virgin colada,25000,2
+Sakapatat Brew House & Resto,pink dragon,35000,3
+Sakapatat Brew House & Resto,house red wine,69000,4
+Sakapatat Brew House & Resto,bintang small,29000,5
+Izakaya,tori nanban set,80000,1
+Izakaya,soba gozen set,70000,2
+Izakaya,tendon set,87000,3
+Izakaya,sushi gozen set ,165000,4
+Izakaya,sake no sumiso ae,50000,5
+Ramenhead,beef yaki ramen,43000,1
+Ramenhead,chicken yaki udon,40000,2
+Ramenhead,gyudon rice bowl,30000,3
+Ramenhead,niwatori no hone,25000,4
+Ramenhead,katsu yaki ramen,40000,5
+BAKI by D'Monaco,australian beef tenderloin,170000,1
+BAKI by D'Monaco,beef tenderloin steak,120000,2
+BAKI by D'Monaco,bbq beef brisket,120000,3
+BAKI by D'Monaco,salmon steak,150000,4
+BAKI by D'Monaco,rustica bianca pizza,80000,5
+Kanari Society & Space,hanalulu,30000,1
+Kanari Society & Space,eleanor ,30000,2
+Kanari Society & Space,kanari delusional,30000,3
+Kanari Society & Space,beef teriyaki,37000,4
+Kanari Society & Space,dori sambal matah,35000,5
+TRILOGI COFFEE,kopi susu gula aren ,30000,1
+TRILOGI COFFEE,palm sugar frappe,35000,2
+TRILOGI COFFEE,oreo vanilla frappe,35000,3
+TRILOGI COFFEE,nasi campur trilogi ,68000,4
+TRILOGI COFFEE,chicken cordon bleu ,52000,5
+Dummin Coffee & Space UKDW,roasted barley ,23000,1
+Dummin Coffee & Space UKDW,cinnamon ,25000,2
+Dummin Coffee & Space UKDW,regal ,25000,3
+Dummin Coffee & Space UKDW,cafe latte,20000,4
+Dummin Coffee & Space UKDW,salted egg rice bowl,28000,5
+Enam Langit by Plataran,mixed grill seafood,265000,1
+Enam Langit by Plataran,nasi goreng kecombrang,100000,2
+Enam Langit by Plataran,sop buntut,150000,3
+Enam Langit by Plataran,menoreh garden,75000,4
+Enam Langit by Plataran,pandan sari,75000,5
+Mie Ayam Bandung 59,nasi campur halal,29000,1
+Mie Ayam Bandung 60,bakso chuan ki,17000,2
+Mie Ayam Bandung 61,pangsit sechuan,17000,3
+Mie Ayam Bandung 62,yammie sechuan manis,20000,4
+Mie Ayam Bandung 63,yammie manis pedas,20000,5
+28 Coffee Seturan,butterscotch coffee,24000,1
+29 Coffee Seturan,hazelnut latte,24000,2
+30 Coffee Seturan,regal latte,25000,3
+31 Coffee Seturan,red velvet,23000,4
+32 Coffee Seturan,matcha strawberry freeze,23000,5
+Chunda Resto,oxtail soup,125000,1
+Chunda Resto,chunda fried rice,80000,2
+Chunda Resto,chunda beef skewer satay,145000,3
+Chunda Resto,meat lover pizza,92000,4
+Chunda Resto,janti colada,35000,5
+Lalawuh Sunda,nasi liwet komplit,35000,1
+Lalawuh Sunda,nasi merah komplik,30000,2
+Lalawuh Sunda,nasi goreng ikan asin,25000,3
+Lalawuh Sunda,nila goreng crispy,25000,4
+Lalawuh Sunda,sayur lodeh,10000,5
+R&B Grill Yogyakarta,lamb chop,111000,1
+R&B Grill Yogyakarta,US Meat package,250000,2
+R&B Grill Yogyakarta,norwegian salmon,113000,3
+R&B Grill Yogyakarta,caesar salad,40000,4
+R&B Grill Yogyakarta,wagyu beef burger,88000,5
+R&B Grill Jogja - 2nd Building,lamb chop,111000,1
+R&B Grill Jogja - 2nd Building,US Meat package,250000,2
+R&B Grill Jogja - 2nd Building,norwegian salmon,113000,3
+R&B Grill Jogja - 2nd Building,caesar salad,40000,4
+R&B Grill Jogja - 2nd Building,wagyu beef burger,88000,5
+Metropole Coffee,fish and chips,60000,1
+Metropole Coffee,beef goulash,45000,2
+Metropole Coffee,creamy lemon fetuccine,45000,3
+Metropole Coffee,caramel macchiato,37000,4
+Metropole Coffee,black summer,35000,5
+Mediterranea Restaurant by Kamil,lamb shank tajine with prunes,150000,1
+Mediterranea Restaurant by Kamil,don camilo pizza,65000,2
+Mediterranea Restaurant by Kamil,creamy spinaches,33000,3
+Mediterranea Restaurant by Kamil,chocolate vienna,37000,4
+Mediterranea Restaurant by Kamil,affogato,37000,5
+Nanamia Pizzeria,lasagne classica,42000,1
+Nanamia Pizzeria,bianca pizza,63000,2
+Nanamia Pizzeria,peperoni pizza,70000,3
+Nanamia Pizzeria,mango lassy,28000,4
+Nanamia Pizzeria,coffee milkshake,29000,5
+Nanamia Pizzeria Jogja (North Area),lasagne classica,42000,1
+Nanamia Pizzeria Jogja (North Area),bianca pizza,63000,2
+Nanamia Pizzeria Jogja (North Area),peperoni pizza,70000,3
+Nanamia Pizzeria Jogja (North Area),mango lassy,28000,4
+Nanamia Pizzeria Jogja (North Area),coffee milkshake,29000,5
+Warung Burjo DM,indomie rebus tante (tanpa telur),5500,1
+Warung Burjo DM,mie dokdok + nasi,10000,2
+Warung Burjo DM,magelangan,10000,3
+Warung Burjo DM,nasi orak arik,8000,4
+Warung Burjo DM,kopi susu,5000,5
+Warung Burjo Duta Rasa Grup,indomie rebus tante (tanpa telur),5500,1
+Warung Burjo Duta Rasa Grup,mie dokdok + nasi,10000,2
+Warung Burjo Duta Rasa Grup,magelangan,10000,3
+Warung Burjo Duta Rasa Grup,nasi orak arik,8000,4
+Warung Burjo Duta Rasa Grup,kopi susu,5000,5
+Burjo Melati,indomie rebus tante (tanpa telur),5500,1
+Burjo Melati,mie dokdok + nasi,10000,2
+Burjo Melati,magelangan,10000,3
+Burjo Melati,nasi orak arik,8000,4
+Burjo Melati,kopi susu,5000,5
+Warung Burjo Mirasa,indomie rebus tante (tanpa telur),5500,1
+Warung Burjo Mirasa,mie dokdok + nasi,10000,2
+Warung Burjo Mirasa,magelangan,10000,3
+Warung Burjo Mirasa,nasi orak arik,8000,4
+Warung Burjo Mirasa,kopi susu,5000,5
+Burjo Murni Monjali 54,indomie rebus tante (tanpa telur),5500,1
+Burjo Murni Monjali 55,mie dokdok + nasi,10000,2
+Burjo Murni Monjali 56,magelangan,10000,3
+Burjo Murni Monjali 57,nasi orak arik,8000,4
+Burjo Murni Monjali 58,kopi susu,5000,5
+Burjo Murno,indomie rebus tante (tanpa telur),5500,1
+Burjo Murno,mie dokdok + nasi,10000,2
+Burjo Murno,magelangan,10000,3
+Burjo Murno,nasi orak arik,8000,4
+Burjo Murno,kopi susu,5000,5
+Burjo Andeska Kranggan,indomie rebus tante (tanpa telur),5500,1
+Burjo Andeska Kranggan,mie dokdok + nasi,10000,2
+Burjo Andeska Kranggan,magelangan,10000,3
+Burjo Andeska Kranggan,nasi orak arik,8000,4
+Burjo Andeska Kranggan,kopi susu,5000,5
+Burjo PS,indomie rebus tante (tanpa telur),5500,1
+Burjo PS,mie dokdok + nasi,10000,2
+Burjo PS,magelangan,10000,3
+Burjo PS,nasi orak arik,8000,4
+Burjo PS,kopi susu,5000,5
+RM Padang SAKATO,nasi rendang,13000,1
+RM Padang SAKATO,nasi cincang,12000,2
+RM Padang SAKATO,nasi kikil ,12000,3
+RM Padang SAKATO,nasi ayam bakar,12000,4
+RM Padang SAKATO,es eh,3000,5
+Rumah Makan Padang Murah,nasi rendang,13000,1
+Rumah Makan Padang Murah,nasi cincang,12000,2
+Rumah Makan Padang Murah,nasi kikil ,12000,3
+Rumah Makan Padang Murah,nasi ayam bakar,12000,4
+Rumah Makan Padang Murah,es eh,3000,5
+RM Padang Tanjuang,nasi rendang,13000,1
+RM Padang Tanjuang,nasi cincang,12000,2
+RM Padang Tanjuang,nasi kikil ,12000,3
+RM Padang Tanjuang,nasi ayam bakar,12000,4
+RM Padang Tanjuang,es eh,3000,5
+Rumah Makan Diploma Minang,nasi rendang,13000,1
+Rumah Makan Diploma Minang,nasi cincang,12000,2
+Rumah Makan Diploma Minang,nasi kikil ,12000,3
+Rumah Makan Diploma Minang,nasi ayam bakar,12000,4
+Rumah Makan Diploma Minang,es eh,3000,5
+RM Duta Minang,nasi ayam pop,32000,1
+RM Duta Minang,nasi sop buntut,48000,2
+RM Duta Minang,nasi rendang,28500,3
+RM Duta Minang,nasi paru,28500,4
+RM Duta Minang,nasi dendeng,31000,5
+RM Duta Minang,nasi ayam gulai,27500,6
+warung makan padang meriah,nasi telur,8000,1
+warung makan padang meriah,nasi rendang,15000,2
+warung makan padang meriah,nasi kikil ,12000,3
+warung makan padang meriah,nasi ayam,12000,4
+warung makan padang meriah,es teh,3000,5
+RM Padang Lima Sekawan,nasi rendang ayam,22000,1
+RM Padang Lima Sekawan,nasi rendang daging,22000,2
+RM Padang Lima Sekawan,nasi ayam balado,22000,3
+RM Padang Lima Sekawan,nasi gembung goreng,20000,4
+RM Padang Lima Sekawan,es teh,4500,5
+Warung Makan Padang Sendowo,nasi rendang,15000,1
+Warung Makan Padang Sendowo,nasi ayam bakar,13000,2
+Warung Makan Padang Sendowo,nasi babat,13000,3
+Warung Makan Padang Sendowo,nasi nila,14000,4
+Warung Makan Padang Sendowo,es teh,2000,5
+Rumah Makan Padang Simpang Raya Tugu,sate lidah,18000,1
+Rumah Makan Padang Simpang Raya Tugu,dendeng balado,15000,2
+Rumah Makan Padang Simpang Raya Tugu,ikan panggang,18000,3
+Rumah Makan Padang Simpang Raya Tugu,teh talua,12000,4
+Rumah Makan Padang Simpang Raya Tugu,kopi talua,18000,5
+McDonald's Jakal,paket panas spesial,45000,1
+McDonald's Jakal,panas 1,35909,2
+McDonald's Jakal,panas 2 + rice,53636,3
+McDonald's Jakal,paket double cheeseburger,42727,4
+McDonald's Jakal,mcflurry,15909,5
+McDonald's Sudirman Yogyakarta,paket panas spesial,45000,1
+McDonald's Sudirman Yogyakarta,panas 1,35909,2
+McDonald's Sudirman Yogyakarta,panas 2 + rice,53636,3
+McDonald's Sudirman Yogyakarta,paket double cheeseburger,42727,4
+McDonald's Sudirman Yogyakarta,mcflurry,15909,5
+McDonald's Jombor,paket panas spesial,45000,1
+McDonald's Jombor,panas 1,35909,2
+McDonald's Jombor,panas 2 + rice,53636,3
+McDonald's Jombor,paket double cheeseburger,42727,4
+McDonald's Jombor,mcflurry,15909,5
+McDonald's Plaza Malioboro,paket panas spesial,45000,1
+McDonald's Plaza Malioboro,panas 1,35909,2
+McDonald's Plaza Malioboro,panas 2 + rice,53636,3
+McDonald's Plaza Malioboro,paket double cheeseburger,42727,4
+McDonald's Plaza Malioboro,mcflurry,15909,5
+McDonald's Sultan Agung,paket panas spesial,45000,1
+McDonald's Sultan Agung,panas 1,35909,2
+McDonald's Sultan Agung,panas 2 + rice,53636,3
+McDonald's Sultan Agung,paket double cheeseburger,42727,4
+McDonald's Sultan Agung,mcflurry,15909,5
+McDonald's Ambarukmo,paket panas spesial,45000,1
+McDonald's Ambarukmo,panas 1,35909,2
+McDonald's Ambarukmo,panas 2 + rice,53636,3
+McDonald's Ambarukmo,paket double cheeseburger,42727,4
+McDonald's Ambarukmo,mcflurry,15909,5
+McDonald's Ice Cream Galeria Mall,mcflurry oreo,15909,1
+McDonald's Ice Cream Galeria Mall,mcflurry tehbotol,15909,2
+McDonald's Ice Cream Galeria Mall,mcflurry tehbotol kue jadul,15909,3
+McDonald's Ice Cream Galeria Mall,iced coffee matcha jelly float,25000,4
+McDonald's Ice Cream Galeria Mall,ice cream cone,8182,5
+McDonald's Ambarrukmo Plaza,paket panas spesial,45000,1
+McDonald's Ambarrukmo Plaza,panas 1,35909,2
+McDonald's Ambarrukmo Plaza,panas 2 + rice,53636,3
+McDonald's Ambarrukmo Plaza,paket double cheeseburger,42727,4
+McDonald's Ambarrukmo Plaza,mcflurry,15909,5
+McDonald's Sleman City Hall,paket panas spesial,45000,1
+McDonald's Sleman City Hall,panas 1,35909,2
+McDonald's Sleman City Hall,panas 2 + rice,53636,3
+McDonald's Sleman City Hall,paket double cheeseburger,42727,4
+McDonald's Sleman City Hall,mcflurry,15909,5
+Pizza Hut Jakal,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Jakal,meat monsta pan pizza regular,99000,2
+Pizza Hut Jakal,super supreme cheesy bites personal,61000,3
+Pizza Hut Jakal,big box,210000,4
+Pizza Hut Jakal,green tea yakult,28182,5
+Pizza Hut Jogja City Mall,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Jogja City Mall,meat monsta pan pizza regular,99000,2
+Pizza Hut Jogja City Mall,super supreme cheesy bites personal,61000,3
+Pizza Hut Jogja City Mall,big box,210000,4
+Pizza Hut Jogja City Mall,green tea yakult,28182,5
+Pizza Hut Sudirman,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Sudirman,meat monsta pan pizza regular,99000,2
+Pizza Hut Sudirman,super supreme cheesy bites personal,61000,3
+Pizza Hut Sudirman,big box,210000,4
+Pizza Hut Sudirman,green tea yakult,28182,5
+Pizza Hut Delivery - PHD Godean,qu4rtza free beef fetuccine,149001,1
+Pizza Hut Delivery - PHD Godean,double box deluxe free beef fetuccine,132000,2
+Pizza Hut Delivery - PHD Godean,big box signature free beef fetuccine,176000,3
+Pizza Hut Delivery - PHD Godean,mybox xl value ,55000,4
+Pizza Hut Delivery - PHD Godean,2 my box value ,45000,5
+Pizza Hut Delivery - PHD Colombo,qu4rtza free beef fetuccine,149001,1
+Pizza Hut Delivery - PHD Colombo,double box deluxe free beef fetuccine,132000,2
+Pizza Hut Delivery - PHD Colombo,big box signature free beef fetuccine,176000,3
+Pizza Hut Delivery - PHD Colombo,mybox xl value ,55000,4
+Pizza Hut Delivery - PHD Colombo,2 my box value ,45000,5
+Pizza Hut Sultan Agung,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Sultan Agung,meat monsta pan pizza regular,99000,2
+Pizza Hut Sultan Agung,super supreme cheesy bites personal,61000,3
+Pizza Hut Sultan Agung,big box,210000,4
+Pizza Hut Sultan Agung,green tea yakult,28182,5
+Pizza Hut Ambarukmo,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Ambarukmo,meat monsta pan pizza regular,99000,2
+Pizza Hut Ambarukmo,super supreme cheesy bites personal,61000,3
+Pizza Hut Ambarukmo,big box,210000,4
+Pizza Hut Ambarukmo,green tea yakult,28182,5
+Pizza Hut Delivery - PHD Seturan,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Delivery - PHD Seturan,meat monsta pan pizza regular,99000,2
+Pizza Hut Delivery - PHD Seturan,super supreme cheesy bites personal,61000,3
+Pizza Hut Delivery - PHD Seturan,big box,210000,4
+Pizza Hut Delivery - PHD Seturan,green tea yakult,28182,5
+Pizza Hut Delivery - PHD Taman Siswa,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Delivery - PHD Taman Siswa,meat monsta pan pizza regular,99000,2
+Pizza Hut Delivery - PHD Taman Siswa,super supreme cheesy bites personal,61000,3
+Pizza Hut Delivery - PHD Taman Siswa,big box,210000,4
+Pizza Hut Delivery - PHD Taman Siswa,green tea yakult,28182,5
+Pizza Hut Delivery - PHD Jakal,frankfurter bbq stuffed crust large,158000,1
+Pizza Hut Delivery - PHD Jakal,meat monsta pan pizza regular,99000,2
+Pizza Hut Delivery - PHD Jakal,super supreme cheesy bites personal,61000,3
+Pizza Hut Delivery - PHD Jakal,big box,210000,4
+Pizza Hut Delivery - PHD Jakal,green tea yakult,28182,5
+Ayam Goreng Suharti - Laksda Adisucipto,ayam goreng utuh tanpa lalap,141500,1
+Ayam Goreng Suharti - Laksda Adisucipto,ayam goreng separo ,73600,2
+Ayam Goreng Suharti - Laksda Adisucipto,nasi putih,9462,3
+Ayam Goreng Suharti - Laksda Adisucipto,cah kangkung,39032,4
+Ayam Goreng Suharti - Laksda Adisucipto,sambal ayam ,7097,5
+Ayam Goreng Ny. Suharti,ayam goreng utuh tanpa lalap,141500,1
+Ayam Goreng Ny. Suharti,ayam goreng separo ,73600,2
+Ayam Goreng Ny. Suharti,nasi putih,9462,3
+Ayam Goreng Ny. Suharti,cah kangkung,39032,4
+Ayam Goreng Ny. Suharti,sambal ayam ,7097,5
+Petit Paris Boulangerie and Bistro,choco croissant,27500,1
+Petit Paris Boulangerie and Bistro,croissant smoke beef & cheese ,31250,2
+Petit Paris Boulangerie and Bistro,danish nutella,36250,3
+Petit Paris Boulangerie and Bistro,almond croissant,31250,4
+Petit Paris Boulangerie and Bistro,caramel coffee latte iced ,27500,5
+ChezMoi Patissier & Chocolatier Sagan,browines premium,60000,1
+ChezMoi Patissier & Chocolatier Sagan,muffin fruit,50400,2
+ChezMoi Patissier & Chocolatier Sagan,cream cheese,13800,3
+ChezMoi Patissier & Chocolatier Sagan,spicy floss large,12000,4
+ChezMoi Patissier & Chocolatier Sagan,minimix,31200,5
+Kobayashi Pattiserie & Boulangerie,cheese banana cake,16300,1
+Kobayashi Pattiserie & Boulangerie,choco banana cake,13800,2
+Kobayashi Pattiserie & Boulangerie,lapis special keju,68800,3
+Kobayashi Pattiserie & Boulangerie,cheese / choco / double roll,18800,4
+Kobayashi Pattiserie & Boulangerie,lapisa surabaya,23800,5
+Petit Paris Boulangerie Jakal,choco croissant,27500,1
+Petit Paris Boulangerie Jakal,croissant smoke beef & cheese ,31250,2
+Petit Paris Boulangerie Jakal,danish nutella,36250,3
+Petit Paris Boulangerie Jakal,almond croissant,31250,4
+Petit Paris Boulangerie Jakal,caramel coffee latte iced ,27500,5
+ChezMoi Patissier & Chocolatier,browines premium,60000,1
+ChezMoi Patissier & Chocolatier,muffin fruit,50400,2
+ChezMoi Patissier & Chocolatier,cream cheese,13800,3
+ChezMoi Patissier & Chocolatier,spicy floss large,12000,4
+ChezMoi Patissier & Chocolatier,minimix,31200,5
+Cinema Bakery,mini bear paw,10800,1
+Cinema Bakery,supreme,36300,2
+Cinema Bakery,mini cheese croissant,10800,3
+Cinema Bakery,mini pain au choco,10800,4
+Cinema Bakery,pain au choco,20200,5
+Holland Bakery,pisang bollen box,57200,1
+Holland Bakery,lemper ayam,10300,2
+Holland Bakery,chiffon chocolate chips,84700,3
+Holland Bakery,kelapa pandan pudding log ,30100,4
+Holland Bakery,chiffon cake pandan,74800,5
+FAVOR Patisserie Pizzeria & Eatery,tiramisu mille crepes,24000,1
+FAVOR Patisserie Pizzeria & Eatery,pain au chocolate,27500,2
+FAVOR Patisserie Pizzeria & Eatery,plain butter croissant,25000,3
+FAVOR Patisserie Pizzeria & Eatery,chocolate croissant,31500,4
+FAVOR Patisserie Pizzeria & Eatery,korean garlic bread,13000,5
+Bloomery Cake & Patisserie Jakal,bundling 5,168000,1
+Bloomery Cake & Patisserie Jakal,whole mix all varian,390000,2
+Bloomery Cake & Patisserie Jakal,slice matcha mille crepe,36000,3
+Bloomery Cake & Patisserie Jakal,slice tiramisu mille crepe,37000,4
+Bloomery Cake & Patisserie Jakal,strawberry mille crepes,37000,5
+The Harvest Cakes,triple chocolate 10x20,258500,1
+The Harvest Cakes,chocolate tiramisu 20x10,258500,2
+The Harvest Cakes,mix twin signature 20x10,269500,3
+The Harvest Cakes,chocomaltine cheesecake 20x10,269500,4
+The Harvest Cakes,strawberry cheesecake 20x10,346500,5
+Rumah Makan RATA RATA Monjali,ayam kecap,9100,1
+Rumah Makan RATA RATA Monjali,perkedel,2500,2
+Rumah Makan RATA RATA Monjali,nasi putih,3750,3
+Rumah Makan RATA RATA Monjali,oseng jagung muda,2600,4
+Rumah Makan RATA RATA Monjali,es jeruk,3900,5
+Rumah Makan Rata-rata Kinanti,ayam kecap,9100,1
+Rumah Makan Rata-rata Kinanti,perkedel,2500,2
+Rumah Makan Rata-rata Kinanti,nasi putih,3750,3
+Rumah Makan Rata-rata Kinanti,oseng jagung muda,2600,4
+Rumah Makan Rata-rata Kinanti,es jeruk,3900,5
+Rumah Makan Rata Rata Jl. Kabupaten,ayam kecap,9100,1
+Rumah Makan Rata Rata Jl. Kabupaten,perkedel,2500,2
+Rumah Makan Rata Rata Jl. Kabupaten,nasi putih,3750,3
+Rumah Makan Rata Rata Jl. Kabupaten,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Jl. Kabupaten,es jeruk,3900,5
+Rumah Makan Rata Rata Karanggayam,ayam kecap,9100,1
+Rumah Makan Rata Rata Karanggayam,perkedel,2500,2
+Rumah Makan Rata Rata Karanggayam,nasi putih,3750,3
+Rumah Makan Rata Rata Karanggayam,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Karanggayam,es jeruk,3900,5
+Rumah Makan Rata Rata Seturan,ayam kecap,9100,1
+Rumah Makan Rata Rata Seturan,perkedel,2500,2
+Rumah Makan Rata Rata Seturan,nasi putih,3750,3
+Rumah Makan Rata Rata Seturan,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Seturan,es jeruk,3900,5
+Rumah Makan Rata Rata Kentungan,ayam kecap,9100,1
+Rumah Makan Rata Rata Kentungan,perkedel,2500,2
+Rumah Makan Rata Rata Kentungan,nasi putih,3750,3
+Rumah Makan Rata Rata Kentungan,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Kentungan,es jeruk,3900,5
+Rumah Makan Rata Rata Mrican,ayam kecap,9100,1
+Rumah Makan Rata Rata Mrican,perkedel,2500,2
+Rumah Makan Rata Rata Mrican,nasi putih,3750,3
+Rumah Makan Rata Rata Mrican,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Mrican,es jeruk,3900,5
+Rumah Makan Rata Rata Kaliurang Km 8,ayam kecap,9100,1
+Rumah Makan Rata Rata Kaliurang Km 9,perkedel,2500,2
+Rumah Makan Rata Rata Kaliurang Km 10,nasi putih,3750,3
+Rumah Makan Rata Rata Kaliurang Km 11,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Kaliurang Km 12,es jeruk,3900,5
+Rumah Makan Rata Rata Condong Catur,ayam kecap,9100,1
+Rumah Makan Rata Rata Condong Catur,perkedel,2500,2
+Rumah Makan Rata Rata Condong Catur,nasi putih,3750,3
+Rumah Makan Rata Rata Condong Catur,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Condong Catur,es jeruk,3900,5
+Rumah Makan Rata Rata Palagan,ayam kecap,9100,1
+Rumah Makan Rata Rata Palagan,perkedel,2500,2
+Rumah Makan Rata Rata Palagan,nasi putih,3750,3
+Rumah Makan Rata Rata Palagan,oseng jagung muda,2600,4
+Rumah Makan Rata Rata Palagan,es jeruk,3900,5
+Fruktosa Juicebar,avocado single blend,33000,1
+Fruktosa Juicebar,mango single blend,28000,2
+Fruktosa Juicebar,sedona sunset,30000,3
+Fruktosa Juicebar,creamy berries,32000,4
+Fruktosa Juicebar,coso fun,30000,5
+Jooster (Juice Bar),jus alpukat strawberry,14000,1
+Jooster (Juice Bar),jus apel mangga,15000,2
+Jooster (Juice Bar),jus pisang strawberry,13000,3
+Jooster (Juice Bar),jus pisang oreo ,12000,4
+Jooster (Juice Bar),jus nanas mangga,13000,5
+Akkar Juice Bar Moses,plant bae coldpressed juices,35000,1
+Akkar Juice Bar Moses,hot/ice choco almond coldpressed juices,30000,2
+Akkar Juice Bar Moses,berry boost smoothie,38000,3
+Akkar Juice Bar Moses,salad roll (6pcs),35000,4
+Akkar Juice Bar Moses,smoked chicken salad bowl,40000,5
+Akkar Juice Bar Tugu,plant bae coldpressed juices,35000,1
+Akkar Juice Bar Tugu,hot/ice choco almond coldpressed juices,30000,2
+Akkar Juice Bar Tugu,berry boost smoothie,38000,3
+Akkar Juice Bar Tugu,salad roll (6pcs),35000,4
+Akkar Juice Bar Tugu,smoked chicken salad bowl,40000,5
+Jus Flamboyan,jus mangga,10000,1
+Jus Flamboyan,jus alpukat,10000,2
+Jus Flamboyan,jus melon,8000,3
+Jus Flamboyan,jus jeruk,5000,4
+Jus Flamboyan,jus jambu,8000,5
+Garden Juice,jus mangga,10000,1
+Garden Juice,jus alpukat,10000,2
+Garden Juice,jus melon,8000,3
+Garden Juice,jus jeruk,5000,4
+Garden Juice,jus jambu,8000,5
+Master Juice,jus melon,8000,1
+Master Juice,jus mangga,12000,2
+Master Juice,jus durian,10000,3
+Master Juice,jus pisang,9000,4
+Master Juice,salad buah 400ml,15000,5
+Master Juice,sop buah biasa,10000,6
+Tebu Express,tebu original small,6000,1
+Tebu Express,tebu original large ,12000,2
+Tebu Express,lemonade yakult series,18000,3
+Tebu Express,berry blast yakult series,18000,4
+Tebu Express,chocolate specialty series,20000,5
+Nolda Pocha Jogja,kimchi mandu,40000,1
+Nolda Pocha Jogja,korean chicken feet,59000,2
+Nolda Pocha Jogja,kimchi,5000,3
+Nolda Pocha Jogja,sundubu jjigae,26000,4
+Nolda Pocha Jogja,fish cake soup,35000,5
+WANAWATU,salmon wellingtone,189000,1
+WANAWATU,rib on the hill,179000,2
+WANAWATU,sunrise on the hill,40000,3
+WANAWATU,wanawatu breeze,35000,4
+WANAWATU,jonggrang sparkling ginger,35000,5
+Suwatu By Mil & Bay,sojiwan package,150000,1
+Suwatu By Mil & Bay,prambanan package,200000,2
+Suwatu By Mil & Bay,orange fruit,39000,3
+Suwatu By Mil & Bay,choco hazelnut,39000,4
+Suwatu By Mil & Bay,green tea,39000,5
+ABHAYAGIRI - Venue and Dining,curry fried rice,55000,1
+ABHAYAGIRI - Venue and Dining,pisang goreng,45000,2
+ABHAYAGIRI - Venue and Dining,australian sirloin 200gr,215000,3
+ABHAYAGIRI - Venue and Dining,kambing rica jogjakarta,110000,4
+ABHAYAGIRI - Venue and Dining,sereh blekuthuk,49000,5
+Osea Resto and Bar Jogja,penne carbonara,80000,1
+Osea Resto and Bar Jogja,beef ala oriental,70000,2
+Osea Resto and Bar Jogja,thai mango fiesta,40000,3
+Osea Resto and Bar Jogja,kimchi quesadillas ,65000,4
+Osea Resto and Bar Jogja,osea secret,30000,5
+Candhari Heaven,caesar salad,65000,1
+Candhari Heaven,nasi goreng iga bakar prambanan,70000,2
+Candhari Heaven,oxtail ribs soup,85000,3
+Candhari Heaven,fish and chips,60000,4
+Candhari Heaven,dragonfizz tea,35000,5
+Gudeg Yu Narni Beran,nasi gudeg krecek telur,15000,1
+Gudeg Yu Narni Beran,nasi gudeg krecek paha,26000,2
+Gudeg Yu Narni Beran,nasi gudeg krecek + suwir,25000,3
+Gudeg Yu Narni Beran,nasi gudeg krecek paha + telur,32000,4
+Gudeg Yu Narni Beran,nasi gudeg krecek ati ampela + telur,28000,5
+Gudeg Bu Hj. Amad,nasi gudeg krecek telur,20500,1
+Gudeg Bu Hj. Amad,nasi gudeg krecek telur tahu,24000,2
+Gudeg Bu Hj. Amad,nasi gudeg krecek paha,35000,3
+Gudeg Bu Hj. Amad,nasi gudeg krecek ayam suwir telur,34000,4
+Gudeg Bu Hj. Amad,nasi gudeg krecek ati ampela,35000,5
+Gudeg Bu Djuminten,nasi gudeg telur,18000,1
+Gudeg Bu Djuminten,nasi gudeg ati ampela,25000,2
+Gudeg Bu Djuminten,nasi gudeg suwiran,25000,3
+Gudeg Bu Djuminten,nasi gudeg suwiran + telur,30000,4
+Gudeg Bu Djuminten,1 porsi gudeg + areh,25000,5
+Gudeg Yu Narni Tugu,nasi gudeg krecek telur,15000,1
+Gudeg Yu Narni Tugu,nasi gudeg krecek paha,26000,2
+Gudeg Yu Narni Tugu,nasi gudeg krecek + suwir,25000,3
+Gudeg Yu Narni Tugu,nasi gudeg krecek paha + telur,32000,4
+Gudeg Yu Narni Tugu,nasi gudeg krecek ati ampela + telur,28000,5
+Gudeg ayu jogja mulungan,nasi gudeg krecek telur,15000,1
+Gudeg ayu jogja mulungan,nasi gudeg krecek paha,26000,2
+Gudeg ayu jogja mulungan,nasi gudeg krecek + suwir,25000,3
+Gudeg ayu jogja mulungan,nasi gudeg krecek paha + telur,32000,4
+Gudeg ayu jogja mulungan,nasi gudeg krecek ati ampela + telur,28000,5
+Gudeg Bu Cip Jakal,nasi gudeg krecek telur,15000,1
+Gudeg Bu Cip Jakal,nasi gudeg krecek paha,26000,2
+Gudeg Bu Cip Jakal,nasi gudeg krecek + suwir,25000,3
+Gudeg Bu Cip Jakal,nasi gudeg krecek paha + telur,32000,4
+Gudeg Bu Cip Jakal,nasi gudeg krecek ati ampela + telur,28000,5
+Gudeg Mercon Mbak Yuni,nasi gudeg telor ayam suwir,25000,1
+Gudeg Mercon Mbak Yuni,nasi gudeg paha atas,39000,2
+Gudeg Mercon Mbak Yuni,nasi gudeg mercon telor,20000,3
+Gudeg Mercon Mbak Yuni,sate kulit ayam,5000,4
+Gudeg Mercon Mbak Yuni,krecek,5000,5
+Gudeg Asli Mbok Ginuk Palagan,nasi gudeg krecek telur,15000,1
+Gudeg Asli Mbok Ginuk Palagan,nasi gudeg krecek paha,26000,2
+Gudeg Asli Mbok Ginuk Palagan,nasi gudeg krecek + suwir,25000,3
+Gudeg Asli Mbok Ginuk Palagan,nasi gudeg krecek paha + telur,32000,4
+Gudeg Asli Mbok Ginuk Palagan,nasi gudeg krecek ati ampela + telur,28000,5
+Gudeg Mercon Bu Tinah,nasi gudeg krecek telur,15000,1
+Gudeg Mercon Bu Tinah,nasi gudeg krecek paha,26000,2
+Gudeg Mercon Bu Tinah,nasi gudeg krecek + suwir,25000,3
+Gudeg Mercon Bu Tinah,nasi gudeg krecek paha + telur,32000,4
+Gudeg Mercon Bu Tinah,nasi gudeg krecek ati ampela + telur,28000,5
+Bowl-Ling Fruit Bar & Kitchen Concat,durio ling (sup buah dengan kuah durian),28600,1
+Bowl-Ling Fruit Bar & Kitchen Concat,mellow ling (sup buah dengan kuah melon),29700,2
+Bowl-Ling Fruit Bar & Kitchen Concat,red ling (sup buah dengan kuah strawberry),29700,3
+Bowl-Ling Fruit Bar & Kitchen Concat,pitaya bowl,38500,4
+Bowl-Ling Fruit Bar & Kitchen Concat,chicken caesar salad,38500,5
+Nasi Bebek Sanjay,paket hemat sanjay + nasi,15000,1
+Nasi Bebek Sanjay,bebek sanjay besar,21000,2
+Nasi Bebek Sanjay,ayam sanjay negeri,12000,3
+Nasi Bebek Sanjay,ayam sanjay kampung,20000,4
+Nasi Bebek Sanjay,rempela,5000,5
+Nasi Bebek Mbak Desi,nasi putih bebek,28000,1
+Nasi Bebek Mbak Desi,nasi putih ayam,15000,2
+Nasi Bebek Mbak Desi,kubis goreng,4000,3
+Nasi Bebek Mbak Desi,terong goreng,4000,4
+Nasi Bebek Mbak Desi,es teh,3000,5
+Bebek Jogja Paling Enak,paket nasi bebek,27000,1
+Bebek Jogja Paling Enak,paket nasi bebek hemat,23000,2
+Bebek Jogja Paling Enak,paket nasi ayam goreng,17000,3
+Bebek Jogja Paling Enak,paket nasi ikan nila ,17000,4
+Bebek Jogja Paling Enak,paket nasi lele goreng,14000,5
+BEBEK GORENG SIMPATIK TUGU SAMBAL KOREK,bebek kampung paha,32000,1
+BEBEK GORENG SIMPATIK TUGU SAMBAL KOREK,bebek kampung dada,32000,2
+BEBEK GORENG SIMPATIK TUGU SAMBAL KOREK,ayam kampung paha,32000,3
+BEBEK GORENG SIMPATIK TUGU SAMBAL KOREK,ayam kampung dada,32000,4
+BEBEK GORENG SIMPATIK TUGU SAMBAL KOREK,ayam kampung rempelo ati,14000,5
+Bebek Goreng Simpatik,bebek kampung paha,32000,1
+Bebek Goreng Simpatik,bebek kampung dada,32000,2
+Bebek Goreng Simpatik,ayam kampung paha,32000,3
+Bebek Goreng Simpatik,ayam kampung dada,32000,4
+Bebek Goreng Simpatik,ayam kampung rempelo ati,14000,5
+BEBEK BALAP RESTO,paket bebek kremes,31000,1
+BEBEK BALAP RESTO,paket bebek gelap gulita,39000,2
+BEBEK BALAP RESTO,paket bebek bakar manis,39000,3
+BEBEK BALAP RESTO,paket ayam kampung kremes,31000,4
+BEBEK BALAP RESTO,paket ayam kampung bakar manis,34000,5
+Bebek Goreng Pandu,paket hemat bebek,33000,1
+Bebek Goreng Pandu,paket hemat ayam,31000,2
+Bebek Goreng Pandu,bebek dada cabe ijo,26000,3
+Bebek Goreng Pandu,ayam dada cabe ijo,23000,4
+Bebek Goreng Pandu,bebek paha sambal korek,26000,5
+Bebek Lemu Jogja,bebek kampung paha,32000,1
+Bebek Lemu Jogja,bebek kampung dada,32000,2
+Bebek Lemu Jogja,ayam kampung paha,32000,3
+Bebek Lemu Jogja,ayam kampung dada,32000,4
+Bebek Lemu Jogja,ayam kampung rempelo ati,14000,5
+Bebek Peking Oye,bebek kampung paha,35000,1
+Bebek Peking Oye,bebek kampung dada,35000,2
+Bebek Peking Oye,ayam kampung paha,35000,3
+Bebek Peking Oye,ayam kampung dada,35000,4
+Bebek Peking Oye,ayam kampung rempelo ati,16000,5
+Nasi Bebek Madura Bumbu Hitam Alif Kricak Kidul,nasi bebek bumbu hitam,28000,1
+Nasi Bebek Madura Bumbu Hitam Alif Kricak Kidul,nasi ayam goreng bumbu hitam,20000,2
+Nasi Bebek Madura Bumbu Hitam Alif Kricak Kidul,nasi ayam penyet,17000,3
+Nasi Bebek Madura Bumbu Hitam Alif Kricak Kidul,nasi telur bumbu hitam,15000,4
+Nasi Bebek Madura Bumbu Hitam Alif Kricak Kidul,nasi telur serundeng,12000,5
+Gudeg Bromo Bu Tekluk,nasi suwir telur,30000,1
+Gudeg Bromo Bu Tekluk,nasi suwir,28000,2
+Gudeg Bromo Bu Tekluk,nasi telur,18000,3
+Gudeg Bromo Bu Tekluk,nasi paha atas ayam potong,39000,4
+Gudeg Bromo Bu Tekluk,nasi dada ayam potong,50000,5
+Kepiting Cak Gundul,kepiting super jumbo (per ons),38000,1
+Kepiting Cak Gundul,kepiting telor besar (per ons),33000,2
+Kepiting Cak Gundul,kepiting telor kecil (per ons),30000,3
+Kepiting Cak Gundul,udang putih (tepung / bakar),60000,4
+Kepiting Cak Gundul,kerang (asam manis / mentega hitam),60000,5
+Bakmie Bersahadja 77,bakmie szechuan,19500,1
+Bakmie Bersahadja 77,bakmie ayam charsiu,19500,2
+Bakmie Bersahadja 77,bakmie ayam cincang,17500,3
+Bakmie Bersahadja 77,bakso goreng ,15000,4
+Bakmie Bersahadja 77,swie kiaw chili oil,20000,5
+Waroeng Yanto Jakal,nasi goreng hongkong,22000,1
+Waroeng Yanto Jakal,paket kulit,18000,2
+Waroeng Yanto Jakal,paket ikan kakap,20000,3
+Waroeng Yanto Jakal,cumi telor asin,46000,4
+Waroeng Yanto Jakal,kangkung terasi spesial,25000,5
+Tjemara Noodle Bar - Prawirotaman,bali authentic,14000,1
+Tjemara Noodle Bar - Prawirotaman,szechuan oriental,15000,2
+Tjemara Noodle Bar - Prawirotaman,hongkong style,17000,3
+Tjemara Noodle Bar - Prawirotaman,korean spicy,20000,4
+Tjemara Noodle Bar - Prawirotaman,classic favorite,13000,5
+Tjemara Noodle Bar - Sagan,bali authentic,14000,1
+Tjemara Noodle Bar - Sagan,szechuan oriental,15000,2
+Tjemara Noodle Bar - Sagan,hongkong style,17000,3
+Tjemara Noodle Bar - Sagan,korean spicy,20000,4
+Tjemara Noodle Bar - Sagan,classic favorite,13000,5
+TjeMaRa Noodle Bar - Sleman,bali authentic,14000,1
+TjeMaRa Noodle Bar - Sleman,szechuan oriental,15000,2
+TjeMaRa Noodle Bar - Sleman,hongkong style,17000,3
+TjeMaRa Noodle Bar - Sleman,korean spicy,20000,4
+TjeMaRa Noodle Bar - Sleman,classic favorite,13000,5
+Zona Seafood - Gejayan,ikan bakar jimbaran,42000,1
+Zona Seafood - Gejayan,ikan bakar madu,39000,2
+Zona Seafood - Gejayan,cumi goreng telur asin,29000,3
+Zona Seafood - Gejayan,udang saos padang,29000,4
+Zona Seafood - Gejayan,kepiting saos asam manis,79000,5
+Zona Seafood - Plengkung Gading,ikan bakar jimbaran,42000,1
+Zona Seafood - Plengkung Gading,ikan bakar madu,39000,2
+Zona Seafood - Plengkung Gading,cumi goreng telur asin,29000,3
+Zona Seafood - Plengkung Gading,udang saos padang,29000,4
+Zona Seafood - Plengkung Gading,kepiting saos asam manis,79000,5
+Zona Seafood - Kotabaru,ikan bakar jimbaran,42000,1
+Zona Seafood - Kotabaru,ikan bakar madu,39000,2
+Zona Seafood - Kotabaru,cumi goreng telur asin,29000,3
+Zona Seafood - Kotabaru,udang saos padang,29000,4
+Zona Seafood - Kotabaru,kepiting saos asam manis,79000,5
+Zona Seafood - Jl. Magelang,ikan bakar jimbaran,42000,1
+Zona Seafood - Jl. Magelang,ikan bakar madu,39000,2
+Zona Seafood - Jl. Magelang,cumi goreng telur asin,29000,3
+Zona Seafood - Jl. Magelang,udang saos padang,29000,4
+Zona Seafood - Jl. Magelang,kepiting saos asam manis,79000,5

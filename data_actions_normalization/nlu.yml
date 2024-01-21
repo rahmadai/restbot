@@ -546,8 +546,8 @@ nlu:
     - apa yang bisa kamu rekomendasikan untuk hidangan utama di [cinema bakery](restaurant_name)
     - apa ya menu spesifik di [rm padang sederhana](restaurant_name)
     - Restobot, ada menu yang paling recommended di [shabu auce](restaurant_name) ini?
-    - Gue penasaran, restobot. Apa yang wajib dicoba di sini menurutmu, [papa johns](restaurant_name)?
-    - Aku ingin mencoba makanan Asia. Apa yang kamu rekomendasikan di [izakaya](restaurant_name)?
+    - Gue penasaran, restobot. Apa yang menu wajib dicoba di sini menurutmu, [papa johns](restaurant_name)?
+    - Menu apa yang kamu rekomendasikan di [izakaya](restaurant_name)?
     - Apa ada tambahan lain yang cocok untuk disajikan dengan nasi goreng tersebut di [warung layar sentuh](restaurant_name)?
     - Enaknya makan apa ya di [warung kopi klotok](restaurant_name)?
     - Aku ingin mencoba makanan tradisional, apa yang kamu rekomendasikan di [golden geisha ramen](restaurant_name)?
@@ -559,6 +559,84 @@ nlu:
     - Best seller menu di [tilasawa](restaurant_name) apa ya?
     - Apa ya menu spesifik di [mie sapi banteng](restaurant_name)?
     - Specialty menu di [oppio coffee](restaurant_name) apa ya?
+    - Restobot, coba kasih tahu gue menu andalan di [giorno's pizzeria](restaurant_name)
+    - Menurutmu, menu terbaik di [rm duta minang](restaurant_name) apa?
+    - Apa menu paling disukai di [rm. duta minang gowongan](restaurant_name)?
+    - Gue penasaran, restobot. Ada menu spesial di [nikuya bbq jogja](restaurant_name) yang wajib dicoba ga?
+    - Kasih tau dong, menu favorit di [milk by artemy](restaurant_name).
+    - Gimana menurutmu, menu andalan di [izakaya](restaurant_name)?
+    - Apa yang paling enak di [ramenhead](restaurant_name)?
+    - Ada menu yang paling recommended di [baki by d'monaco](restaurant_name)?
+    - Restobot, apa yang paling hits di [kanari society & space](restaurant_name)?
+    - Rekomendasiin kopi yang enak di [trilogi coffee](restaurant_name) dong
+    - Minuman reccommended di [dummin coffee & space ukdw](restaurant_name) apa ya?
+    - Oke nih, restobot. Kasih tau gue, kalau mau coba satu menu, makanan apa yang gue harus pilih di [enam langit by plataran](restaurant_name)?
+    - Apa yang bisa kamu rekomendasikan untuk hidangan utama di [mie ayam bandung 59](restaurant_name)?
+    - Sis, kasih saran dong, menu yang recommended di [28 coffee seturan](restaurant_name).
+    - Best seller menu di [chunda resto](restaurant_name) apa ya?
+    - Restobot, kalau mau makan malam di [misoji sushi](restaurant_name), ada menu yang harus dicoba nggak?
+    - Menu apa yang paling recommended di [koiki coffee](restaurant_name)?
+    - Bagaimana dengan menu di [sunny side up](restaurant_name), apa yang enak?
+    - Ada menu khusus di [kojiro sushi](restaurant_name) yang selalu jadi favorit pelanggan?
+    - Oke nih, restobot. Kalau lagi di [the harvest](restaurant_name), menu apa yang paling populer?
+    - Gimana menurutmu, menu paling enak di [misobar](restaurant_name)?
+    - Apa yang wajib dicoba di [upnormal coffee roasters](restaurant_name)?
+    - Restobot, kalau lagi di [tjokroaminoto fine dining](restaurant_name), menu apa yang paling recommended?
+    - Menu apa yang paling hits di [waroeng steak & shake](restaurant_name)?
+    - Rekomendasiin dessert yang enak di [madam tan dimsum](restaurant_name) dong
+    - Minuman apa yang paling cocok dinikmati di [lava grill steakhouse](restaurant_name)?
+    - Oke nih, restobot. Kalau lagi di [black canyon coffee](restaurant_name), ada menu yang wajib dicoba?
+    - Bagaimana dengan hidangan penutup di [kopinyc](restaurant_name), ada yang spesial?
+    - Restobot, kasih saran dong, menu vegetarian terbaik di [vegan bar](restaurant_name).
+    - Kalau lagi di [noodle inc](restaurant_name), menu apa yang paling recommended?
+    - Gimana menurutmu, menu paling lezat di [dooboobap](restaurant_name)?
+    - Apa yang unik di [balique resto](restaurant_name) yang patut dicoba?
+    - Restobot, kalau lagi di [taman indie riverside](restaurant_name), ada menu yang harus dicoba nggak?
+    - Ada menu spesial yang harus dicoba di [cyber sushi](restaurant_name)?
+    - Bagaimana dengan menu di [merah putih](restaurant_name), apa yang paling istimewa?
+
+- intent: intent_ask_all_menu
+  examples: |
+    - Berikan daftar lengkap menu di [gudeg sagan](restaurant_name)
+    - Saya ingin melihat semua menu yang ada di [seven stone](restaurant_name)
+    - Apa saja hidangan yang tersedia di [sushi tei](restaurant_name)?
+    - Tolong berikan detail menu yang ada di [tilasawa](restaurant_name)
+    - Bisa kasih saya pandangan menyeluruh tentang menu di [cinema bakery](restaurant_name)?
+    - Apa saja pilihan menu di [rm padang sederhana](restaurant_name)?
+    - Restobot, jelaskan semua menu yang ada di [shabu auce](restaurant_name) ini
+    - Saya ingin tahu semua menu yang disajikan di [papa johns](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [izakaya](restaurant_name)
+    - Bagaimana dengan menu di [sate senayan](restaurant_name)? Apa saja yang mereka tawarkan?
+    - Saya ingin mengetahui semua opsi yang ada di menu [soto ayam express](restaurant_name)
+    - Restoran [coffee heaven](restaurant_name) punya menu apa saja?
+    - Berikan daftar lengkap makanan dan minuman di [ramen street](restaurant_name)
+    - Saya penasaran dengan variasi menu di [the spice house](restaurant_name). Bisa dijelaskan?
+    - Tolong berikan gambaran umum mengenai menu di [waffle delight](restaurant_name)
+    - Bagaimana dengan ragam menu di [burger barn](restaurant_name)? Saya ingin tahu semuanya.
+    - Berikan daftar makanan yang ada di [sate house](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [the steakhouse](restaurant_name)
+    - Restobot, jelaskan semua menu yang ada di [the pasta place](restaurant_name) ini
+    - Saya ingin mengetahui semua pilihan menu di [ice cream delight](restaurant_name)
+    - Apa saja hidangan yang bisa saya nikmati di [ramen hut](restaurant_name)?
+    - Tolong berikan daftar lengkap menu di [taco express](restaurant_name)
+    - Saya ingin tahu semua opsi makanan di [momo corner](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [the healthy bowl](restaurant_name)
+    - Bagaimana dengan variasi menu di [soupy delight](restaurant_name)? Saya ingin tahu semuanya.
+    - Berikan daftar makanan yang ada di [wok wonders](restaurant_name)
+    - Saya ingin mengetahui semua pilihan menu di [sushi delight](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [grill master](restaurant_name)
+    - Restobot, jelaskan semua menu yang ada di [dimsum delight](restaurant_name) ini
+    - Apa saja hidangan yang direkomendasikan di [the noodle house](restaurant_name)?
+    - Saya ingin tahu semua opsi makanan di [dessert dreams](restaurant_name)
+    - Apa saja menu minuman yang tersedia di [juice junction](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [gravy goodness](restaurant_name)
+    - Apa saja hidangan yang bisa saya nikmati di [kebab kingdom](restaurant_name)?
+    - Berikan daftar lengkap makanan yang ada di [soup station](restaurant_name)
+    - Saya ingin tahu semua opsi makanan di [mexican munchies](restaurant_name)
+    - Tolong berikan daftar lengkap menu di [sandwich central](restaurant_name)
+    - Bagaimana dengan variasi menu di [bento bliss](restaurant_name)? Saya ingin tahu semuanya.
+    - Saya ingin mengetahui semua pilihan menu di [bread basket](restaurant_name)
+    - Restobot, jelaskan semua menu yang ada di [cheese heaven](restaurant_name) ini
 
 - intent: intent_ask_restaurant_location
   examples: |
@@ -712,52 +790,39 @@ nlu:
     - berapa harga menu di [papa johns](restaurant_name)?
     - berapa harga menu di [mie sapi banteng](restaurant_name)?
     - [gudeg sagan](restaurant_name) biasanya menawarkan harga menu yang sekitar berapa?
-    - pukul berapa [bricafe x couvee](restaurant_name) buka dan berapa harga menu utamanya?
+    - berapa harga menu utamanya [bricafe x couvee](restaurant_name)?
     - boleh kamu informasikan harga menu di [fore coffee - kaliurang](restaurant_name)?
     - saya penasaran dengan harga menu di [seven stones rainforest coffee](restaurant_name). ada informasi?
-    - tahu tidak kapan [oppio coffee](restaurant_name) mulai menetapkan harga untuk pelanggannya?
     - bisa berikan saya gambaran harga menu di [rumah makan padang sederhana](restaurant_name)?
     - bagaimana dengan harga kopi di [warung kopi klotok](restaurant_name)?
     - berapa harga menu di [warung layar sentuh](restaurant_name)? ada informasi?
     - boleh berikan saya informasi mengenai harga menu di [tilasawa coffee roaster](restaurant_name)?
-    - pukul berapa [sushi tei](restaurant_name) buka dan berapa harga menu sushi mereka?
-    - kapan [cinema bakery](restaurant_name) mulai menetapkan harga untuk menu mereka?
     - berapa harga menu di [chingu cafe](restaurant_name)?
     - [ayam pedas arto moro](restaurant_name) menawarkan menu dengan harga berapa yaa?
-    - pukul berapa [filosofi kopi jogja](restaurant_name) buka dan berapa harga kopi mereka?
     - boleh kamu memberitahu harga menu di [tempo gelato](restaurant_name)?
     - saya penasaran dengan harga menu di [tempo gelato prawirotaman](restaurant_name). ada informasi?
-    - tahu tidak kapan [el primo sausage & dairy](restaurant_name) mulai menetapkan harga untuk pelanggannya?
     - bisa informasikan harga menu di [giorno's pizzeria](restaurant_name)?
     - bagaimana dengan harga menu di [rm duta minang](restaurant_name)?
     - berapa harga menu di [rm. duta minang gowongan](restaurant_name)? ada informasi?
     - boleh berikan saya gambaran harga menu di [golden geisha ramen](restaurant_name)?
-    - pukul berapa [swasana by temata yogyakarta](restaurant_name) buka dan berapa harga menu utamanya?
-    - kapan [susu dan roti bakar om bob](restaurant_name) mulai menetapkan harga untuk menu mereka?
     - berapa harga menu di [susu dan roti bakar om bob nologaten](restaurant_name)?
     - [susu dan roti bakar om bob maguwo](restaurant_name) biasanya menawarkan harga menu yang sekitar berapa?
-    - pukul berapa [susu dan roti bakar om bob godean](restaurant_name) buka dan berapa harga menu utamanya?
     - boleh kamu informasikan harga menu di [nasi goreng sapi padmanaba](restaurant_name)?
     - saya penasaran dengan harga menu di [nasi goreng sapi kantor notaris](restaurant_name). ada informasi?
-    - tahu tidak kapan [oharang bbq jogja](restaurant_name) mulai menetapkan harga untuk pelanggannya?
     - bisa berikan saya gambaran harga menu di [seorae](restaurant_name)?
     - bagaimana dengan harga menu di [gyu-kaku japanese bbq](restaurant_name)?
     - berapa harga menu di [kakkoii japanese bbq & shabu-shabu](restaurant_name)? ada informasi?
     - boleh berikan saya informasi mengenai harga menu di [nikuya bbq jogja](restaurant_name)?
-    - pukul berapa [niku japanese bbq jogja](restaurant_name) buka dan berapa harga menu utamanya?
-    - kapan [shabu auce](restaurant_name) mulai menetapkan harga untuk menu mereka?
     - berapa harga menu di [milk by artemy](restaurant_name)?
     - [sakapatat brew house & resto](restaurant_name) biasanya menawarkan menu dengan harga berapa?
     - pukul berapa [izakaya](restaurant_name) buka dan berapa harga menu utamanya?
     - boleh kamu informasikan harga menu di [ramenhead](restaurant_name)?
     - saya penasaran dengan harga menu di [baki by d'monaco](restaurant_name). ada informasi?
-    - tahu tidak kapan [kanari society & space](restaurant_name) mulai menetapkan harga untuk pelanggannya?
     - bisa informasikan harga menu di [trilogi coffee](restaurant_name)?
     - bagaimana dengan harga kopi di [dummin coffee & space ukdw](restaurant_name)?
     - berapa harga menu di [enam langit by plataran](restaurant_name)? ada informasi?
     - boleh berikan saya gambaran harga menu di [mie ayam bandung 59](restaurant_name)?
     - pukul berapa [28 coffee seturan](restaurant_name) buka dan berapa harga menu utamanya?
-    - kapan [chunda resto](restaurant_name) mulai menetapkan harga untuk menu mereka?
 
 - intent: intent_restaurant_facility
   examples: |

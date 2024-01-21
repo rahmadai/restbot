@@ -25,6 +25,8 @@ intents:
     use_entities: true
 - intent_restaurant_category:
     use_entities: true
+- intent_ask_all_menu:
+    use_entities: true
 - intent_confirmation:
     use_entities: false
 - intent_ask_restaurant_location:
@@ -121,5 +123,6 @@ actions:
 - action_check_restaurants_categories
 - action_check_restaurants_pricing
 - action_check_restaurants_recommendation
+- action_check_recommendation_menu_restaurants
 forms: {}
 e2e_actions: []

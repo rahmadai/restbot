@@ -42,4 +42,23 @@ rules:
         - restaurant_name
       - action: action_check_restaurants_facilities
 
+  - rule: User asks for restaurant menu
+    steps:
+      - intent: intent_ask_all_menu
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_menu
+
+  - rule: User asks for restaurant pricing range
+    steps:
+      - intent: intent_restaurant_pricing
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_pricing
   
+  - rule: User asks for recommendation menu restaurant
+    steps:
+      - intent: intent_recommendation_menu
+        entities:
+        - restaurant_name
+      - action: action_check_recommendation_menu_restaurants

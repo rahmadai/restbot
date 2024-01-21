@@ -8,13 +8,18 @@ from actions.weighted_product import preprocessing, get_data_resto
 
 # read csv file
 import pandas as pd
+
 df = pd.read_csv('db/list.csv')
 df_location = pd.read_csv('db/location_dataset.csv')
+menu_df = pd.read_csv('db/menu.csv')
+menu_df['restaurant_name_lower'] = menu_df['nama_resto'].str.lower()
 # lowercase df_location
 df_location['location_name'] = df_location['location_name'].apply(lambda x: x.lower())
 df = preprocessing(df)
 df = df.assign(category=df['category'].str.split(',')).explode('category')
 df = df.assign(facility=df['facility'].str.split(',')).explode('facility')
+
+df = df.merge(menu_df, on='restaurant_name_lower', how='left', indicator=True)
 
 class ActionCheckRestaurantsRecommendation(Action):
     def name(self) -> Text:
@@ -248,8 +253,15 @@ class ActionCheckRestaurantsPricing(Action):
         if name != None:
             # parse address from csv when restaurant_name is matched with retaurant_name column
             try:
-                price_ranges = df.loc[df['restaurant_name_lower'] == name, 'price_ranges'].iloc[0]
-                response_message = "Range harga " + str(name) + " adalah : " + str(price_ranges)
+                # retrieve menu and rank_menu from menu_df while restaurant_name_lower == name
+                menu = df.loc[df['restaurant_name_lower'] == name, ['menu', 'harga']]
+                # get distict value from menu and rank_menu
+                menu = menu.drop_duplicates(subset=['menu', 'harga'])
+                # order by rank_menu ascending
+                menu = menu.sort_values(by=['harga'], ascending=True)
+                # retrieve only column menu and top 2
+                # menu = menu['menu'].head(2).tolist()
+                response_message = "berikut list harga dari restoran " + str(name) + " : " + str(menu)
             except:
                 response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
         else:
@@ -282,7 +294,11 @@ class ActionCheckRestaurantsFacilities(Action):
         if name != None:
             # parse address from csv when restaurant_name is matched with retaurant_name column
             try:
-                facilities = df.loc[df['restaurant_name_lower'] == name, 'facility'].iloc[0]
+                facilities = df.loc[df['restaurant_name_lower'] == name, 'facility']
+                # drop duplicate by facility
+                facilities = facilities.drop_duplicates()
+                # get list of facilities
+                facilities = facilities.tolist()
                 response_message = "berikut fasilitas restoran " + str(name) + " : " + str(facilities)
             except:
                 response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
@@ -292,6 +308,90 @@ class ActionCheckRestaurantsFacilities(Action):
         dispatcher.utter_message(response_message)
         return []
     
+class ActionCheckRestaurantsMenu(Action):
+    def name(self) -> Text:
+        return "action_check_restaurants_menu"
+    def run(self,
+                dispatcher: CollectingDispatcher,
+                tracker: Tracker,
+                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        tracker_list = tracker.latest_message['entities']
+        parsed_entities = {}
+
+        for entity_info in tracker_list:
+            entity = entity_info['entity']
+            value = entity_info['value']
+            parsed_entities[entity] = value
+
+        try:
+            name = parsed_entities['restaurant_name']
+        except:
+            name = None
+
+        if name != None:
+            # parse address from csv when restaurant_name is matched with retaurant_name column
+            try:
+                # retrieve menu and rank_menu from menu_df while restaurant_name_lower == name
+                menu = df.loc[df['restaurant_name_lower'] == name, ['menu', 'rank_menu']]
+                # get distict value from menu and rank_menu
+                menu = menu.drop_duplicates(subset=['menu', 'rank_menu'])
+                # order by rank_menu ascending
+                menu = menu.sort_values(by=['rank_menu'], ascending=True)
+                # retrieve only column menu and top 2
+                menu = menu['menu'].tolist()
+                response_message = "berikut list seluruh menu dari restoran " + str(name) + " : " + str(menu)
+            except:
+                response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+        else:
+            response_message = "Maaf, tidak ada restoran tersebut di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
+    
+
+class ActionCheckRecommendationMenuRestaurants(Action):
+    def name(self) -> Text:
+        return "action_check_recommendation_menu_restaurants"
+    def run(self,
+                dispatcher: CollectingDispatcher,
+                tracker: Tracker,
+                domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        tracker_list = tracker.latest_message['entities']
+        parsed_entities = {}
+
+        for entity_info in tracker_list:
+            entity = entity_info['entity']
+            value = entity_info['value']
+            parsed_entities[entity] = value
+
+        try:
+            name = parsed_entities['restaurant_name']
+        except:
+            name = None
+
+        if name != None:
+            # parse address from csv when restaurant_name is matched with retaurant_name column
+            try:
+                # retrieve menu and rank_menu from menu_df while restaurant_name_lower == name
+                menu = df.loc[df['restaurant_name_lower'] == name, ['menu', 'rank_menu']]
+                # get distict value from menu and rank_menu
+                menu = menu.drop_duplicates(subset=['menu', 'rank_menu'])
+                # order by rank_menu ascending
+                menu = menu.sort_values(by=['rank_menu'], ascending=True)
+                # retrieve only column menu and top 2
+                menu = menu['menu'].head(2).tolist()
+                response_message = "berikut rekomendasi menu dari restoran " + str(name) + " : " + str(menu)
+            except:
+                response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+        else:
+            response_message = "Maaf, tidak ada restoran tersebut di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
+
+
 class ActionCheckRestaurantsCategories(Action):
     def name(self) -> Text:
         return "action_check_restaurants_categories"
