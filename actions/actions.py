@@ -57,101 +57,123 @@ class ActionCheckRestaurantsRecommendation(Action):
             lat = -7.767638
             long = 110.376639
 
+        lat = -7.767638
+        long = 110.376639
         print(lat)
         print(long)
         # switch by combination restaurant_type, location, restaurant_facility
-        if restaurant_type != None and restaurant_facility != None and location != None:
-            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
+        try:
+            if restaurant_type != None and restaurant_facility != None and location != None:
+                df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    print(df_recommended)
+                    # get latitute and longitude from df_location
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    # limit df_recommended to 5
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+            elif restaurant_type != None and restaurant_facility == None and location != None:
+                df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi " + str(restaurant_type) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+            elif restaurant_type == None and restaurant_facility != None and location != None:
+                df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
+            elif restaurant_type != None and restaurant_facility != None and location == None:
+                df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
+            elif restaurant_type != None and restaurant_facility == None and location == None:
+                df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi " + str(restaurant_type) + " : " + str(list_restaurant)
+            elif restaurant_type == None and restaurant_facility != None and location == None:
+                df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
+            elif restaurant_type == None and restaurant_facility == None and location != None:
+                df_recommended = df
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    df_recommended = get_data_resto(df_recommended, lat, long)
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut rekomendasi restoran di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
             else:
-                print(df_recommended)
-                # get latitute and longitude from df_location
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                # limit df_recommended to 5
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
-        elif restaurant_type != None and restaurant_facility == None and location != None:
-            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
-            else:
-                # limit df_recommended to 5
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi " + str(restaurant_type) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
-        elif restaurant_type == None and restaurant_facility != None and location != None:
-            df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
-            else:
-                # limit df_recommended to 5
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " dan berada di sekitar lokasi : " + str(location) + " : " + str(list_restaurant)
-        elif restaurant_type != None and restaurant_facility != None and location == None:
-            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x)) & (df['facility'].apply(lambda x: str(restaurant_facility) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
-            else:
-                # limit df_recommended to 5
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi " + str(restaurant_type) + " yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
-        elif restaurant_type != None and restaurant_facility == None and location == None:
-            df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
-            else:
-                # limit df_recommended to 5
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi " + str(restaurant_type) + " : " + str(list_restaurant)
-        elif restaurant_type == None and restaurant_facility != None and location == None:
-            df_recommended = df[(df['facility'].apply(lambda x: str(restaurant_facility) == x))]
-            # check df_recommended is empty or not
-            if df_recommended.empty:
-                response_message = "Maaf, tidak ada list restoran di database kami"
-            else:
-                # limit df_recommended to 5
-                df_recommended = get_data_resto(df_recommended, lat, long)
-                # drop duplicate by retaurant_name
-                df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
-                df_recommended = df_recommended.head(5)
-                print(df_recommended)
-                list_restaurant = df_recommended['retaurant_name'].tolist()
-                list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
-                response_message = "Berikut rekomendasi restoran yang memiliki fasilitas : " + str(restaurant_facility) + " : " + str(list_restaurant)
+                response_message = "Minta tolong untuk ulangi pertanyaan anda yang lebih spesifik?"
+        except:
+            response_message = "Minta tolong untuk ulangi pertanyaan anda yang lebih spesifik?"
         print(response_message)
 
         dispatcher.utter_message(response_message)

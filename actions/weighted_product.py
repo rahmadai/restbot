@@ -85,7 +85,7 @@ def get_data_resto(df_process, latitude, longitude):
     df_process['price_ranges'] = df_process['price_ranges']
     df_process['rating'] = df_process['rating'].apply(lambda x: round(float(x)))
     df_process['restoran_type'] = df_process['resto_type']
-    df_process['distance'] = df_process.apply(lambda x: calculate_distance(latitude, longitude, x['latitude'], x['longitude']), axis=1)
+    df_process['distance'] = df_process.apply(lambda x: calculate_distance(latitude, longitude, float(x['latitude']), float(x['longitude'])), axis=1)
     df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 1 else (3 if x <= 3 else 5))
     df_process['weighted_product'] = df_process.apply(lambda x: weighted_product(x['reviews'], x['price_ranges'], x['rating'], x['restoran_type'], x['distance']), axis=1)
     df_process = df_process.sort_values(by=['weighted_product'], ascending=False)
