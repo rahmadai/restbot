@@ -11,11 +11,15 @@ from math import radians, sin, cos, sqrt, atan2
 lat = -7.767638
 long = 110.376639
 
-weight_C1 = 5
-weight_C2 = 3
-weight_C3 = 5
+weight_C1 = 4
+weight_C2 = 2
+weight_C3 = 3
 weight_C4 = 4
-weight_C5 = 2
+weight_C5 = 5
+
+import random
+
+random.seed(1)
 
 total_weight = weight_C1 + weight_C2 + weight_C3 + weight_C4 + weight_C5
 
@@ -25,8 +29,13 @@ weight_param_C3 = weight_C3 / total_weight
 weight_param_C4 = weight_C4 / total_weight
 weight_param_C5 = weight_C5 / total_weight
 
+# x['reviews'], x['price_ranges'], x['rating'], x['restoran_type'], x['distance']
+# jarak, jenis, jumlah_review, rating, harga
+
 def weighted_product(C1, C2, C3, C4, C5):
-    return (C1**weight_param_C1) * (C2**(-1*weight_param_C2)) * (C3**weight_param_C3) * (C4**weight_param_C4) * (C5**(-1*weight_param_C5))
+    # return (C1**weight_param_C1) * (C2**(-1*weight_param_C2)) * (C3**weight_param_C3) * (C4**weight_param_C4) * (C5**(-1*weight_param_C5))
+    return (C1**weight_param_C1) * (C2**(-1*weight_param_C2)) * (C3**weight_param_C3) * (C5**(-2*weight_param_C5))
+    # return (C5**(-1*weight_param_C5))
 
 def calculate_distance(lat1, long1, lat2, long2):
     # return ((lat1-lat2)**2 + (long1-long2)**2)**0.5
@@ -86,7 +95,9 @@ def get_data_resto(df_process, latitude, longitude):
     df_process['rating'] = df_process['rating'].apply(lambda x: round(float(x)))
     df_process['restoran_type'] = df_process['resto_type']
     df_process['distance'] = df_process.apply(lambda x: calculate_distance(latitude, longitude, float(x['latitude']), float(x['longitude'])), axis=1)
-    df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 1 else (3 if x <= 3 else 5))
+    # df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 1 else (3 if x <= 3 else 5))
+    # df_process['distance'] = df_process['distance'].apply(lambda x: 1 if x <= 1 else (2 if x <= 3 else (3 if x <= 5 else (4 if x <= 10 else 5))))
+    df_process['distance'] = df_process['distance']
     df_process['weighted_product'] = df_process.apply(lambda x: weighted_product(x['reviews'], x['price_ranges'], x['rating'], x['restoran_type'], x['distance']), axis=1)
     df_process = df_process.sort_values(by=['weighted_product'], ascending=False)
   

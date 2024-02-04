@@ -57,8 +57,6 @@ class ActionCheckRestaurantsRecommendation(Action):
             lat = -7.767638
             long = 110.376639
 
-        lat = -7.767638
-        long = 110.376639
         print(lat)
         print(long)
         # switch by combination restaurant_type, location, restaurant_facility
@@ -281,9 +279,13 @@ class ActionCheckRestaurantsPricing(Action):
                 menu = menu.drop_duplicates(subset=['menu', 'harga'])
                 # order by rank_menu ascending
                 menu = menu.sort_values(by=['harga'], ascending=True)
+
+                if menu.empty:
+                    response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
                 # retrieve only column menu and top 2
                 # menu = menu['menu'].head(2).tolist()
-                response_message = "berikut list harga dari restoran " + str(name) + " : " + str(menu)
+                else:
+                    response_message = "berikut list harga dari restoran " + str(name) + " : " + str(menu)
             except:
                 response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
         else:

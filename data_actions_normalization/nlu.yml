@@ -359,6 +359,56 @@ nlu:
     - Ya, sesuai dengan yang aku mau.
     - Benar, pesananku adalah itu.
     - Tidak ada yang berubah, itu yang aku pesan.
+    - Saya ingin mencoba masakan Korea.
+    - Hari ini aku mau makanan hangat
+    - Aku suka makanan Asia
+    - Saya ingin mencoba masakan Korea.
+    - Saya prefer ini
+    - Gue mau makan nasi padang murah
+    - Gue mau nyobain seafood disini
+    - Gua ngidam nasi padang
+    - Aku mau nyoba makanan italia
+    - Aku suka makanan perancis
+    - Aku suka ice cream
+    - Gua lebih suka teh
+    - Saya suka hidangan berbahan dasar ikan
+    - Saya lebih prefer nasi goreng
+    - Saya mau mencoba mocktail nya
+    - Saya suka hidangan pedas
+    - Saya lebih suka hidangan berbahan dasar tahu
+    - Saya ingin mencoba hidangan eksotis
+    - Saya suka menu makanan ringan
+    - Saya ingin makanan sehat dan rendah kalori
+    - Saya suka makanan laut
+    - Saya ingin mencoba hidangan khas musim panas
+    - Saya alergi terhadap kacang, jadi saya harus menghindarinya
+    - Saya ingin makanan yang sesuai untuk diet keto
+    - Saya suka hidangan berbahan dasar ayam
+    - Saya ingin mencoba hidangan yang unik
+    - Saya suka hidangan berbahan dasar daging sapi
+    - Saya lebih suka hidangan berbahan dasar sayuran
+    - Saya ingin menu makan malam yang romantis
+    - Saya suka hidangan dari Timur Tengah
+    - Saya ingin makanan yang sesuai untuk diet rendah karbohidrat
+    - Saya suka hidangan berbahan dasar telur
+    - Saya ingin makanan yang sesuai untuk diet vegan
+    - Saya suka hidangan penutup yang manis
+    - Saya ingin mencoba hidangan yang khas restoran ini
+    - Saya suka makanan berbahan dasar nasi
+    - Saya ingin makanan yang sesuai untuk diet rendah gula
+    - Saya suka hidangan berbahan dasar bebek
+    - Saya ingin makanan yang mudah dibawa untuk takeout
+    - Saya suka hidangan Jepang
+    - Saya ingin mencoba hidangan yang sesuai untuk musim gugur
+    - Saya suka hidangan India
+    - Saya ingin makanan yang cocok untuk diet gluten-free
+    - Saya suka hidangan Korea
+    - Saya ingin menu sarapan yang lezat
+    - Saya suka sushi
+    - Saya ingin mencoba hidangan yang menyehatkan
+    - Saya suka hidangan pedas dan asam
+    - Saya ingin makanan yang sesuai untuk diet vegetarian
+    - Saya suka hidangan berbahan dasar ikan
 
 - intent: intent_thanks
   examples: |
@@ -520,58 +570,6 @@ nlu:
     - Bot, aku gak suka restoran dengan harga yang tidak terjangkau
     - Resto dengan hidangan pedas bukan tipeku, bot
 
-- intent: intent_provide_information
-  examples: |
-    - Saya ingin mencoba masakan Korea.
-    - Hari ini aku mau makanan hangat
-    - Aku suka makanan Asia
-    - Saya ingin mencoba masakan Korea.
-    - Saya prefer ini
-    - Gue mau makan nasi padang murah
-    - Gue mau nyobain seafood disini
-    - Gua ngidam nasi padang
-    - Aku mau nyoba makanan italia
-    - Aku suka makanan perancis
-    - Aku suka ice cream
-    - Gua lebih suka teh
-    - Saya suka hidangan berbahan dasar ikan
-    - Saya lebih prefer nasi goreng
-    - Saya mau mencoba mocktail nya
-    - Saya suka hidangan pedas
-    - Saya lebih suka hidangan berbahan dasar tahu
-    - Saya ingin mencoba hidangan eksotis
-    - Saya suka menu makanan ringan
-    - Saya ingin makanan sehat dan rendah kalori
-    - Saya suka makanan laut
-    - Saya ingin mencoba hidangan khas musim panas
-    - Saya alergi terhadap kacang, jadi saya harus menghindarinya
-    - Saya ingin makanan yang sesuai untuk diet keto
-    - Saya suka hidangan berbahan dasar ayam
-    - Saya ingin mencoba hidangan yang unik
-    - Saya suka hidangan berbahan dasar daging sapi
-    - Saya lebih suka hidangan berbahan dasar sayuran
-    - Saya ingin menu makan malam yang romantis
-    - Saya suka hidangan dari Timur Tengah
-    - Saya ingin makanan yang sesuai untuk diet rendah karbohidrat
-    - Saya suka hidangan berbahan dasar telur
-    - Saya ingin makanan yang sesuai untuk diet vegan
-    - Saya suka hidangan penutup yang manis
-    - Saya ingin mencoba hidangan yang khas restoran ini
-    - Saya suka makanan berbahan dasar nasi
-    - Saya ingin makanan yang sesuai untuk diet rendah gula
-    - Saya suka hidangan berbahan dasar bebek
-    - Saya ingin makanan yang mudah dibawa untuk takeout
-    - Saya suka hidangan Jepang
-    - Saya ingin mencoba hidangan yang sesuai untuk musim gugur
-    - Saya suka hidangan India
-    - Saya ingin makanan yang cocok untuk diet gluten-free
-    - Saya suka hidangan Korea
-    - Saya ingin menu sarapan yang lezat
-    - Saya suka sushi
-    - Saya ingin mencoba hidangan yang menyehatkan
-    - Saya suka hidangan pedas dan asam
-    - Saya ingin makanan yang sesuai untuk diet vegetarian
-    - Saya suka hidangan berbahan dasar ikan
 
 - intent: intent_happy_mood
   examples: |
@@ -744,6 +742,7 @@ nlu:
     - saya ingin mencari [restaurant](restaurant_type) yang ada [mushalla](restaurant_facility) di [Kaliurang](location)
     - rekomendasiin dong [restaurant](restaurant_type) yang enak dan murah di [Jamal](location) dengan fasilitas [tempat parkir](restaurant_facility)
     - bisakah kamu merekomendasikan [japanese resto](restaurant_type) di [Palagan](location) yang ada [smoking area](restaurant_facility)?
+    - bisakah kamu merekomendasikan [top](restaurant_type) di [Palagan](location) yang ada [smoking area](restaurant_facility)?
     - saya ingin mencari tempat yang mempunyai [tempat parkir](restaurant_facility) untuk 2 orang di deket [ugm](location)
     - rekomendasiin dong restoran yang ada fasilitas [tempat parkir](restaurant_facility)
     - tolong carikan tempat yang ada fasilitas [ruang tunggu](restaurant_facility)
@@ -786,13 +785,17 @@ nlu:
     - saya ingin mencari restaurant enak(restaurant_type) di dekat [kantor](location)
     - apakah ada restaurant yang bagus untuk sarapan(restaurant_type) [di sini](location)
     - bisakah kamu merekomendasikan [restaurant vegetarian](restaurant_type) di sekitar [kaliurang](location)
+    - bisakah kamu merekomendasikan [top](restaurant_type) di sekitar [kaliurang](location)
     - aku ingin mencari tempat [coffee shop](restaurant_type) di [jogja](location). apa ada yang kamu rekomendasikan?
     - tolong rekomen dong [padang restaurant](restaurant_type) yang murah [disini](location)
     - tolong carikan [japanese](restaurant_type) resto enak dong
+    - tolong carikan [authentic](restaurant_type) resto enak dong
+    - tolong carikan [top](restaurant_type) resto enak dong
     - hai, ada rekomendasi restoran [italia](restaurant_type) enak [di sekitar sini](location)
     - hai, bisakah kamu merekomendasikan restoran [steak](restaurant_type) yang bagus?
     - apakah ada restoran [sushi](restaurant_type) yang baik [di sekitar sini](location)
     - bisakah kamu merekomendasikan tempat makan [vegetarian](restaurant_type)?
+    - bisakah kamu merekomendasikan tempat makan [authentic](restaurant_type)?
     - aku ingin mencari tempat [warkop](restaurant_type) di jogja. apa ada yang kamu rekomendasikan?
     - tolong rekomen dong rumah makan [padang](restaurant_type) yang murah disini
     - bisa cariin [chinese](restaurant_type) restaurant yang terkenal di daerah ini?

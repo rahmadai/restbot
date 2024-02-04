@@ -106,7 +106,7 @@ responses:
   utter_default:
   - text: Maaf saya tidak tahu maksud anda, boleh diulangi?
   utter_confirmation:
-  - text: Baik akan saya proses
+  - text: Baiklah. Apakah kamu ada permintaan lainnya?
   utter_ask_other_questions:
   - text: Apakah informasi tadi sudah cukup?
   utter_thanks:
@@ -115,6 +115,8 @@ responses:
   - text: Sampai jumpa lagi!
   utter_iamabot:
   - text: Saya adalah chatbot untuk mencarikan anda rekomendasi restoran terbaik
+  utter_happy_mood:
+  - text: Wah, Restbot senang mendengarnya!
 actions:
 - action_check_restaurants_menu
 - action_check_restaurants_location

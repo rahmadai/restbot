@@ -20,6 +20,14 @@ rules:
     steps:
       - intent: intent_challenge_bot
       - action: utter_iamabot
+  - rule: happy mood
+    steps:
+      - intent: intent_happy_mood
+      - action: utter_happy_mood
+  - rule: confirm
+    steps:
+      - intent: intent_confirmation
+      - action: utter_confirmation
 
   - rule: User asks for restaurant locations
     steps:
