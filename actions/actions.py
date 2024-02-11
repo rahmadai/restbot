@@ -287,7 +287,11 @@ class ActionReserveRestaurant(Action):
             # parse address from csv when restaurant_name is matched with retaurant_name column
             try:
                 number = df.loc[df['restaurant_name_lower'] == name, 'Phones'].iloc[0]
-                response_message = "Kamu bisa menghubungi " + str(name) + " di nomor berikut : " + str(number)
+                # if number nan
+                if pd.isna(number):
+                    response_message = "Mohon maaf, restoran " + str(name) + " tersebut tidak memiliki kontak untuk dihubungi"
+                else:
+                    response_message = "Kamu bisa menghubungi " + str(name) + " di nomor berikut : " + str(number)
             except:
                 response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
         else:
