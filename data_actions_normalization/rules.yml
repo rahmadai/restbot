@@ -4,30 +4,66 @@ rules:
     steps:
       - intent: nlu_fallback
       - action: utter_default
+
   - rule: greet user
     steps:
       - intent: intent_greet
       - action: utter_ask_questions
+
   - rule: thankyou
     steps:
       - intent: intent_thanks
       - action: utter_thanks
+
   - rule: goodbye user
     steps:
       - intent: intent_bye
       - action: utter_goodbye
+
   - rule: challenge bot
     steps:
       - intent: intent_challenge_bot
       - action: utter_iamabot
-  - rule: happy mood
+
+  - rule: reject the bot's answer/recommendation
     steps:
-      - intent: intent_happy_mood
-      - action: utter_happy_mood
-  - rule: confirm
+      - intent: intent_reject
+      - action: utter_reject
+
+  - rule: users confirm something
     steps:
       - intent: intent_confirmation
       - action: utter_confirmation
+
+  - rule: users provide the contradictary statement 
+    steps:
+      - intent: intent_provide_negative_sample
+      - action: utter_provide_negative_sample
+
+  - rule: users state happiness
+    steps:
+      - intent: intent_happy_mood
+      - action: utter_happy_mood
+
+  - rule: users ask discount / promo
+    steps:
+      - intent: intent_restaurant_discount
+      - action: action_check_restaurants_discount
+      
+  - rule: User asks for restaurant 24 Hour
+    steps:
+      - intent: intent_aks_24h_restaurant
+        entities:
+        - restaurant_type
+      - action: action_check_24h_restaurant
+
+  - rule: User asks for reserve restaurant
+    steps:
+      - intent: intent_reservation
+        entities:
+        - restaurant_name
+      - action: action_reserve_restaurant
+    
 
   - rule: User asks for restaurant locations
     steps:

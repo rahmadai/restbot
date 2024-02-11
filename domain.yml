@@ -45,6 +45,10 @@ intents:
     use_entities: false
 - intent_challenge_bot:
     use_entities: false
+- intent_restaurant_discount:
+    use_entities: false
+- intent_aks_24h_restaurant:
+    use_entities: true
 entities:
 - restaurant_type
 - restaurant_name
@@ -102,7 +106,7 @@ responses:
   utter_ask_questions:
   - text: Hai saya RestoChat, ada yang bisa dibantu?
   utter_reject:
-  - text: Mohon maaf, apa ada request lain?
+  - text: Baiklah. Restbot akan memberikan rekomendasi lainnya. Restoran apa yang kamu sukai?
   utter_default:
   - text: Maaf saya tidak tahu maksud anda, boleh diulangi?
   utter_confirmation:
@@ -110,13 +114,18 @@ responses:
   utter_ask_other_questions:
   - text: Apakah informasi tadi sudah cukup?
   utter_thanks:
-  - text: Terimakasih sudah menggunakan RestoChat!
+  - text: Sama-sama. Restbot senang membantumu
   utter_goodbye:
   - text: Sampai jumpa lagi!
   utter_iamabot:
-  - text: Saya adalah chatbot untuk mencarikan anda rekomendasi restoran terbaik
+  - text: Saya Restbot, chatbot pintar yang akan menjawab seputar restoran & kuliner untukmu.
+  utter_provide_negative_sample:
+  - text: Baiklah. Restbot akan menjawab lainnya. Restoran apa yang kamu sukai?
   utter_happy_mood:
-  - text: Wah, Restbot senang mendengarnya!
+  - text: Wah, Restbot senang mendengarnya
+#   utter_restaurant_discount:
+#   - text: Mohon maaf, Restbot belum memiliki data restoran seperti yang kamu inginkan. Namun Restbot memiliki banyak rekomendasi restoran/kuliner untukmu. Apakah kamu memiliki permintaan lainnya?
+
 actions:
 - action_check_restaurants_menu
 - action_check_restaurants_location
@@ -126,5 +135,8 @@ actions:
 - action_check_restaurants_pricing
 - action_check_restaurants_recommendation
 - action_check_recommendation_menu_restaurants
+- action_check_24h_restaurant
+- action_check_restaurants_discount
+- action_reserve_restaurant
 forms: {}
 e2e_actions: []

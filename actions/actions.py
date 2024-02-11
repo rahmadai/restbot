@@ -213,6 +213,106 @@ class ActionCheckRestaurantsLocation(Action):
         dispatcher.utter_message(response_message)
         return []
     
+class ActionAsk24HRestaurant(Action):
+    def name(self) -> Text:
+        return "action_check_24h_restaurant"
+    
+    def run(self,
+              dispatcher: CollectingDispatcher,
+              tracker: Tracker,
+              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    
+        # parse restaurant_name from entity
+        tracker_list = tracker.latest_message['entities']
+        parsed_entities = {}
+
+        for entity_info in tracker_list:
+            entity = entity_info['entity']
+            value = entity_info['value']
+            parsed_entities[entity] = value
+
+        try:
+            restaurant_type = parsed_entities['restaurant_type']
+        except:
+            restaurant_type = None
+        
+        if restaurant_type != None:
+            try:
+                df_recommended = df[(df['category'].apply(lambda x: str(restaurant_type) == x))]
+                # filter by column 24/7 == "yes"
+                df_recommended = df_recommended[df_recommended['24/7'] == "yes"]
+                # check df_recommended is empty or not
+                if df_recommended.empty:
+                    response_message = "Maaf, tidak ada list restoran di database kami"
+                else:
+                    # limit df_recommended to 5
+                    # drop duplicate by retaurant_name
+                    df_recommended = df_recommended.drop_duplicates(subset=['retaurant_name'])
+                    df_recommended = df_recommended.head(5)
+                    print(df_recommended)
+                    list_restaurant = df_recommended['retaurant_name'].tolist()
+                    list_restaurant = ', '.join([str(elem) for elem in list_restaurant])
+                    response_message = "Berikut " + str(restaurant_type) + "yang buka 24 jam : " + str(list_restaurant)
+            except:
+                response_message = "Maaf, tidak ada restoran yang bernama " + str(restaurant_type) + " tidak ada di database kami"
+        else:
+            response_message = "Maaf, tidak ada restoran tersebut di database kami hehhee"
+
+        dispatcher.utter_message(response_message)
+        return []
+    
+class ActionReserveRestaurant(Action):
+    def name(self) -> Text:
+        return "action_reserve_restaurant"
+    
+    def run(self,
+              dispatcher: CollectingDispatcher,
+              tracker: Tracker,
+              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    
+        tracker_list = tracker.latest_message['entities']
+        parsed_entities = {}
+
+        for entity_info in tracker_list:
+            entity = entity_info['entity']
+            value = entity_info['value']
+            parsed_entities[entity] = value
+
+        try:
+            name = parsed_entities['restaurant_name']
+        except:
+            name = None
+
+        if name != None:
+            # parse address from csv when restaurant_name is matched with retaurant_name column
+            try:
+                number = df.loc[df['restaurant_name_lower'] == name, 'Phones'].iloc[0]
+                response_message = "Kamu bisa menghubungi " + str(name) + " di nomor berikut : " + str(number)
+            except:
+                response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
+        else:
+            response_message = "Maaf, tidak ada restoran tersebut di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
+    
+class ActionCheckRestaurantDiscount(Action):
+    def name(self) -> Text:
+        return "action_check_restaurants_discount"
+    
+    def run(self,
+              dispatcher: CollectingDispatcher,
+              tracker: Tracker,
+              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    
+        try:
+            response_message = "Mohon maaf, Restbot belum memiliki data restoran seperti yang kamu inginkan. Namun Restbot memiliki banyak rekomendasi restoran/kuliner untukmu. Apakah kamu memiliki permintaan lainnya?"
+        except:
+            response_message = "Mohon maaf, Restbot belum memiliki data restoran seperti yang kamu inginkan. Namun Restbot memiliki banyak rekomendasi restoran/kuliner untukmu. Apakah kamu memiliki permintaan lainnya?"
+
+        dispatcher.utter_message(response_message)
+        return []
+    
 class ActionCheckRestaurantsWorkingHours(Action):
     def name(self) -> Text:
         return "action_check_restaurants_working_hours"
