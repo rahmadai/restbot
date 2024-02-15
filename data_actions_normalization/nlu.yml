@@ -1785,7 +1785,7 @@ nlu:
     - [bar](restaurant_type) buat malming di mana ya bot?
     - gw lg bm [bebek](restaurant_type) deh bot, yang enak dimana yak?
     - aing teh ngidam [pepes](restaurant_type), bisa beli dimana yak?
-    - ingpo [coffee shop](restaurant_type) uapik neng [uii](restaurant_location) dong bos
+    - ingpo [coffee shop](restaurant_type) uapik neng [uii](location) dong bos
     - [coffee shop](restaurant_type) instagrammable deket [uny](location) dong min
     - ada saran [coffee shop](restaurant_type) yang ada ruangan [meeting](restaurant_facility) ?
     - bot, info [coffee shop](restaurant_type) yang punya [ruangan indoor](restaurant_facility) dong
@@ -1796,41 +1796,41 @@ nlu:
     - berikan saya list tempat makan [gudeg](restaurant_type) di sekitar [tugu](location)
     - berikan saya list resto yang jual [cromboloni](restaurant_type)
     - berikan saya list resto yang jual [steak](restaurant_type) di [jogja](location)
-    - gw pengen wfc di [coffee shop](restaurant_type) di daerah [jakal](restaurant_location)
+    - gw pengen wfc di [coffee shop](restaurant_type) di daerah [jakal](location)
     - gw pengen wfc di [coffee shop](restaurant_type) yang punya banyak [colokan](restaurant_facility)
     - gw pengen [auce](restaurant_type) deh bot
-    - gw pengen wfc di [coffee shop](restaurant_type) di daerah [jakal](restaurant_location)
+    - gw pengen wfc di [coffee shop](restaurant_type) di daerah [jakal](location)
     - gw pengen makan [mie](restaurant_type) chili oil bot
     - gw mo makan [sushi](restaurant_type) yang murah bot
-    - tempat beli [croissant](restaurant_type) di [jogja](restaurant_location) dimana ya?
+    - tempat beli [croissant](restaurant_type) di [jogja](location) dimana ya?
     - tempat beli [bebek](restaurant_type) madura yang enak dimana ya?
     - lagi pengen yang berkuah kaya [bakso](restaurant_type) deh bot
     - lagi pengen makan nasi [bebek](restaurant_type) madura
     - lagi pengen [es krim](restaurant_type) bot
-    - berikan saya list tempat makan [enak](restaurant_type) di daerah [umy](restaurant_location)
+    - berikan saya list tempat makan [enak](restaurant_type) di daerah [umy](location)
     - tempat beli [bebek](restaurant_type) madura yang enak dimana ya?
     - lagi pengen yang berkuah kaya [auce](restaurant_type) deh bot
     - lagi pengen makan nasi [bebek](restaurant_type) madura
-    - Info dong, restoran yang recommended di sekitar [seturan](restaurant_location).
-    - berikan saya list tempat makan [ayam](restaurant_type) geprek enak di [jogja](restaurant_location)
-    - rekomendasi [burjo](restaurant_type) enak di daerah [uii](restaurant_location)
-    - Bot, ada saran restoran enak di daerah sekitar (restaurant_location)?
-    - Info dong, restoran yang enak di sekitar [seturan](restaurant_location).
-    - Bot, cariin restoran yang oke di sekitar [monjali](restaurant_location), ya.
-    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [concat](restaurant_location) ga, bot?
-    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [palagan](restaurant_location)?
-    - Info dong, restoran yang recommended di sekitar [seturan](restaurant_location).
-    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](restaurant_location), ya.
-    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [umy](restaurant_location) ga, bot?
-    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [tugu](restaurant_location)?
-    - Info dong, restoran yang recommended di sekitar [seturan](restaurant_location).
-    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](restaurant_location), ya.
-    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [ukdw](restaurant_location) ga, bot?
-    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [stasiun lempuyangan](restaurant_location)?
-    - Info dong, restoran yang recommended di sekitar [seturan](restaurant_location).
-    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](restaurant_location), ya.
-    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [uii](restaurant_location) ga, bot?
-    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [uny](restaurant_location)?
+    - Info dong, restoran yang recommended di sekitar [seturan](location).
+    - berikan saya list tempat makan [ayam](restaurant_type) geprek enak di [jogja](location)
+    - rekomendasi [burjo](restaurant_type) enak di daerah [uii](location)
+    - Bot, ada saran restoran enak di daerah sekitar (location)?
+    - Info dong, restoran yang enak di sekitar [seturan](location).
+    - Bot, cariin restoran yang oke di sekitar [monjali](location), ya.
+    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [concat](location) ga, bot?
+    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [palagan](location)?
+    - Info dong, restoran yang recommended di sekitar [seturan](location).
+    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](location), ya.
+    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [umy](location) ga, bot?
+    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [tugu](location)?
+    - Info dong, restoran yang recommended di sekitar [seturan](location).
+    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](location), ya.
+    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [ukdw](location) ga, bot?
+    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [stasiun lempuyangan](location)?
+    - Info dong, restoran yang recommended di sekitar [seturan](location).
+    - Bot, cariin restoran yang [mantap](restaurant_type) di sekitar [monjali](location), ya.
+    - Ada saran tempat makan yang deket dan [enak](restaurant_type) di [uii](location) ga, bot?
+    - Bot, bisa kasih rekomendasi restoran yang [enak](restaurant_type) di sekitar [uny](location)?
 
 - intent: intent_ask_all_menu
   examples: |
@@ -3311,6 +3311,69 @@ nlu:
     - apakah [tilasawa](restaurant_name) menyediakan banyak [colokan](restaurant_facility)
     - [internet](restaurant_facility) di [tilasawa](restaurant_name) kenceng ga?
     - apakah [tilasawa](restaurant_name) menyediakan banyak [stop kontak](restaurant_facility)?
+
+- intent: intent_provide_location
+  examples: |
+    - [UGM](location)
+    - [UNY ](location)
+    - [UMY](location)
+    - [UII](location)
+    - [UKDW](location)
+    - [UMBY](location)
+    - [UAJY](location)
+    - [UTY](location)
+    - [UNISA](location)
+    - [UPN](location)
+    - [UIN Suka](location)
+    - [Sandar](location)
+    - [Stasiun Tugu ](location)
+    - [Stasiun Lempuyangan](location)
+    - [Stasiun Maguwo](location)
+    - [Terminal Giwangan](location)
+    - [Terminal Jombor](location)
+    - [Terminal Concat](location)
+    - [Terminal Ngabean](location)
+    - [Tugu Yogyakarta](location)
+    - [Pakuwon](location)
+    - [Amplaz](location)
+    - [Gale](location)
+    - [JCM](location)
+    - [SCH](location)
+    - [J-Walk](location)
+    - [Lippo](location)
+    - [Transmart](location)
+    - [Jakal](location)
+    - [Kaliurang](location)
+    - [Jamal](location)
+    - [Palagan](location)
+    - [Monjali](location)
+    - [Concat](location)
+    - [Sarkem](location)
+    - [Jogteng](location)
+    - [Tamsis](location)
+    - [Alkid](location)
+    - [Malio](location)
+    - [Tampin](location)
+    - [Titik Nol](location)
+    - [JEC](location)
+    - [Kotbar](location)
+    - [Jakal Atas](location)
+    - [Seturan](location)
+    - [Prawirotaman](location)
+    - [Parangtritis](location)
+    - [Bantul](location)
+    - [Sleman](location)
+    - [Maguwo](location)
+    - [Tugu](location)
+    - [Stadion Maguwoharjo Sleman](location)
+    - [Stadion UNY](location)
+    - [Stadion Pancasila UGM](location)
+    - [Stadion Tridadi](location)
+    - [Stadion Mandala Krida](location)
+    - [Stadion Dwi Windu](location)
+    - [Kopertis Stadium](location)
+    - [Stadion Sultan Agung](location)
+    - [Stadion Kridosono](location)
 
 - intent: intent_provide_restaurant_name
   examples: |

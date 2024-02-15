@@ -60,11 +60,11 @@ class Preprocess(GraphComponent):
             message.data['text'] = message.data['text'].lower()
             # replace word in message.data['text'] with word in csv file
             # run word by word inside text and replace with word_changes.csv
-            for word in message.data['text'].split():
-                try:
-                    message.data['text'] = message.data['text'].replace(word, df.loc[df['word'] == word, 'changes_word'].iloc[0])
-                except:
-                    pass
-            print(message.data['text'])
+            # for word in message.data['text'].split():
+            #     try:
+            #         message.data['text'] = message.data['text'].replace(word, df.loc[df['word'] == word, 'changes_word'].iloc[0])
+            #     except:
+            #         pass
+            # print(message.data['text'])
 
         return messages

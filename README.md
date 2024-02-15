@@ -47,9 +47,11 @@ $ rasa train --data data_actions_normalization --config config/config-custom-ber
 ```
 
 #### Testing
-To testing the bot, modify testing inside /tests folder
+To testing the bot, create folder train_test_split_normalization
 ```
-$ rasa test
+$ rasa data split nlu --random-seed 1 --training-fraction 0.8 --out train_test_split_normalization --nlu data_actions_normalization/nlu.yml
+$ rasa train --data train_test_split_normalization/training_data.yml --config config/config-custom-bert.yml 
+$ rasa test nlu --nlu train_test_split_normalization/test_data.yml
 ```
 
 #### Activate actions server

@@ -1,70 +1,114 @@
 version: "3.1"
 stories:
+- story: User greets, confirms recommendation, and asks for restaurant recommendation (./train_test_split/test_stories.yml)
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_recommendation_restaurant
+  - action: utter_provide_general_recommendation_restaurant  # predicted: action_check_restaurants_recommendation
+- story: User greets, confirms recommendation, rejects, and asks for working hours (./train_test_split/test_stories.yml)
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_reject
+  - action: utter_reject
+  - intent: intent_restaurant_working_hours
+  - action: utter_provide_restaurant_hours  # predicted: action_check_restaurants_recommendation
+- story: User greets, rejects recommendation, confirms, asks for working hours, and expresses gratitude (./train_test_split/test_stories.yml)
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_reject
+  - action: utter_reject
+  - intent: intent_confirmation
+  - action: utter_confirmation
+  - intent: intent_restaurant_working_hours
+  - action: utter_provide_restaurant_hours  # predicted: action_check_restaurants_recommendation
+  - intent: intent_thanks
+  - action: utter_thanks
+- story: User search for a restaurant type (./train_test_split/test_stories.yml)
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_recommendation_restaurant
+    entities:
+    - restaurant_type: ''
+    - restaurant_name: ''
+    - working_hours: ''
+    - restaurant_location: ''
+  - action: utter_provide_general_recommendation_restaurant  # predicted: action_check_restaurants_recommendation
+  - intent: intent_ask_restaurant_location
+    entities:
+    - restaurant_type: ''
+    - restaurant_name: ''
+    - working_hours: ''
+    - restaurant_location: ''
+  - action: utter_provide_restaurant_location  # predicted: action_check_restaurants_recommendation
+  - intent: intent_confirmation
+  - action: utter_confirmation_for_restaurant  # predicted: utter_confirmation
+  - intent: intent_thanks
+  - action: utter_thanks
 - story: happy path 1 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: intent_greet: hello there!
-  - action: utter_greet  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: mood_great  # predicted: intent_greet: amazing
-  - action: utter_happy  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_greet  # predicted: action_check_restaurants_recommendation
+  - intent: mood_great  # predicted: intent_happy_mood: amazing
+  - action: utter_happy  # predicted: action_check_restaurants_recommendation
 - story: happy path 2 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: intent_greet: hello there!
-  - action: utter_greet  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: mood_great  # predicted: intent_greet: amazing
-  - action: utter_happy  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_greet  # predicted: action_check_restaurants_recommendation
+  - intent: mood_great  # predicted: intent_happy_mood: amazing
+  - action: utter_happy  # predicted: action_check_restaurants_recommendation
   - intent: goodbye  # predicted: intent_bye: bye-bye!
-  - action: utter_goodbye  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_goodbye  # predicted: action_check_restaurants_recommendation
 - story: sad path 1 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: intent_greet: hello
-  - action: utter_greet  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_greet  # predicted: action_check_restaurants_recommendation
   - intent: mood_unhappy  # predicted: intent_greet: not good
-  - action: utter_cheer_up  # predicted: action_default_fallback
-  - action: utter_did_that_help  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: affirm  # predicted: intent_greet: yes
-  - action: utter_happy  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_cheer_up  # predicted: action_check_restaurants_recommendation
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: nlu_fallback: yes
+  - action: utter_happy  # predicted: action_check_restaurants_recommendation
 - story: sad path 2 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: intent_greet: hello
-  - action: utter_greet  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_greet  # predicted: action_check_restaurants_recommendation
   - intent: mood_unhappy  # predicted: intent_greet: not good
-  - action: utter_cheer_up  # predicted: action_default_fallback
-  - action: utter_did_that_help  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: deny  # predicted: intent_greet: not really
-  - action: utter_goodbye  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_cheer_up  # predicted: action_check_restaurants_recommendation
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: intent_reject: not really
+  - action: utter_goodbye  # predicted: action_check_restaurants_recommendation
 - story: sad path 3 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: intent_greet: hi
-  - action: utter_greet  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: mood_unhappy  # predicted: intent_thanks: very terrible
-  - action: utter_cheer_up  # predicted: action_default_fallback
-  - action: utter_did_that_help  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
-  - intent: deny  # predicted: intent_reject: no
-  - action: utter_goodbye  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_greet  # predicted: action_check_restaurants_recommendation
+  - intent: mood_unhappy  # predicted: intent_greet: very terrible
+  - action: utter_cheer_up  # predicted: action_check_restaurants_recommendation
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: nlu_fallback: no
+  - action: utter_goodbye  # predicted: action_check_restaurants_recommendation
 - story: say goodbye (./tests/test_stories.yml)
   steps:
   - intent: goodbye  # predicted: intent_bye: bye-bye!
-  - action: utter_goodbye  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_goodbye  # predicted: action_check_restaurants_recommendation
 - story: bot challenge (./tests/test_stories.yml)
   steps:
-  - intent: bot_challenge  # predicted: intent_ask_restaurant_location: are you a bot?
-  - action: utter_iamabot  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - intent: bot_challenge  # predicted: intent_greet: are you a bot?
+  - action: utter_iamabot  # predicted: action_check_restaurants_recommendation
+- story: User states the preferences, and then ask restaurant recommendation from it (./train_test_split/test_stories.yml)
+  steps:
+  - intent: intent_greet
+  - action: utter_ask_questions
+  - intent: intent_provide_information
+  - action: action_listen  # predicted: action_check_restaurants_recommendation
+  - intent: intent_recommendation_restaurant
+  - action: utter_provide_general_recommendation_restaurant  # predicted: action_check_restaurants_recommendation
 - story: User asks for recommendations (./train_test_split/test_stories.yml)
   steps:
   - intent: intent_greet
@@ -72,15 +116,12 @@ stories:
   - intent: intent_restaurant_menu
     entities:
     - restaurant_name: ''
-  - action: utter_provide_restaurant_menu
+  - action: utter_provide_restaurant_menu  # predicted: action_check_restaurants_recommendation
   - intent: intent_recommendation_menu
     entities:
     - restaurant_name: ''
-  - action: utter_provide_menu_recommendation  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_provide_menu_recommendation  # predicted: action_check_recommendation_menu_restaurants
   - intent: intent_confirmation
-  - action: utter_confirmation_for_restaurant  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_confirmation_for_restaurant  # predicted: utter_confirmation
   - intent: intent_thanks
-  - action: utter_thanks  # predicted: action_default_fallback
-  - action: action_listen  # predicted: action_default_fallback
+  - action: utter_thanks

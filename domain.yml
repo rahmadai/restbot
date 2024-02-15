@@ -49,6 +49,8 @@ intents:
     use_entities: false
 - intent_aks_24h_restaurant:
     use_entities: true
+- intent_provide_location:
+    use_entities: true
 entities:
 - restaurant_type
 - restaurant_name

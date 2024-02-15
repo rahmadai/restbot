@@ -1,0 +1,82 @@
+version: "3.1"
+rules:
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+  - rule: greet user
+    steps:
+      - intent: intent_greet
+      - action: utter_ask_questions
+  - rule: thankyou
+    steps:
+      - intent: intent_thanks
+      - action: utter_thanks
+  - rule: goodbye user
+    steps:
+      - intent: intent_bye
+      - action: utter_goodbye
+  - rule: challenge bot
+    steps:
+      - intent: intent_challenge_bot
+      - action: utter_iamabot
+  - rule: happy mood
+    steps:
+      - intent: intent_happy_mood
+      - action: utter_happy_mood
+  - rule: confirm
+    steps:
+      - intent: intent_confirmation
+      - action: utter_confirmation
+
+  - rule: User asks for restaurant locations
+    steps:
+      - intent: intent_ask_restaurant_location
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_location
+
+  - rule: User asks for working hours
+    steps:
+      - intent: intent_restaurant_working_hours
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_working_hours
+
+  - rule: User asks for restaurant facility
+    steps:
+      - intent: intent_restaurant_facility
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_facilities
+
+  - rule: User asks for restaurant menu
+    steps:
+      - intent: intent_ask_all_menu
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_menu
+
+  - rule: User asks for restaurant pricing range
+    steps:
+      - intent: intent_restaurant_pricing
+        entities:
+        - restaurant_name
+      - action: action_check_restaurants_pricing
+  
+  - rule: User asks for recommendation menu restaurant
+    steps:
+      - intent: intent_recommendation_menu
+        entities:
+        - restaurant_name
+      - action: action_check_recommendation_menu_restaurants
+
+  - rule: User confirm something
+    steps:
+      - intent: intent_confirmation
+      - action: utter_confirmation
+  
+  - rule: users provide the contradictary statement 
+    steps:
+      - intent: intent_provide_negative_sample
+      - action: utter_provide_negative_sample
