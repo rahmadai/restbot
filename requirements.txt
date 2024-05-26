@@ -2,5 +2,6 @@ multidict
 attr
 # numpy >= 1.17.3
 # rasa>=2.6.2   # old_model
-rasa
+PyYAML==6.0
+rasa==3.6.13
 tensorboard

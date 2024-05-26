@@ -1,0 +1,57 @@
+{
+  "location": {
+    "precision": 0.5384615384615384,
+    "recall": 0.6363636363636364,
+    "f1-score": 0.5833333333333334,
+    "support": 11,
+    "confused_with": {
+      "restaurant_name": 1
+    }
+  },
+  "restaurant_type": {
+    "precision": 0.38461538461538464,
+    "recall": 0.4166666666666667,
+    "f1-score": 0.4,
+    "support": 24,
+    "confused_with": {
+      "restaurant_name": 8
+    }
+  },
+  "restaurant_facility": {
+    "precision": 0.8461538461538461,
+    "recall": 0.6875,
+    "f1-score": 0.7586206896551724,
+    "support": 16,
+    "confused_with": {
+      "restaurant_name": 1
+    }
+  },
+  "restaurant_name": {
+    "precision": 0.8743455497382199,
+    "recall": 0.8564102564102564,
+    "f1-score": 0.8652849740932642,
+    "support": 195,
+    "confused_with": {
+      "restaurant_type": 7
+    }
+  },
+  "micro avg": {
+    "precision": 0.8024691358024691,
+    "recall": 0.7926829268292683,
+    "f1-score": 0.7975460122699387,
+    "support": 246
+  },
+  "macro avg": {
+    "precision": 0.6608940797422472,
+    "recall": 0.6492351398601398,
+    "f1-score": 0.6518097492704424,
+    "support": 246
+  },
+  "weighted avg": {
+    "precision": 0.8097141865498397,
+    "recall": 0.7926829268292683,
+    "f1-score": 0.8003462099566501,
+    "support": 246
+  },
+  "accuracy": 0.9288194444444444
+}

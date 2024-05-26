@@ -51,6 +51,8 @@ intents:
     use_entities: true
 - intent_provide_location:
     use_entities: true
+- intent_reservation:
+    use_entities: true
 entities:
 - restaurant_type
 - restaurant_name
@@ -80,9 +82,10 @@ slots:
     type: text
     initial_value: null
     # auto_fill: true
-    influence_conversation: false
+    influence_conversation: true
     mappings:
-    - type: custom
+    - type: from_entity
+      entity: restaurant_name
   location:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
@@ -125,6 +128,8 @@ responses:
   - text: Baiklah. Restbot akan menjawab lainnya. Restoran apa yang kamu sukai?
   utter_happy_mood:
   - text: Wah, Restbot senang mendengarnya
+  utter_ask_restaurant_name:
+  - text: Restaurant mana yang ingin kamu ketahui?
 #   utter_restaurant_discount:
 #   - text: Mohon maaf, Restbot belum memiliki data restoran seperti yang kamu inginkan. Namun Restbot memiliki banyak rekomendasi restoran/kuliner untukmu. Apakah kamu memiliki permintaan lainnya?
 
@@ -140,5 +145,12 @@ actions:
 - action_check_24h_restaurant
 - action_check_restaurants_discount
 - action_reserve_restaurant
-forms: {}
+- action_entity_kosong
+- action_check_entity
+- action_handle_requests
+- validate_restaurant_form
+forms:
+  restaurant_form:
+    required_slots:
+      - restaurant_name
 e2e_actions: []

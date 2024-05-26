@@ -1,0 +1,204 @@
+version: "3.1"
+nlu:
+- intent: intent_challenge_bot
+  examples: |
+    - apakah kamu masih bekerja
+    - apa saya berbicara dengan bot?
+    - apa saya berbicara dengan manusia?
+- intent: intent_confirmation
+  examples: |
+    - iya, pesanannya itu.
+    - iya, pesananku itu.
+    - betul, aku pesan itu.
+    - gue mau nyoba rekomendasi lu deh
+- intent: intent_provide_restaurant_name
+  examples: |
+    - [pizza hut jakal](restaurant_name)
+    - restoran nya bernama [burger king](restaurant_name)
+    - saya tadi milihnya [mcdonald's jakal](restaurant_name)
+    - [cinema bakery](restaurant_name)
+    - [mcdonald's sudirman yogyakarta](restaurant_name)
+    - [papa johns](restaurant_name)
+- intent: intent_bye
+  examples: |
+    - ya udah, kita off dulu ya.
+    - waktunya off, sobat.
+    - saya akan kembali nanti.
+    - gue cabs dulu
+    - udah deh, saya pamit duluan.
+    - aku pamit dulu
+- intent: intent_reject
+  examples: |
+    - gue sih mending gak usah deh pilih yang itu
+    - kurang suka itu si
+    - tidak
+    - sorry, tapi gue milih yang lain aja deh
+    - other suggestion?
+    - ga like
+    - no way, gue gak mau pilih yang kayak gitu
+    - mungkin ada opsi lain?
+- intent: intent_ask_all_menu
+  examples: |
+    - Tolong berikan daftar lengkap menu di [the healthy bowl](restaurant_name)
+    - Berikan daftar lengkap makanan yang ada di [soup station](restaurant_name)
+    - Restobot, jelaskan semua menu yang ada di [cheese heaven](restaurant_name) ini
+    - Saya ingin mengetahui semua opsi yang ada di menu [soto ayam express](restaurant_name)
+    - Tolong berikan gambaran umum mengenai menu di [waffle delight](restaurant_name)
+    - Saya ingin tahu semua menu yang disajikan di [papa johns](restaurant_name)
+    - Bagaimana dengan variasi menu di [bento bliss](restaurant_name)? Saya ingin tahu semuanya.
+    - Tolong berikan daftar lengkap menu di [izakaya](restaurant_name)
+- intent: intent_greet
+  examples: |
+    - yow
+    - selamat siang
+    - heyy there
+    - hey bot
+    - heyho
+    - selamat malem
+    - hi bot
+    - good morning
+    - tes
+- intent: intent_restaurant_facility
+  examples: |
+    - restoran [mcdonald's jakal](restaurant_name) memiliki fasilitas apa saja?
+    - restoran [giorno's pizzeria](restaurant_name) punya fasilitas apa saja?
+    - saya ingin tahu fasilitas yang ada di [golden geisha ramen](restaurant_name).
+    - bisa beri detail tentang fasilitas di [rm duta minang](restaurant_name)?
+    - apa yang bisa saya temukan dari segi fasilitas di [fore coffee - kaliurang](restaurant_name)?
+    - bisakah anda beri detail tentang fasilitas di [wendys](restaurant_name)?
+    - apa yang bisa anda ceritakan tentang fasilitas di [taco bell](restaurant_name)?
+    - apa yang tersedia di [rm. duta minang gowongan](restaurant_name) dari segi fasilitas?
+- intent: intent_restaurant_pricing
+  examples: |
+    - bisa berikan saya gambaran harga menu di [seorae](restaurant_name)?
+    - boleh tahu berapa harga menu di [taco bell](restaurant_name)?
+    - saya penasaran dengan harga menu di [nasi goreng sapi kantor notaris](restaurant_name). ada informasi?
+    - [gudeg sagan](restaurant_name) biasanya menawarkan harga menu yang sekitar berapa?
+    - pukul berapa [izakaya](restaurant_name) buka dan berapa harga menu utamanya?
+    - bisa berikan saya gambaran harga menu di [rumah makan padang sederhana](restaurant_name)?
+    - bisa informasikan harga menu di [giorno's pizzeria](restaurant_name)?
+    - berapa harga menu di [kakkoii japanese bbq & shabu-shabu](restaurant_name)? ada informasi?
+    - saya penasaran dengan harga menu di [tempo gelato prawirotaman](restaurant_name). ada informasi?
+    - bagaimana dengan harga menu di [rm duta minang](restaurant_name)?
+- intent: intent_provide_information
+  examples: |
+    - saya suka makanan berbahan dasar nasi
+    - saya ingin mencoba masakan korea.
+    - saya ingin makanan yang mudah dibawa untuk takeout
+    - saya ingin mencoba hidangan yang khas restoran ini
+    - saya lebih prefer nasi goreng
+    - saya ingin makanan sehat dan rendah kalori
+    - hari ini aku mau makanan hangat
+    - saya ingin makanan yang sesuai untuk diet vegan
+    - saya lebih suka hidangan berbahan dasar sayuran
+- intent: intent_happy_mood
+  examples: |
+    - aku seneng banget makan di sini, jadi makin ceria!
+    - seneng banget, makanannya enak parah!
+    - gak kerasa udah habis makan, padahal lagi happy banget!
+    - aku bisa makan terus di sini, betah banget!
+    - gila, makanannya enak banget, makasih ya!
+    - wah, rasanya kayak di awan tujuh!
+    - wah, suasana di sini bikin happy
+    - makasih ya, restoran ini bikin mood aku bagus!
+    - aku seneng banget makan di sini, rasanya emang juara!
+    - puas banget, gak nyangka makanannya enak banget!
+- intent: intent_thanks
+  examples: |
+    - saya sangat senang dengan respons anda, terima kasih
+    - terima kasih atas keramahannya
+    - saya berterima kasih atas waktu yang anda habiskan untuk menjawab pertanyaan saya
+    - saya sangat menghargai dukungannya, terima kasih
+    - saya senang bisa mendapatkan jawaban, terima kasih
+    - saya sangat menghargai jawaban yang anda berikan, terima kasih
+    - makasih ya
+    - saya sangat bersyukur atas panduannya, terima kasih
+    - wah, terima kasih banyak ya!
+- intent: intent_provide_negative_sample
+  examples: |
+    - bot, gak suka restoran yang terlalu mewah
+    - saya tidak suka hidangan dengan bahan dasar berbau ikan
+    - saya ga suka kambing
+    - aku bukan penggemar restoran berkonsep buffet, bot
+    - hmm gamau, aku alergi udang
+    - aku kurang suka restoran dengan menu vegetarian, bot
+    - bot, gak terlalu suka restoran dengan menu vegetarian
+    - bot, gak suka restoran chinese
+    - bot, aku gak suka restoran dengan harga yang tidak terjangkau
+    - bot, aku gak terlalu suka restoran dengan menu manis
+- intent: intent_disagree
+  examples: |
+    - kok jawabanmu nggak nyambung sama pertanyaanku?
+    - ini nggak nyambung sama yang aku tanyain
+    - aku gak setuju sama jawaban ini, maaf
+    - aku gak bisa nerima jawaban yang kayak gini
+    - eh, ini beneran rekomendasinya?
+    - ini kok salah paham sama pertanyaanku
+    - ini gak sesuai sama yang aku tanyain, maaf
+    - aku harap kamu bisa kasih jawaban yang lebih baik
+    - aku harap kamu bisa kasih saran yang lebih baik
+    - hmm ga mau itu
+- intent: intent_recommendation_menu
+  examples: |
+    - Best seller menu di [tilasawa](restaurant_name) apa ya?
+    - Bagaimana dengan menu di [sunny side up](restaurant_name), apa yang enak?
+    - Bagaimana dengan hidangan penutup di [kopinyc](restaurant_name), ada yang spesial?
+    - Restobot, coba kasih tahu gue menu andalan di [giorno's pizzeria](restaurant_name)
+    - Enaknya makan apa ya di [warung kopi klotok](restaurant_name)?
+    - Restobot, apa yang paling hits di [kanari society & space](restaurant_name)?
+    - Best seller menu di [chunda resto](restaurant_name) apa ya?
+    - Minuman reccommended di [dummin coffee & space ukdw](restaurant_name) apa ya?
+    - Apa menu paling disukai di [rm. duta minang gowongan](restaurant_name)?
+    - Ada menu spesial yang harus dicoba di [cyber sushi](restaurant_name)?
+    - Ada menu yang paling recommended di [baki by d'monaco](restaurant_name)?
+- intent: intent_restaurant_working_hours
+  examples: |
+    - [r&b grill yogyakarta](restaurant_name) buka jam berapa yaa?
+    - [susu dan roti bakar om bob maguwo](restaurant_name) buka jam berapa yaa?
+    - bisa informasikan jam buka [giorno's pizzeria](restaurant_name)?
+    - kapan [shabu auce](restaurant_name) mulai beroperasi?
+    - bisa informasikan jam buka [seorae](restaurant_name)?
+    - bisakah kamu memberitahu jam buka [tempo gelato](restaurant_name)?
+    - bagaimana jam kerja [starbucks](restaurant_name)?
+    - pukul berapa [mcdonald's sudirman yogyakarta](restaurant_name) buka?
+    - bisakah kamu memberitahu jam buka [burger king](restaurant_name)?
+    - bisa berikan saya jam buka [taco bell](restaurant_name)?
+    - jam berapa [milk by artemy](restaurant_name) buka?
+    - pukul berapa [filosofi kopi jogja](restaurant_name) buka?
+    - pukul berapa [susu dan roti bakar om bob godean](restaurant_name) buka?
+- intent: intent_ask_restaurant_location
+  examples: |
+    - tolong beri tahu saya koordinat gps [gyu-kaku japanese bbq](restaurant_name) ini.
+    - tolong beri tahu saya koordinat gps [dummin coffee & space ukdw](restaurant_name).
+    - bisa beri tahu saya alamat [chingu cafe](restaurant_name)?
+    - apa alamat pasti dari [nanamia pizzeria jogja](restaurant_name)?
+    - apa alamat pasti dari [nikuya bbq jogja](restaurant_name)?
+    - apa lokasi pasti dari [lalawuh sunda](restaurant_name)?
+    - di mana [kakkoii japanese bbq & shabu-shabu](restaurant_name) dengan menu spesial ini berlokasi?
+    - bisakah anda memberi petunjuk ke [sakapatat brew house & resto](restaurant_name)?
+    - saya butuh alamat [golden geisha ramen](restaurant_name) ini, bisa anda bantu?
+    - lokasi [gyu-kaku japanese bbq](restaurant_name) ada di mana?
+    - lokasi [rm duta minang](restaurant_name) di sekitar mana?
+    - restobot, di mana alamat lengkap [oppio coffee](restaurant_name) berada?
+    - bagaimana saya bisa menemukan [el primo sausage & dairy](restaurant_name)?
+- intent: intent_recommendation_restaurant
+  examples: |
+    - bisakah kamu merekomendasikan [restaurant vegetarian](restaurant_type) di sekitar [kaliurang](location)
+    - bisakah kamu merekomendasikan [kafe seni](restaurant_type) yang memiliki galeri seni menarik?
+    - bisa carikan [japanese restaurant](restaurant_type) dengan sushi terbaik?
+    - tolong carikan tempat makan yang enak dan ada [smoking area](restaurant_facility)
+    - bisakah kamu merekomendasikan tempat makan [vegetarian](restaurant_type)?
+    - bisakah kamu merekomendasikan tempat yang menyediakan [mushala](restaurant_facility) di sekitar [kaliurang](location)
+    - rekomendasiin dong [restaurant](restaurant_type) enak dan murah dan ada fasilitas [ac](restaurant_facility) di sekitar [kaliurang](location)
+    - ada saran [padang restaurant](restaurant_type) yang menyajikan masakan padang otentik?
+    - tolong rekomen dong [rumah makan padang](restaurant_type) yang murah disini
+    - hai, ada rekomendasi restorant enak [di sekitar sini](location) dan ada [wifi](restaurant_facility) dong
+    - hai, ada rekomendasi [restoran italia](restaurant_type) enak [di sekitar sini](location) dan bisa [takeaway](restaurant_facility) dong
+    - bisa carikan [restoran keluarga](restaurant_type) yang cocok untuk makan bersama
+    - saya ingin memesan dari [pengiriman makanan](restaurant_type), ada yang bisa direkomendasikan?
+    - apakah ada [restoran sushi](restaurant_type) yang baik [di sekitar sini](location)
+    - hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus di sekitar [kaliurang](location)
+    - apakah ada [italian restaurant](restaurant_type) yang spesial di sekitar sini?
+    - apakah ada [restoran sushi](restaurant_type) yang enak dan menyediakan [ruangan meeting](restaurant_facility) [di sekitar sini](location)
+    - apakah ada restoran yang disediakan [mushala](restaurant_facility) untuk sarapan [di sini](location)
+    - hai, bisakah kamu merekomendasikan [restoran steak](restaurant_type) yang bagus dan ada fasilitas berupa [ruangan outdoor](restaurant_facility) di sekitar [kaliurang](location)

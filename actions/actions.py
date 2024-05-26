@@ -1,10 +1,11 @@
 import httpx 
 from typing import Any, Text, Dict, List
 
-from rasa_sdk import Action, Tracker
+from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, FollowupAction
 from actions.weighted_product import preprocessing, get_data_resto
+from rasa_sdk.types import DomainDict
 
 # read csv file
 import pandas as pd
@@ -21,6 +22,55 @@ df = df.assign(facility=df['facility'].str.split(',')).explode('facility')
 
 df = df.merge(menu_df, on='restaurant_name_lower', how='left', indicator=True)
 
+class ValidateRestaurantForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_restaurant_form"
+
+    def validate_restaurant_name(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate `restaurant_name` value."""
+
+        # dispatcher.utter_message(text=f"OK! You want to have a {slot_value} restaurant name.")
+        return {"restaurant_name": slot_value}
+
+class ActionHandleRequests(Action):
+    def name(self) -> Text:
+        return "action_handle_requests"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+            slot_value = tracker.get_slot('restaurant_name')
+            if slot_value is None:
+                return [FollowupAction("action_check_restaurants_location")]
+            else:
+                dispatcher.utter_message(response="utter_ask_restaurant_name")
+
+class ActionCheckEntity(Action):
+    def name(self) -> Text:
+        return "action_check_entity"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        requested_entity = tracker.get_slot("requested_entity")
+
+        # You can replace 'requested_entity' with the name of the entity you're interested in
+        # Check if the entity is present in the user's message
+        if requested_entity:
+            # Entity is present, set the slot indicating the entity is present
+            return [SlotSet("entity_present", True)]
+        else:
+            # Entity is not present, set the slot indicating the entity is not present
+            return [SlotSet("entity_present", False)]
+        
 class ActionCheckRestaurantsRecommendation(Action):
     def name(self) -> Text:
         return "action_check_restaurants_recommendation"
@@ -348,6 +398,20 @@ class ActionCheckRestaurantsWorkingHours(Action):
                 response_message = "Maaf, tidak ada restoran yang bernama " + str(name) + " tidak ada di database kami"
         else:
             response_message = "Maaf, tidak ada restoran tersebut di database kami"
+    
+        dispatcher.utter_message(response_message)
+        return []
+    
+class ActionEntityKosong(Action):
+    def name(self) -> Text:
+        return "action_entity_kosong"
+    
+    def run(self,
+              dispatcher: CollectingDispatcher,
+              tracker: Tracker,
+              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    
+        response_message = "Contoh entity kosong"
     
         dispatcher.utter_message(response_message)
         return []

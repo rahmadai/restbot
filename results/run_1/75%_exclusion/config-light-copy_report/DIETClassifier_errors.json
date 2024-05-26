@@ -1,0 +1,1359 @@
+[
+  {
+    "text": "pizza hut jakal",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "pizza hut jakal",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.7675628662109375,
+        "value": "pizza hut",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "warung kopi klotok",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "warung kopi klotok",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9970826506614685,
+        "value": "warung",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fore coffee - kaliurang",
+    "entities": [
+      {
+        "start": 0,
+        "end": 23,
+        "value": "fore coffee - kaliurang",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.4062575399875641,
+        "value": "fore coffee",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.9935235977172852,
+        "value": "kaliurang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ga mo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 3,
+        "end": 5,
+        "confidence_entity": 0.7706296443939209,
+        "value": "mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Saya ingin tahu semua opsi makanan di mexican munchies",
+    "entities": [
+      {
+        "start": 38,
+        "end": 54,
+        "value": "mexican munchies",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tolong berikan daftar lengkap menu di grill master",
+    "entities": [
+      {
+        "start": 38,
+        "end": 50,
+        "value": "grill master",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 44,
+        "end": 50,
+        "confidence_entity": 0.8748553991317749,
+        "value": "master",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bagaimana dengan variasi menu di bento bliss? Saya ingin tahu semuanya.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 44,
+        "value": "bento bliss",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Berikan daftar makanan yang ada di wok wonders",
+    "entities": [
+      {
+        "start": 35,
+        "end": 46,
+        "value": "wok wonders",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tolong berikan daftar lengkap menu di gravy goodness",
+    "entities": [
+      {
+        "start": 38,
+        "end": 52,
+        "value": "gravy goodness",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 38,
+        "end": 43,
+        "confidence_entity": 0.4410698115825653,
+        "value": "gravy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5506718754768372,
+        "value": "yo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "apa yang bisa saya temukan dari segi fasilitas di burger king?",
+    "entities": [
+      {
+        "start": 50,
+        "end": 61,
+        "value": "burger king",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 50,
+        "end": 56,
+        "confidence_entity": 0.5074086785316467,
+        "value": "burger",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "restoran gudeg sagan memiliki fasilitas apa saja?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "gudeg sagan",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9833787083625793,
+        "value": "sagan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sakapatat brew house & resto biasanya menawarkan menu dengan harga berapa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 28,
+        "value": "sakapatat brew house & resto",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 10,
+        "end": 28,
+        "confidence_entity": 0.6668274402618408,
+        "value": "brew house & resto",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bisa informasikan harga menu di giorno's pizzeria?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 49,
+        "value": "giorno's pizzeria",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 39,
+        "end": 49,
+        "confidence_entity": 0.9970115423202515,
+        "value": "s pizzeria",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boleh kamu informasikan harga menu di fore coffee - kaliurang?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 61,
+        "value": "fore coffee - kaliurang",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 38,
+        "end": 49,
+        "confidence_entity": 0.4737645089626312,
+        "value": "fore coffee",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 52,
+        "end": 61,
+        "confidence_entity": 0.9960882663726807,
+        "value": "kaliurang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bagaimana dengan harga kopi di dummin coffee & space ukdw?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 57,
+        "value": "dummin coffee & space ukdw",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 38,
+        "end": 52,
+        "confidence_entity": 0.43989017605781555,
+        "value": "coffee & space",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "menu apa saja yang ditawarkan oleh mcdonald's sudirman yogyakarta dan berapa harganya?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 65,
+        "value": "mcdonald's sudirman yogyakarta",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 35,
+        "end": 69,
+        "confidence_entity": 0.7036359310150146,
+        "value": "mcdonald's sudirman yogyakarta dan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oh! terima kasih!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9531001448631287,
+        "value": "oh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "thank you banget lho",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.4507344961166382,
+        "value": "lho",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya suka hidangan korea",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.9339743256568909,
+        "value": "korea",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya ingin makanan yang sesuai untuk diet keto",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 42,
+        "end": 46,
+        "confidence_entity": 0.9329602122306824,
+        "value": "keto",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku mau nyoba makanan italia",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9675081372261047,
+        "value": "italia",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya ingin makanan yang cocok untuk diet gluten-free",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.9148284196853638,
+        "value": "cocok",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 41,
+        "end": 52,
+        "confidence_entity": 0.5083417892456055,
+        "value": "gluten-free",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mood aku langsung mejeng pas makan di sini!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.7867103815078735,
+        "value": "langsung",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku seneng banget makan di sini, jadi makin ceria!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 44,
+        "end": 49,
+        "confidence_entity": 0.9766530990600586,
+        "value": "ceria",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "enak lho disitu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.2799467444419861,
+        "value": "lho",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku happy banget dateng ke sini",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 17,
+        "end": 23,
+        "confidence_entity": 0.7153759002685547,
+        "value": "dateng",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bot, gak terlalu suka dengan restoran italia",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 38,
+        "end": 44,
+        "confidence_entity": 0.9640193581581116,
+        "value": "italia",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "resto dengan hidangan daging bukan pilihanku, bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7345914840698242,
+        "value": "resto",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "maaf, tapi saya tidak setuju dengan rekomendasi anda.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 6,
+        "end": 10,
+        "confidence_entity": 0.9700770974159241,
+        "value": "tapi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9863923192024231,
+        "value": "setuju",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku gak setuju sama jawaban kamu, nggak relevan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9722322821617126,
+        "value": "setuju",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bagaimana dengan hidangan penutup di kopinyc, ada yang spesial?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 44,
+        "value": "kopinyc",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Kalau lagi di noodle inc, menu apa yang paling recommended?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "noodle inc",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Enaknya makan apa ya di warung kopi klotok?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 42,
+        "value": "warung kopi klotok",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.9981452226638794,
+        "value": "warung",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Minuman reccommended di dummin coffee & space ukdw apa ya?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 50,
+        "value": "dummin coffee & space ukdw",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 31,
+        "end": 45,
+        "confidence_entity": 0.41218602657318115,
+        "value": "coffee & space",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pukul berapa filosofi kopi jogja buka?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 32,
+        "value": "filosofi kopi jogja",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 27,
+        "end": 32,
+        "confidence_entity": 0.9974319338798523,
+        "value": "jogja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pukul berapa susu dan roti bakar om bob godean buka?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 46,
+        "value": "susu dan roti bakar om bob godean",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 13,
+        "end": 39,
+        "confidence_entity": 0.5800120234489441,
+        "value": "susu dan roti bakar om bob",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bisa informasikan jam buka rumah makan padang sederhana?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 55,
+        "value": "rumah makan padang sederhana",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 27,
+        "end": 32,
+        "confidence_entity": 0.9994263648986816,
+        "value": "rumah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 39,
+        "end": 55,
+        "confidence_entity": 0.9271549582481384,
+        "value": "padang sederhana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bisakah kamu memberitahu jam buka metropole coffee?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 50,
+        "value": "metropole coffee",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 44,
+        "end": 50,
+        "confidence_entity": 0.4506184756755829,
+        "value": "coffee",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bisakah kamu memberitahu jam buka fore coffee - kaliurang?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 57,
+        "value": "fore coffee - kaliurang",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 34,
+        "end": 45,
+        "confidence_entity": 0.4767773747444153,
+        "value": "fore coffee",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 48,
+        "end": 57,
+        "confidence_entity": 0.9962002635002136,
+        "value": "kaliurang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tahu tidak kapan el primo sausage & dairy mulai melayani pelanggan?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 41,
+        "value": "el primo sausage & dairy",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.6741977334022522,
+        "value": "primo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 34,
+        "end": 41,
+        "confidence_entity": 0.6406651139259338,
+        "value": "& dairy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "r&b grill yogyakarta buka jam berapa yaa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "r&b grill yogyakarta",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.8661602735519409,
+        "value": "r&b",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.9957914352416992,
+        "value": "yogyakarta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "apa alamat lengkap dari gudeg sagan?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 35,
+        "value": "gudeg sagan",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.991122841835022,
+        "value": "sagan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya butuh tahu di mana kanari society & space, bisakah anda bantu?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 46,
+        "value": "kanari society & space",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 31,
+        "end": 46,
+        "confidence_entity": 0.46162983775138855,
+        "value": "society & space",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "restobot, di mana alamat lengkap fore coffee - kaliurang berada?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 56,
+        "value": "fore coffee - kaliurang",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 33,
+        "end": 44,
+        "confidence_entity": 0.41524776816368103,
+        "value": "fore coffee",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 47,
+        "end": 56,
+        "confidence_entity": 0.9962820410728455,
+        "value": "kaliurang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "di mana alamat filosofi kopi jogja yang paling dekat?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 34,
+        "value": "filosofi kopi jogja",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 29,
+        "end": 34,
+        "confidence_entity": 0.9974361062049866,
+        "value": "jogja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "di mana warung burjo duta rasa grup terletak?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 35,
+        "value": "warung burjo duta rasa grup",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 8,
+        "end": 30,
+        "confidence_entity": 0.9327678680419922,
+        "value": "warung burjo duta rasa",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bagaimana saya bisa menemukan el primo sausage & dairy?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 54,
+        "value": "el primo sausage & dairy",
+        "entity": "restaurant_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.7830626964569092,
+        "value": "primo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 47,
+        "end": 54,
+        "confidence_entity": 0.6898579597473145,
+        "value": "& dairy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya ingin memesan dari pengiriman makanan, ada yang bisa direkomendasikan?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 42,
+        "value": "pengiriman makanan",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hai, bisakah kamu merekomendasikan restoran steak yang bagus di sekitar kaliurang",
+    "entities": [
+      {
+        "start": 35,
+        "end": 49,
+        "value": "restoran steak",
+        "entity": "restaurant_type"
+      },
+      {
+        "start": 72,
+        "end": 81,
+        "value": "kaliurang",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 72,
+        "end": 81,
+        "confidence_entity": 0.9967221617698669,
+        "value": "kaliurang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bisakah kamu merekomendasikan restoran hidangan penutup dengan pilihan penutup lezat?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 55,
+        "value": "restoran hidangan penutup",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ada ramen restaurant yang punya ramen terbaik?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 20,
+        "value": "ramen restaurant",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.5451631546020508,
+        "value": "ramen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_type",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.5865247845649719,
+        "value": "restaurant",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.612367570400238,
+        "value": "ramen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "apakah ada pujasera yang cocok untuk acara formal?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "pujasera",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 25,
+        "end": 30,
+        "confidence_entity": 0.9053089618682861,
+        "value": "cocok",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tolong rekomen dong restoran yang ada ruang disabilitas",
+    "entities": [
+      {
+        "start": 38,
+        "end": 55,
+        "value": "ruang disabilitas",
+        "entity": "restaurant_facility"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_facility",
+        "start": 38,
+        "end": 43,
+        "confidence_entity": 0.9906681180000305,
+        "value": "ruang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "apakah ada restaurant yang bagus untuk sarapan di sini",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "restaurant",
+        "entity": "restaurant_type"
+      },
+      {
+        "start": 47,
+        "end": 54,
+        "value": "di sini",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 11,
+        "end": 21,
+        "confidence_entity": 0.581395149230957,
+        "value": "restaurant",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ada saran restoran cepat saji yang menyediakan makanan cepat saji sehat?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 29,
+        "value": "restoran cepat saji",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bisakah kamu merekomendasikan tempat makan vegetarian?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 53,
+        "value": "vegetarian",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ada saran padang restaurant yang menyajikan masakan padang otentik?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 27,
+        "value": "padang restaurant",
+        "entity": "restaurant_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 10,
+        "end": 27,
+        "confidence_entity": 0.5542535185813904,
+        "value": "padang restaurant",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 52,
+        "end": 58,
+        "confidence_entity": 0.8951801657676697,
+        "value": "padang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku ingin mencari tempat makan yang tersedia ruang rapat di jogja. apa ada yang kamu rekomendasikan?",
+    "entities": [
+      {
+        "start": 45,
+        "end": 56,
+        "value": "ruang rapat",
+        "entity": "restaurant_facility"
+      },
+      {
+        "start": 60,
+        "end": 65,
+        "value": "jogja",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_facility",
+        "start": 45,
+        "end": 50,
+        "confidence_entity": 0.9912700653076172,
+        "value": "ruang",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 60,
+        "end": 65,
+        "confidence_entity": 0.9970563650131226,
+        "value": "jogja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "saya ingin mencari tempat yang mempunyai tempat parkir untuk 2 orang di deket ugm",
+    "entities": [
+      {
+        "start": 41,
+        "end": 54,
+        "value": "tempat parkir",
+        "entity": "restaurant_facility"
+      },
+      {
+        "start": 78,
+        "end": 81,
+        "value": "ugm",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_facility",
+        "start": 48,
+        "end": 54,
+        "confidence_entity": 0.9893201589584351,
+        "value": "parkir",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 61,
+        "end": 62,
+        "confidence_entity": 0.4107561409473419,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 78,
+        "end": 81,
+        "confidence_entity": 0.9914759993553162,
+        "value": "ugm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hai, ada rekomendasi restoran italia enak di sekitar sini dan ada wifi dong",
+    "entities": [
+      {
+        "start": 21,
+        "end": 36,
+        "value": "restoran italia",
+        "entity": "restaurant_type"
+      },
+      {
+        "start": 42,
+        "end": 57,
+        "value": "di sekitar sini",
+        "entity": "location"
+      },
+      {
+        "start": 66,
+        "end": 70,
+        "value": "wifi",
+        "entity": "restaurant_facility"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 30,
+        "end": 36,
+        "confidence_entity": 0.9675028920173645,
+        "value": "italia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 58,
+        "end": 61,
+        "confidence_entity": 0.5212674140930176,
+        "value": "dan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hai, bisakah kamu merekomendasikan tempat yang bagus dan tersedia toilet umum",
+    "entities": [
+      {
+        "start": 66,
+        "end": 77,
+        "value": "toilet umum",
+        "entity": "restaurant_facility"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_name",
+        "start": 53,
+        "end": 56,
+        "confidence_entity": 0.5132085084915161,
+        "value": "dan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aku ingin mencari tempat coffee shop yang tersedia ruang rapat di jogja. apa ada yang kamu rekomendasikan?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 36,
+        "value": "coffee shop",
+        "entity": "restaurant_type"
+      },
+      {
+        "start": 51,
+        "end": 62,
+        "value": "ruang rapat",
+        "entity": "restaurant_facility"
+      },
+      {
+        "start": 66,
+        "end": 71,
+        "value": "jogja",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_type",
+        "start": 25,
+        "end": 36,
+        "confidence_entity": 0.40445753931999207,
+        "value": "coffee shop",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_facility",
+        "start": 51,
+        "end": 56,
+        "confidence_entity": 0.9915786981582642,
+        "value": "ruang",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant_name",
+        "start": 66,
+        "end": 71,
+        "confidence_entity": 0.9969915151596069,
+        "value": "jogja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "apakah ada restoran menyediakan ruangan meeting di sekitar sini",
+    "entities": [
+      {
+        "start": 32,
+        "end": 47,
+        "value": "ruangan meeting",
+        "entity": "restaurant_facility"
+      },
+      {
+        "start": 48,
+        "end": 63,
+        "value": "di sekitar sini",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant_facility",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.9880424737930298,
+        "value": "ruangan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

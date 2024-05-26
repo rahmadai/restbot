@@ -58,6 +58,9 @@ rules:
       - action: action_check_24h_restaurant
 
   - rule: User asks for reserve restaurant
+    condition:
+      - slot_was_set:
+        - restaurant_name: true
     steps:
       - intent: intent_reservation
         entities:
@@ -66,13 +69,31 @@ rules:
     
 
   - rule: User asks for restaurant locations
+    condition:
+      - slot_was_set:
+        - restaurant_name: false
     steps:
       - intent: intent_ask_restaurant_location
         entities:
         - restaurant_name
+      - slot_was_set:
+        - restaurant_name: true
       - action: action_check_restaurants_location
+      - slot_was_set:
+        - requested_slot: null
+    wait_for_user_input: false
+
+  # - rule: User asks for restaurant locations
+  #   steps:
+  #     - intent: intent_ask_restaurant_location
+  #     - action: action_handle_requests
+  #     - intent: intent_provide_location
+  #     - action: action_handle_requests
 
   - rule: User asks for working hours
+    condition:
+      - slot_was_set:
+        - restaurant_name: true
     steps:
       - intent: intent_restaurant_working_hours
         entities:
@@ -80,6 +101,9 @@ rules:
       - action: action_check_restaurants_working_hours
 
   - rule: User asks for restaurant facility
+    condition:
+      - slot_was_set:
+        - restaurant_name: true
     steps:
       - intent: intent_restaurant_facility
         entities:
@@ -106,3 +130,22 @@ rules:
         entities:
         - restaurant_name
       - action: action_check_recommendation_menu_restaurants
+
+  - rule: ask location restaurant, with null condition
+    condition:
+      - slot_was_set:
+        - restaurant_name: false
+    steps:
+      - intent: intent_ask_restaurant_location
+      - action: restaurant_form
+      - active_loop: restaurant_form
+  - rule: Submit form with restaurant name value
+    condition:
+      - active_loop: restaurant_form
+    steps:
+      - action: restaurant_form
+      - active_loop: null
+      - action: action_check_restaurants_location
+      - slot_was_set:
+        - requested_slot: null
+    wait_for_user_input: false

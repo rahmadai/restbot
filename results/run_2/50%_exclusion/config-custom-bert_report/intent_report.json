@@ -1,0 +1,197 @@
+{
+  "intent_ask_all_menu": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8,
+    "confused_with": {
+      "intent_recommendation_restaurant": 4,
+      "intent_restaurant_facility": 2,
+      "intent_restaurant_pricing": 1
+    }
+  },
+  "intent_challenge_bot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "intent_disagree": 1,
+      "intent_greet": 1,
+      "intent_provide_negative_sample": 1
+    }
+  },
+  "intent_bye": {
+    "precision": 0.5,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.588235294117647,
+    "support": 7,
+    "confused_with": {
+      "intent_greet": 1,
+      "intent_provide_negative_sample": 1
+    }
+  },
+  "intent_restaurant_pricing": {
+    "precision": 0.6666666666666666,
+    "recall": 0.4,
+    "f1-score": 0.5,
+    "support": 10,
+    "confused_with": {
+      "intent_restaurant_facility": 3,
+      "intent_recommendation_restaurant": 2
+    }
+  },
+  "intent_provide_negative_sample": {
+    "precision": 0.30434782608695654,
+    "recall": 0.7777777777777778,
+    "f1-score": 0.43750000000000006,
+    "support": 9,
+    "confused_with": {
+      "intent_bye": 1,
+      "intent_recommendation_restaurant": 1
+    }
+  },
+  "intent_greet": {
+    "precision": 0.4666666666666667,
+    "recall": 0.875,
+    "f1-score": 0.608695652173913,
+    "support": 8,
+    "confused_with": {
+      "intent_disagree": 1
+    }
+  },
+  "intent_ask_restaurant_location": {
+    "precision": 0.8888888888888888,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.7272727272727274,
+    "support": 13,
+    "confused_with": {
+      "intent_recommendation_restaurant": 2,
+      "intent_restaurant_pricing": 1
+    }
+  },
+  "intent_reject": {
+    "precision": 1.0,
+    "recall": 0.125,
+    "f1-score": 0.2222222222222222,
+    "support": 8,
+    "confused_with": {
+      "intent_provide_negative_sample": 6,
+      "intent_greet": 1
+    }
+  },
+  "intent_provide_restaurant_name": {
+    "precision": 0.6666666666666666,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4444444444444444,
+    "support": 6,
+    "confused_with": {
+      "intent_greet": 2,
+      "intent_restaurant_facility": 1
+    }
+  },
+  "intent_provide_information": {
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1-score": 0.4615384615384615,
+    "support": 10,
+    "confused_with": {
+      "intent_provide_negative_sample": 4,
+      "intent_recommendation_restaurant": 3
+    }
+  },
+  "intent_restaurant_facility": {
+    "precision": 0.4375,
+    "recall": 0.875,
+    "f1-score": 0.5833333333333334,
+    "support": 8,
+    "confused_with": {
+      "intent_recommendation_restaurant": 1
+    }
+  },
+  "intent_thanks": {
+    "precision": 0.7272727272727273,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.7999999999999999,
+    "support": 9,
+    "confused_with": {
+      "intent_happy_mood": 1
+    }
+  },
+  "intent_happy_mood": {
+    "precision": 0.3333333333333333,
+    "recall": 0.1,
+    "f1-score": 0.15384615384615383,
+    "support": 10,
+    "confused_with": {
+      "intent_recommendation_restaurant": 3,
+      "intent_greet": 3,
+      "intent_thanks": 2
+    }
+  },
+  "intent_recommendation_menu": {
+    "precision": 1.0,
+    "recall": 0.36363636363636365,
+    "f1-score": 0.5333333333333333,
+    "support": 11,
+    "confused_with": {
+      "intent_recommendation_restaurant": 6,
+      "intent_bye": 1
+    }
+  },
+  "intent_disagree": {
+    "precision": 0.6,
+    "recall": 0.3,
+    "f1-score": 0.4,
+    "support": 10,
+    "confused_with": {
+      "intent_recommendation_restaurant": 3,
+      "intent_thanks": 1
+    }
+  },
+  "intent_restaurant_working_hours": {
+    "precision": 1.0,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.761904761904762,
+    "support": 13,
+    "confused_with": {
+      "intent_restaurant_facility": 2,
+      "intent_recommendation_restaurant": 2
+    }
+  },
+  "intent_recommendation_restaurant": {
+    "precision": 0.41304347826086957,
+    "recall": 1.0,
+    "f1-score": 0.5846153846153846,
+    "support": 19,
+    "confused_with": {}
+  },
+  "intent_confirmation": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 4,
+    "confused_with": {
+      "intent_provide_negative_sample": 1
+    }
+  },
+  "accuracy": 0.5421686746987951,
+  "macro avg": {
+    "precision": 0.6113547918801543,
+    "recall": 0.5018717393717393,
+    "f1-score": 0.4813380347747355,
+    "support": 166
+  },
+  "weighted avg": {
+    "precision": 0.6350680720245938,
+    "recall": 0.5421686746987951,
+    "f1-score": 0.506939200622951,
+    "support": 166
+  },
+  "micro avg": {
+    "precision": 0.5421686746987951,
+    "recall": 0.5421686746987951,
+    "f1-score": 0.5421686746987951,
+    "support": 166
+  }
+}

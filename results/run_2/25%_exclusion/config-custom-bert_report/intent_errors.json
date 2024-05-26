@@ -1,0 +1,354 @@
+[
+  {
+    "text": "bodoh botnya",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.23779603838920593
+    }
+  },
+  {
+    "text": "berapa umurmu",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.14039938151836395
+    }
+  },
+  {
+    "text": "saya setuju dengan pesanan ini ",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.15417137742042542
+    }
+  },
+  {
+    "text": "pizza hut jakal",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.5109252333641052
+    }
+  },
+  {
+    "text": "chingu cafe",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.28688642382621765
+    }
+  },
+  {
+    "text": "fore coffee   kaliurang",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.21076130867004395
+    }
+  },
+  {
+    "text": "bricafe x couvee",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.759171187877655
+    }
+  },
+  {
+    "text": "kfc",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.2926909923553467
+    }
+  },
+  {
+    "text": "rumah makan padang sederhana",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.21637040376663208
+    }
+  },
+  {
+    "text": "saya akan kembali nanti ",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.1149340495467186
+    }
+  },
+  {
+    "text": "sudah saatnya saya cuss  saudara laki-laki ",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.12355437874794006
+    }
+  },
+  {
+    "text": "oke deh  restobot  saya ingin nyobain itu",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.1274416297674179
+    }
+  },
+  {
+    "text": "tidak terlalu suka",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.6192399859428406
+    }
+  },
+  {
+    "text": "nope",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.6806809902191162
+    }
+  },
+  {
+    "text": "apa saja hidangan yang bisa saya nikmati di ramen hut ",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.10907160490751266
+    }
+  },
+  {
+    "text": "apa saja pilihan menu di rumah makan padang sederhana ",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.17852695286273956
+    }
+  },
+  {
+    "text": "saya mau bertanya dong",
+    "intent": "intent_greet",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.23819828033447266
+    }
+  },
+  {
+    "text": "apa harga rata rata di pizza hut jakal ",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_facility",
+      "confidence": 0.12142166495323181
+    }
+  },
+  {
+    "text": "berapa harga menu di rumah makan  duta minang gowongan  ada inforumah makanasi ",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_provide_restaurant_name",
+      "confidence": 0.09009360522031784
+    }
+  },
+  {
+    "text": "bisa berikan saya gambaran harga menu di rumah makan padang sederhana ",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.14697615802288055
+    }
+  },
+  {
+    "text": "thank you banget lho",
+    "intent": "intent_thanks",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.12166375666856766
+    }
+  },
+  {
+    "text": "saya lebih suka kakak perempuan",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_challenge_bot",
+      "confidence": 0.11529192328453064
+    }
+  },
+  {
+    "text": "saya suka makanan perancis",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.09531568735837936
+    }
+  },
+  {
+    "text": "terima kasih iya  restoran ini bikin mood saya bagus ",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.16299086809158325
+    }
+  },
+  {
+    "text": "wuih  ini restoran instagrammable banget  saudara laki-laki ",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.11619739979505539
+    }
+  },
+  {
+    "text": "saya happy banget datang ke sini",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.09910773485898972
+    }
+  },
+  {
+    "text": "sempurna",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.6118003726005554
+    }
+  },
+  {
+    "text": "sepertinya oke",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.4592583477497101
+    }
+  },
+  {
+    "text": "mantap betul  hidangan favoritku ada di sini ",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_ask_all_menu",
+      "confidence": 0.11080969870090485
+    }
+  },
+  {
+    "text": "yummy",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.5786557793617249
+    }
+  },
+  {
+    "text": "top lho disitu",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.25886887311935425
+    }
+  },
+  {
+    "text": "saya ada pantangan    ",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.14735276997089386
+    }
+  },
+  {
+    "text": "saya sedang mengurangi nasi padang",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.1973598748445511
+    }
+  },
+  {
+    "text": "saya tidak suka hidangan dengan bahan dasar berbau ikan",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_provide_information",
+      "confidence": 0.1798175573348999
+    }
+  },
+  {
+    "text": "tidak recommend deh",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.16841229796409607
+    }
+  },
+  {
+    "text": "hmm tidak terlalu doyan makan itu",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.5424536466598511
+    }
+  },
+  {
+    "text": "saya don't lsayake sayat",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_bye",
+      "confidence": 0.10847080498933792
+    }
+  },
+  {
+    "text": "rekomendasiin kopi yang top di chingu cafe dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.2960962653160095
+    }
+  },
+  {
+    "text": "apakah ada hidangan lain yang direkomendasikan di sushi tei",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.30240094661712646
+    }
+  },
+  {
+    "text": "apa yang bisa kamu rekomendasikan untuk hidangan utama di ayam pedas arto moro ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.22755424678325653
+    }
+  },
+  {
+    "text": "bagaimana dengan menu di sunny side up  apa yang top ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_ask_all_menu",
+      "confidence": 0.1158280074596405
+    }
+  },
+  {
+    "text": "apa yang bisa kamu rekomendasikan untuk hidangan utama di mie ayam bandung 59 ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.20016154646873474
+    }
+  },
+  {
+    "text": "pukul berapa r&b grill jogja   2nd building buka ",
+    "intent": "intent_restaurant_working_hours",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.7917330265045166
+    }
+  },
+  {
+    "text": "apakah ada tempat tempat parkir yang tersedia di dekat bricafe x couvee ",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.3841254413127899
+    }
+  }
+]

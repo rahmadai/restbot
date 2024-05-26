@@ -1,0 +1,338 @@
+[
+  {
+    "text": "apakah kamu masih bekerja",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.184162437915802
+    }
+  },
+  {
+    "text": "apa saya berbicara dengan manusia ",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.16565266251564026
+    }
+  },
+  {
+    "text": "saya lagi bicara sama bot ini",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_happy_mood",
+      "confidence": 0.233899787068367
+    }
+  },
+  {
+    "text": "saya mau nyoba rekomendasi kamu deh",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.15886570513248444
+    }
+  },
+  {
+    "text": "pizza hut jakal",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.14744368195533752
+    }
+  },
+  {
+    "text": "warung kopi klotok",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.3452177047729492
+    }
+  },
+  {
+    "text": "cinema bakery",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.20930781960487366
+    }
+  },
+  {
+    "text": "fore coffee   kaliurang",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.4434721767902374
+    }
+  },
+  {
+    "text": "saya akan mencobanya",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.1565278172492981
+    }
+  },
+  {
+    "text": "saya lebih baik nolak saja pilihan yang ini",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.2151922732591629
+    }
+  },
+  {
+    "text": "tidak terlalu suka",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.7411477565765381
+    }
+  },
+  {
+    "text": "saya sih lebih baik tidak perlu deh pilih yang itu",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.22954419255256653
+    }
+  },
+  {
+    "text": "saya ingin tahu semua menu yang disajikan di papa johns",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.18394173681735992
+    }
+  },
+  {
+    "text": "bagaimana dengan variasi menu di bento bliss  saya ingin tahu semuanya ",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.1344280242919922
+    }
+  },
+  {
+    "text": "apa saja pilihan menu di rumah makan padang sederhana ",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.16588418185710907
+    }
+  },
+  {
+    "text": "iya",
+    "intent": "intent_greet",
+    "intent_prediction": {
+      "name": "intent_confirmation",
+      "confidence": 0.34736835956573486
+    }
+  },
+  {
+    "text": "yow",
+    "intent": "intent_greet",
+    "intent_prediction": {
+      "name": "intent_bye",
+      "confidence": 0.15436162054538727
+    }
+  },
+  {
+    "text": "permisi",
+    "intent": "intent_greet",
+    "intent_prediction": {
+      "name": "intent_bye",
+      "confidence": 0.18641838431358337
+    }
+  },
+  {
+    "text": "bonjour",
+    "intent": "intent_greet",
+    "intent_prediction": {
+      "name": "intent_provide_restaurant_name",
+      "confidence": 0.1916637271642685
+    }
+  },
+  {
+    "text": "pukul berapa izakaya buka dan berapa harga menu utamanya ",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.33512765169143677
+    }
+  },
+  {
+    "text": "thank you banget lho",
+    "intent": "intent_thanks",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.2934544086456299
+    }
+  },
+  {
+    "text": "saya suka hidangan pedas dan asam",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.2587902545928955
+    }
+  },
+  {
+    "text": "saya suka hidangan dari timur tengah",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.2289613038301468
+    }
+  },
+  {
+    "text": "saya mau nyoba makanan italia",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.16265182197093964
+    }
+  },
+  {
+    "text": "saya ingin makanan yang cocok untuk diet gluten free",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.33150485157966614
+    }
+  },
+  {
+    "text": "kapan kapan mau kesana lagi",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.7177414298057556
+    }
+  },
+  {
+    "text": "top lho disitu",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_provide_restaurant_name",
+      "confidence": 0.15967175364494324
+    }
+  },
+  {
+    "text": "yummy",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.2580690383911133
+    }
+  },
+  {
+    "text": "saya tidak doyan    ",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.36633291840553284
+    }
+  },
+  {
+    "text": "saya harap kamu bisa kasih saran yang lebih baik",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.18055517971515656
+    }
+  },
+  {
+    "text": "mau rekomendasi yang lain dong",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.19358567893505096
+    }
+  },
+  {
+    "text": "hmm tidak mau itu",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.8448143005371094
+    }
+  },
+  {
+    "text": "tidak terlalu bagus",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.487200528383255
+    }
+  },
+  {
+    "text": "bagaimana dengan hidangan penutup di kopinyc  ada yang spesial ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_ask_all_menu",
+      "confidence": 0.13413040339946747
+    }
+  },
+  {
+    "text": "rekomendasiin kopi yang top di chingu cafe dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.7255798578262329
+    }
+  },
+  {
+    "text": "enakniya makan apa iya di warung kopi klotok ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.23953984677791595
+    }
+  },
+  {
+    "text": "best seller menu di seven stone apa iya ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.2661795914173126
+    }
+  },
+  {
+    "text": "best seller menu di tilasawa apa iya ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.24892280995845795
+    }
+  },
+  {
+    "text": "menurutmu  menu terbaik di rumah makan duta minang apa ",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.23050081729888916
+    }
+  },
+  {
+    "text": "rekomendasiin kopi yang top di trilogi coffee dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.6907567381858826
+    }
+  },
+  {
+    "text": "restobot  di mana alamat lengkap fore coffee   kaliurang berada ",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_provide_restaurant_name",
+      "confidence": 0.16054615378379822
+    }
+  },
+  {
+    "text": "di mana alamat filosofi kopi jogja yang paling dekat ",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_provide_restaurant_name",
+      "confidence": 0.3080407381057739
+    }
+  }
+]

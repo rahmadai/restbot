@@ -1,0 +1,730 @@
+[
+  {
+    "text": "apakah kamu masih bekerja",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.13234293460845947
+    }
+  },
+  {
+    "text": "apa saya berbicara dengan manusia?",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.10366359353065491
+    }
+  },
+  {
+    "text": "gue lagi bicara sama bot nih",
+    "intent": "intent_challenge_bot",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.34495997428894043
+    }
+  },
+  {
+    "text": "iya, pesanannya itu.",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.20383892953395844
+    }
+  },
+  {
+    "text": "benar, aku pesan yang itu.",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.21119776368141174
+    }
+  },
+  {
+    "text": "gue mau nyoba rekomendasi lu deh",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.1218586191534996
+    }
+  },
+  {
+    "text": "itu yang aku pesan.",
+    "intent": "intent_confirmation",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.19529989361763
+    }
+  },
+  {
+    "text": "pizza hut jakal",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.45986974239349365
+    }
+  },
+  {
+    "text": "tilasawa coffee roaster",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.12925148010253906
+    }
+  },
+  {
+    "text": "wendys",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.43859943747520447
+    }
+  },
+  {
+    "text": "warung kopi klotok",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.2954554259777069
+    }
+  },
+  {
+    "text": "cinema bakery",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.45954081416130066
+    }
+  },
+  {
+    "text": "fore coffee - kaliurang",
+    "intent": "intent_provide_restaurant_name",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.10568816214799881
+    }
+  },
+  {
+    "text": "aku pamit dulu",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.09277418255805969
+    }
+  },
+  {
+    "text": "gue harus cabut dulu, ya.",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.14944256842136383
+    }
+  },
+  {
+    "text": "gue cabs dulu",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.1333368569612503
+    }
+  },
+  {
+    "text": "udah deh, saya pamit duluan.",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.12553399801254272
+    }
+  },
+  {
+    "text": "good bye!",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.23373520374298096
+    }
+  },
+  {
+    "text": "saya akan mencobanya",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.08949970453977585
+    }
+  },
+  {
+    "text": "waktunya bubar, sobat.",
+    "intent": "intent_bye",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.10580841451883316
+    }
+  },
+  {
+    "text": "gue mending nolak aja pilihan yang ini",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.08062323927879333
+    }
+  },
+  {
+    "text": "ga mo",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.1008746549487114
+    }
+  },
+  {
+    "text": "ga terlalu suka",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.8422457575798035
+    }
+  },
+  {
+    "text": "gue sih mending gak usah deh pilih yang itu",
+    "intent": "intent_reject",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.16045260429382324
+    }
+  },
+  {
+    "text": "Saya ingin tahu semua menu yang disajikan di papa johns",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.0741860419511795
+    }
+  },
+  {
+    "text": "Apa saja pilihan menu di rm padang sederhana?",
+    "intent": "intent_ask_all_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.10953865945339203
+    }
+  },
+  {
+    "text": "apa yang tersedia di nasi goreng sapi padmanaba dari segi fasilitas?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_restaurant_pricing",
+      "confidence": 0.09966160356998444
+    }
+  },
+  {
+    "text": "bisakah anda beri detail tentang fasilitas di wendys?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.1179228350520134
+    }
+  },
+  {
+    "text": "apa yang bisa saya temukan dari segi fasilitas di burger king?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.10526053607463837
+    }
+  },
+  {
+    "text": "tolong informasikan fasilitas yang tersedia di mcdonald's sudirman yogyakarta.",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.11514044553041458
+    }
+  },
+  {
+    "text": "restoran cinema bakery punya fasilitas apa saja?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.16829921305179596
+    }
+  },
+  {
+    "text": "restoran gudeg sagan memiliki fasilitas apa saja?",
+    "intent": "intent_restaurant_facility",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.12734653055667877
+    }
+  },
+  {
+    "text": "bisa kasih informasi mengenai harga menu di subway?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.1138295903801918
+    }
+  },
+  {
+    "text": "sakapatat brew house & resto biasanya menawarkan menu dengan harga berapa?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.09091886878013611
+    }
+  },
+  {
+    "text": "bisa informasikan harga menu di giorno's pizzeria?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.15374834835529327
+    }
+  },
+  {
+    "text": "pukul berapa izakaya buka dan berapa harga menu utamanya?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.22600050270557404
+    }
+  },
+  {
+    "text": "boleh berikan saya informasi mengenai harga menu di nikuya bbq jogja?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_ask_restaurant_location",
+      "confidence": 0.08512872457504272
+    }
+  },
+  {
+    "text": "boleh kamu informasikan harga menu di fore coffee - kaliurang?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_facility",
+      "confidence": 0.08477029204368591
+    }
+  },
+  {
+    "text": "bagaimana dengan harga kopi di dummin coffee & space ukdw?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.20145460963249207
+    }
+  },
+  {
+    "text": "saya penasaran dengan harga menu di baki by d'monaco. ada informasi?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.08397838473320007
+    }
+  },
+  {
+    "text": "menu apa saja yang ditawarkan oleh mcdonald's sudirman yogyakarta dan berapa harganya?",
+    "intent": "intent_restaurant_pricing",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.09179431200027466
+    }
+  },
+  {
+    "text": "thank you banget lho",
+    "intent": "intent_thanks",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.21352063119411469
+    }
+  },
+  {
+    "text": "saya suka hidangan korea",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.13676166534423828
+    }
+  },
+  {
+    "text": "saya suka hidangan pedas dan asam",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.2434488832950592
+    }
+  },
+  {
+    "text": "saya ingin makanan yang sesuai untuk diet keto",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.10982047766447067
+    }
+  },
+  {
+    "text": "saya lebih suka hidangan berbahan dasar sayuran",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_disagree",
+      "confidence": 0.11013233661651611
+    }
+  },
+  {
+    "text": "gua lebih suka teh",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.14486099779605865
+    }
+  },
+  {
+    "text": "saya prefer ini",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.21717309951782227
+    }
+  },
+  {
+    "text": "saya suka hidangan dari timur tengah",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.0810665711760521
+    }
+  },
+  {
+    "text": "saya ingin makanan yang sesuai untuk diet vegetarian",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.10197988152503967
+    }
+  },
+  {
+    "text": "saya ingin makanan yang cocok untuk diet gluten-free",
+    "intent": "intent_provide_information",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.09360349923372269
+    }
+  },
+  {
+    "text": "mood aku langsung mejeng pas makan di sini!",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.08401018381118774
+    }
+  },
+  {
+    "text": "wah, pelayanannya juga ramah banget, seneng banget!",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.09669236838817596
+    }
+  },
+  {
+    "text": "kapan-kapan mau kesana lagi",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.2125750333070755
+    }
+  },
+  {
+    "text": "wah, abis makan di sini jadi mood naik!",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.09918671101331711
+    }
+  },
+  {
+    "text": "enak lho disitu",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.1528875231742859
+    }
+  },
+  {
+    "text": "yummy",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.19291740655899048
+    }
+  },
+  {
+    "text": "restoran ini emang pilihan yang bener, puas banget!",
+    "intent": "intent_happy_mood",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.09947558492422104
+    }
+  },
+  {
+    "text": "gue ada alergi ...",
+    "intent": "intent_provide_negative_sample",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11375830322504044
+    }
+  },
+  {
+    "text": "aku harap kamu bisa kasih saran yang lebih baik",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_thanks",
+      "confidence": 0.10180208832025528
+    }
+  },
+  {
+    "text": "aku butuh rekomendasi yang lebih relevan, maaf",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.12147922813892365
+    }
+  },
+  {
+    "text": "mau rekomendasi yang lain dong",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.17208288609981537
+    }
+  },
+  {
+    "text": "hmm ga mau itu",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.3843021094799042
+    }
+  },
+  {
+    "text": "tidak terlalu bagus",
+    "intent": "intent_disagree",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.3184671998023987
+    }
+  },
+  {
+    "text": "Bagaimana dengan hidangan penutup di kopinyc, ada yang spesial?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.07724108546972275
+    }
+  },
+  {
+    "text": "Rekomendasiin kopi yang enak di chingu cafe dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.22174838185310364
+    }
+  },
+  {
+    "text": "Enaknya makan apa ya di warung kopi klotok?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11098837852478027
+    }
+  },
+  {
+    "text": "Aku ingin mencoba makanan tradisional, apa yang kamu rekomendasikan di golden geisha ramen?",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11083637177944183
+    }
+  },
+  {
+    "text": "Rekomendasiin kopi yang enak di trilogi coffee dong",
+    "intent": "intent_recommendation_menu",
+    "intent_prediction": {
+      "name": "intent_recommendation_restaurant",
+      "confidence": 0.1232706606388092
+    }
+  },
+  {
+    "text": "ayam pedas arto moro buka jam berapa yaa?",
+    "intent": "intent_restaurant_working_hours",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.3084735870361328
+    }
+  },
+  {
+    "text": "apa alamat lengkap dari gudeg sagan?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.08754971623420715
+    }
+  },
+  {
+    "text": "di mana cinema bakery terdekat?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.24765470623970032
+    }
+  },
+  {
+    "text": "restobot, di mana alamat lengkap fore coffee - kaliurang berada?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_recommendation_menu",
+      "confidence": 0.11312159895896912
+    }
+  },
+  {
+    "text": "restobot, dimana letaknya tilasawa coffee roaster?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.10774241387844086
+    }
+  },
+  {
+    "text": "bagaimana saya bisa menemukan el primo sausage & dairy?",
+    "intent": "intent_ask_restaurant_location",
+    "intent_prediction": {
+      "name": "intent_restaurant_working_hours",
+      "confidence": 0.16462205350399017
+    }
+  },
+  {
+    "text": "saya ingin memesan dari pengiriman makanan, ada yang bisa direkomendasikan?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_reject",
+      "confidence": 0.06989479809999466
+    }
+  },
+  {
+    "text": "hai, bisakah kamu merekomendasikan restoran steak yang bagus di sekitar kaliurang",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11623142659664154
+    }
+  },
+  {
+    "text": "bisakah kamu merekomendasikan restoran hidangan penutup dengan pilihan penutup lezat?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_ask_all_menu",
+      "confidence": 0.0941581279039383
+    }
+  },
+  {
+    "text": "ada ramen restaurant yang punya ramen terbaik?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.15089896321296692
+    }
+  },
+  {
+    "text": "tolong carikan japanese resto enak dong",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11090588569641113
+    }
+  },
+  {
+    "text": "apakah ada restaurant yang bagus untuk sarapan di sini",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.10450461506843567
+    }
+  },
+  {
+    "text": "ada saran restoran cepat saji yang menyediakan makanan cepat saji sehat?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.08885025233030319
+    }
+  },
+  {
+    "text": "bisakah kamu merekomendasikan tempat makan vegetarian?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_provide_negative_sample",
+      "confidence": 0.08664058148860931
+    }
+  },
+  {
+    "text": "ada saran padang restaurant yang menyajikan masakan padang otentik?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.14570342004299164
+    }
+  },
+  {
+    "text": "aku ingin mencari tempat makan yang tersedia ruang rapat di jogja. apa ada yang kamu rekomendasikan?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.10181495547294617
+    }
+  },
+  {
+    "text": "saya ingin mencari tempat yang mempunyai tempat parkir untuk 2 orang di deket ugm",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.1691889613866806
+    }
+  },
+  {
+    "text": "hai, ada rekomendasi restoran italia enak di sekitar sini dan ada wifi dong",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.1636202186346054
+    }
+  },
+  {
+    "text": "apakah ada italian restaurant yang spesial di sekitar sini?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.18417079746723175
+    }
+  },
+  {
+    "text": "tolong carikan japanese resto di sekitar kaliurang enak dong",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.13427326083183289
+    }
+  },
+  {
+    "text": "aku ingin mencari tempat coffee shop yang tersedia ruang rapat di jogja. apa ada yang kamu rekomendasikan?",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11862253397703171
+    }
+  },
+  {
+    "text": "apakah ada restoran menyediakan ruangan meeting di sekitar sini",
+    "intent": "intent_recommendation_restaurant",
+    "intent_prediction": {
+      "name": "intent_greet",
+      "confidence": 0.11355854570865631
+    }
+  }
+]

@@ -7,57 +7,82 @@ stories:
     - restaurant_type,location,restaurant_facility
   - action: action_check_restaurants_recommendation
 
-# - story: User asks for restaurant locations
+- story: interactive ask location by null value
+  steps:
+  - intent: intent_ask_restaurant_location
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - requested_slot: restaurant_name
+  - slot_was_set:
+    - restaurant_name: tilasawa
+  - active_loop: null
+  - action: action_check_restaurants_location
+  - slot_was_set:
+    - requested_slot: null
+  - intent: intent_bye
+  - action: utter_goodbye
+
+# - story: interactive ask location by expected value
 #   steps:
 #   - intent: intent_ask_restaurant_location
-#     entities:
-#     - restaurant_name
+#   - slot_was_set:
+#     - restaurant_name: tilasawa
 #   - action: action_check_restaurants_location
+#   - slot_was_set:
+#     - restaurant_name: null
 
-# - story: User asks for working hours
+# - story: User asks for working hours, while bot handle null entity working hours
 #   steps:
-#   - intent: intent_restaurant_working_hours
-#     entities:
-#     - restaurant_name
-#   - action: action_check_restaurants_working_hours
+#     - intent: intent_restaurant_working_hours
+#     - slot_was_set:
+#       - restaurant_name: null
+#     - action: utter_ask_restaurant_name
+#     - intent: intent_provide_restaurant_name
+#       entities:
+#       - restaurant_name
+#     - action: action_check_restaurants_working_hours
 
-# - story: User asks for restaurant pricing
+# - story: User asks for restaurant facility, while bot handle null entity restaurant facility
 #   steps:
-#   # - intent: intent_greet
-#   # - action: utter_ask_questions
-#   - intent: intent_restaurant_pricing
-#     entities:
-#     - restaurant_name
-#   - action: action_check_restaurants_pricing
+#     - intent: intent_restaurant_facility
+#     - slot_was_set:
+#       - restaurant_name: null
+#     - action: utter_ask_restaurant_name
+#     - intent: intent_provide_restaurant_name
+#       entities:
+#       - restaurant_name
+#     - action: action_check_restaurants_facilities
 
-# - story: User asks for restaurant facility
+# - story: User asks for restaurant location, while bot handle null entity restaurant location
 #   steps:
-#   - intent: intent_restaurant_facility
-#     entities:
-#     - restaurant_name
-#   - action: action_check_restaurants_facilities
-  
-# - story: handle user affirm
-#   steps:
-#   - checkpoint: recommend_checkpoint
-#   - intent: intent_confirmation
-#   - action: utter_confirmation
-  # - checkpoint: confirm_checkpoint
+#     - intent: intent_ask_restaurant_location
+#     - slot_was_set:
+#       - restaurant_name: null
+#     - action: utter_ask_restaurant_name
+#     - intent: intent_provide_restaurant_name
+#       entities:
+#       - restaurant_name
+    # - action: action_check_restaurants_location
 
-# - story: handle user deny
+# - story: User asks for restaurant location, while bot handle null entity restaurant location
 #   steps:
-#   - checkpoint: recommend_checkpoint
-#   - intent: intent_reject
-  # - checkpoint: deny_checkpoint
+#     - intent: intent_ask_restaurant_location
+#     - slot_was_set:
+#       - restaurant_name: null
+#     - action: utter_ask_restaurant_name
+#     - intent: intent_provide_restaurant_name
+#       entities:
+#       - restaurant_name
+#     - action: action_check_restaurants_location
 
-# - story: finish flow after denial
+# - story: User asks for reserve restaurant, while bot handle null entity restaurant name
 #   steps:
-#   - checkpoint: deny_checkpoint
-#   - intent: intent_bye
-#   - action: utter_goodbye
-
-# - story: finish flow after confirmation
-#   steps:
-#   - checkpoint: confirm_checkpoint
-#   - intent: intent_bye
-#   - action: utter_goodbye
+#     - intent: intent_reservation
+#     - slot_was_set:
+#       - restaurant_name: null
+#     - action: utter_ask_restaurant_name
+#     - intent: intent_provide_restaurant_name
+#       entities:
+#       - restaurant_name
+#     - action: action_reserve_restaurant
